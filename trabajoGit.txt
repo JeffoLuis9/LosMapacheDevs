@@ -10,3 +10,9 @@ NOMBRE8
 NOMBRE9
 NOMBRE10
 Parte Jefferson
+
+NOMBRE14
+NOMBRE15
+NOMBRE16
+parte compu1
+
