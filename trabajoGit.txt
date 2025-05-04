@@ -11,3 +11,4 @@ NOMBRE15
 NOMBRE16
 parte compu1
 
+
