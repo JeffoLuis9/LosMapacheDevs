@@ -6,6 +6,12 @@ Nombre5
 Nombre6
 Nombre7
 
+<<<<<<< HEAD
 NOMBRE8
 NOMBRE9
 NOMBRE10
+=======
+NOMBRE14
+NOMBRE15
+NOMBRE16
+>>>>>>> origin/pruebaCompu1
