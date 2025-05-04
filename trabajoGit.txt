@@ -22,3 +22,4 @@ NOMBRE13
 Parte Compu2
 
 terminamos por hoy
+Ahora estamos en el Main
