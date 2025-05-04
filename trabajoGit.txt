@@ -9,3 +9,5 @@ Nombre7
 NOMBRE14
 NOMBRE15
 NOMBRE16
+parte compu1
+
