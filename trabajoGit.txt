@@ -9,3 +9,4 @@ Nombre7
 NOMBRE11
 NOMBRE12
 NOMBRE13
+Parte Compu2
