@@ -24,8 +24,15 @@ Parte Compu2
 terminamos por hoy
 Ahora estamos en el Main
 
+<<<<<<< HEAD
 Drogo es pto
 
 Drogo le gusta el fentanilo
 
 oe ya me canse xd
+
+Hola soy Cristian
+
+
+Hola soy Cristian OTRA VEZ
+
