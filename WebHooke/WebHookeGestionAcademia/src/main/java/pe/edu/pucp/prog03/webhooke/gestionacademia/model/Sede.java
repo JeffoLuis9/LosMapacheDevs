@@ -20,19 +20,19 @@ public class Sede {
     private String distrito;
 //    private ArrayList<Usuario> usuarios;
 //    private ArrayList<Curso> cursos;
-    private List<TipoSesion> sesiones;
-    private String Nombre_Academia;
-
+//    private List<TipoSesion> sesiones;
+//    private String Nombre_Academia;
+    private Academia academia;
     public Sede() {
-        sesiones = new ArrayList<>();
+//        sesiones = new ArrayList<>();
     }
 
-    public Sede(int id,String direccion, String distrito, String Nombre_Academia) {
-        sesiones = new ArrayList<>();
+    public Sede(int id,String direccion, String distrito, Academia aca) {
+        //sesiones = new ArrayList<>();
         this.direccion = distrito;
         this.direccion = direccion;
         this.id=id;
-        this.Nombre_Academia = Nombre_Academia;
+        this.academia = aca;
     }
 
     public int getId() {
@@ -47,13 +47,21 @@ public class Sede {
         return direccion;
     }
 
-    public String getNombre_Academia() {
-        return Nombre_Academia;
+    public Academia getAcademia() {
+        return academia;
     }
 
-    public void setNombre_Academia(String Nombre_Academia) {
-        this.Nombre_Academia = Nombre_Academia;
+    public void setAcademia(Academia academia) {
+        this.academia = academia;
     }
+
+//    public String getNombre_Academia() {
+//        return Nombre_Academia;
+//    }
+//
+//    public void setNombre_Academia(String Nombre_Academia) {
+//        this.Nombre_Academia = Nombre_Academia;
+//    }
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;

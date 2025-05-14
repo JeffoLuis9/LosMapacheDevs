@@ -178,11 +178,11 @@ public class UsuarioDAOImplement extends BaseDAOImplement<Usuario> implements Us
     protected Usuario mapearModelo(ResultSet rs) throws SQLException {
         Usuario usu = new Usuario();
         usu.setId(rs.getInt("id"));
-        usu.setNombre(rs.getString("Nombre"));
-        usu.setApellido(rs.getString("Apellido"));
+        usu.setNombre(rs.getString("nombre"));
+        usu.setApellido(rs.getString("apellido"));
         usu.setDNI(rs.getString("DNI"));
-        usu.setEmail(rs.getString("Email"));
-        usu.setFechaNacimiento(rs.getDate("FechaNacimiento"));
+        usu.setEmail(rs.getString("email"));
+        usu.setFechaNacimiento(rs.getDate("fechaNacimiento"));
 
         //usuario.setId(rs.getInt("IdUsuario"));
 //            usuario.setNombre(rs.getString("Nombre"));

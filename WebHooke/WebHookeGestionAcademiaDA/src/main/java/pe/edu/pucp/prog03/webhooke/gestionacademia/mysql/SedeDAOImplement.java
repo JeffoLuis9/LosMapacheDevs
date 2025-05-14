@@ -17,6 +17,7 @@ import java.sql.Types;
 import pe.edu.pucp.prog03.webhooke.gestionacademia.dao.SedeDAO;
 //import pe.edu.pucp.prog03.webhooke.gestionacademia.model.Academia;
 import pe.edu.pucp.prog03.webhooke.config.DBManager;
+import pe.edu.pucp.prog03.webhooke.gestionacademia.model.Academia;
 
 import pe.edu.pucp.prog03.webhooke.gestionacademia.model.Sede;
 
@@ -32,7 +33,7 @@ public class SedeDAOImplement extends BaseDAOImplement<Sede> implements SedeDAO 
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_direccion", sed.getDireccion());
         cmd.setString("p_distrito", sed.getDistrito());
-        cmd.setString("p_nombreAcademia", sed.getNombre_Academia());
+        cmd.setInt("p_idAcademia", sed.getAcademia().getId());
         cmd.registerOutParameter("p_id", Types.INTEGER);
         return cmd;
     }
@@ -70,7 +71,7 @@ public class SedeDAOImplement extends BaseDAOImplement<Sede> implements SedeDAO 
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_direccion", sed.getDireccion());
         cmd.setString("p_distrito", sed.getDistrito());
-        cmd.setString("p_nombreAcademia", sed.getNombre_Academia());
+        cmd.setInt("p_idAcademia", sed.getAcademia().getId());
         cmd.setInt("p_id", sed.getId());
         return cmd;
     }
@@ -165,7 +166,9 @@ public class SedeDAOImplement extends BaseDAOImplement<Sede> implements SedeDAO 
         Sede sed= new Sede();
         sed.setDireccion(rs.getString("direccion"));
         sed.setDistrito(rs.getString("distrito"));
-        sed.setNombre_Academia(rs.getString("NombreAcademia"));
+        sed.setId(rs.getInt("idSede"));
+        sed.setAcademia(new AcademiaDAOImplement().buscar(rs.getInt("idAcademia")));
+        
         
         return sed;
     }
