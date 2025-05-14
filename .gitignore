@@ -9,8 +9,5 @@ target/
 *.class
 *.dumpstream
 *.xml
-<<<<<<< HEAD
 *.txt
-=======
-*.txt
->>>>>>> origin/BranchAndres
+
