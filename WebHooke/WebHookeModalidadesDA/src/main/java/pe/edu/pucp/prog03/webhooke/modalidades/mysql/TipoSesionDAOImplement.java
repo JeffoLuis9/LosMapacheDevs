@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package pe.edu.pucp.prog03.webhooke.modalidades.mysql;
+
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -17,90 +18,54 @@ import java.sql.Types;
 import pe.edu.pucp.prog03.webhooke.modalidades.model.TipoSesion;
 import pe.edu.pucp.prog03.webhooke.modalidades.dao.TipoSesionDAO;
 import pe.edu.pucp.prog03.webhooke.config.DBManager;
+
 /**
  *
  * @author ASUS
  */
-public class TipoSesionDAOImplement extends BaseDAOImplement<TipoSesion> implements TipoSesionDAO{
+public class TipoSesionDAOImplement extends BaseDAOImplement<TipoSesion> implements TipoSesionDAO {
+
     @Override
     protected CallableStatement comandoInsertar(Connection conn, TipoSesion tipoSesion) throws SQLException {
-        String sql = "{CALL insertarTipoSesion values(?,?,?,?,?,?)}";
+        String sql = "{CALL insertarTipoSesion(?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
-//        cmd.setString("p_nombre", usu.getNombre());
-//        cmd.setString("p_apellido", usu.getApellido());
-//        cmd.setString("p_dni", usu.getDNI());
-//        cmd.setString("p_email", usu.getEmail());
-//        cmd.setDate("p_fechanacimiento", usu.getFechaNacimiento());
-//        cmd.registerOutParameter("p_id", Types.INTEGER);
+        //cmd.setInt("p_idmodalidad", tipoSesion.getIdModalidad());
+        cmd.setDouble("p_precio", tipoSesion.getPrecio());
+        cmd.setString("p_tipo", tipoSesion.getTipo());
+        cmd.registerOutParameter("p_id", Types.INTEGER);
         return cmd;
     }
 
-
     @Override
     protected CallableStatement comandoModificar(Connection conn, TipoSesion tipoSesion) throws SQLException {
-        String sql = "{CALL modificarUsuario(?,?,?,?,?,?}";
+        String sql = "{CALL modificarTipoSesion(?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
-//        cmd.setString("p_nombre", usu.getNombre());
-//        cmd.setString("p_apellido", usu.getApellido());
-//        cmd.setString("p_dni", usu.getDNI());
-//        cmd.setString("p_email", usu.getEmail());
-//        cmd.setDate("p_fechanacimiento", usu.getFechaNacimiento());
-//        cmd.setInt("p_id", usu.getId());
+
+        cmd.setDouble("p_precio", tipoSesion.getPrecio());
+        cmd.setString("p_tipo", tipoSesion.getTipo());
+        cmd.setInt("p_id", tipoSesion.getIdModalidad());
         return cmd;
     }
 
     @Override
     protected CallableStatement comandoEliminar(Connection conn, int id) throws SQLException {
-        String sql = "{CALL eliminarUsuario(?)}";
+        String sql = "{CALL eliminarTipoSesion(?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setInt("p_id", id);
         return cmd;
     }
-
 
     @Override
     protected CallableStatement comandoBuscar(Connection conn, int id) throws SQLException {
-        String sql = "{CALL buscarUsuarioPorId}";
+        String sql = "{CALL buscarTipoSesionPorId(?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setInt("p_id", id);
         return cmd;
     }
 
-//    @Override
-//    public Usuario buscar(int id){
-//        String sql = "SELECT * FROM Usuario WHERE IdUsuario = ?";
-//        
-//        try (Connection conn =DBManager.getInstance().getConnection();
-//                PreparedStatement ps = conn.prepareStatement(sql)){
-//            
-//            ps.setInt(1, id);
-//            ResultSet rs=ps.executeQuery();
-//            
-//            if(!rs.next()){
-//                System.err.println("No se encontro el area en academia con id: " + id);
-//                return null;
-//            }
-//            
-//            
-//            Usuario usuario = new Usuario() ;
-//            //aca.(rs.getInt("id"));
-//            usuario.setId(rs.getInt("IdUsuario"));
-//            usuario.setNombre(rs.getString("Nombre"));
-//            usuario.setApellido(rs.getString("Apellido"));
-//            usuario.setDNI(rs.getString("DNI"));
-//            usuario.setEmail(rs.getString("Email"));
-//            usuario.setFechaNacimiento(rs.getDate("FechaNacimiento"));
-//            
-//            return usuario;  
-//        }
-//        catch (Exception e) {
-//            System.err.println(e);
-//            throw new RuntimeException("No se pudo listar las academias 3.");
-//        }
-//    }
     @Override
     protected CallableStatement comandoListar(Connection conn) throws SQLException {
-        String sql = "{CALL listarUsuario()}";
+        String sql = "{CALL listarTipoSesion()}";
         CallableStatement cmd = conn.prepareCall(sql);
         return cmd;
     }
@@ -108,19 +73,13 @@ public class TipoSesionDAOImplement extends BaseDAOImplement<TipoSesion> impleme
     @Override
     protected TipoSesion mapearModelo(ResultSet rs) throws SQLException {
         TipoSesion usu = new TipoSesion();
-//        usu.setId(rs.getInt("id"));
-//        usu.setNombre(rs.getString("Nombre"));
-//        usu.setApellido(rs.getString("Apellido"));
-//        usu.setDNI(rs.getString("DNI"));
-//        usu.setEmail(rs.getString("Email"));
-//        usu.setFechaNacimiento(rs.getDate("FechaNacimiento"));
+        /*private int idModalidad;
+    private double precio;
+    private String tipo;*/
+        usu.setIdModalidad(rs.getInt("idModalidad"));
+        usu.setPrecio(rs.getDouble("precio"));
+        usu.setTipo(rs.getString("tipo"));
 
-        //usuario.setId(rs.getInt("IdUsuario"));
-//            usuario.setNombre(rs.getString("Nombre"));
-//            usuario.setApellido(rs.getString("Apellido"));
-//            usuario.setDNI(rs.getString("DNI"));
-//            usuario.setEmail(rs.getString("Email"));
-//            usuario.setFechaNacimiento(rs.getDate("FechaNacimiento"));
         return usu;
     }
 }

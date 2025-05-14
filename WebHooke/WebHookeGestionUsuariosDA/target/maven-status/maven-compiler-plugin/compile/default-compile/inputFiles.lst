@@ -1,18 +1,10 @@
-<<<<<<< HEAD
 D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\dao\AdministradorDAO.java
+D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\dao\AlumnoDAO.java
 D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\dao\ICRUD.java
+D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\dao\ProfesorDAO.java
 D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\dao\UsuarioDAO.java
+D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\mysql\AdministradorDAOImplement.java
+D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\mysql\AlumnoDAOImplement.java
 D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\mysql\BaseDAOImplement.java
+D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\mysql\ProfesorDAOImplement.java
 D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\mysql\UsuarioDAOImplement.java
-=======
-C:\Users\andre\OneDrive\Documentos\cosasJeffesron\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\dao\AdministradorDAO.java
-C:\Users\andre\OneDrive\Documentos\cosasJeffesron\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\dao\AlumnoDAO.java
-C:\Users\andre\OneDrive\Documentos\cosasJeffesron\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\dao\ICRUD.java
-C:\Users\andre\OneDrive\Documentos\cosasJeffesron\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\dao\ProfesorDAO.java
-C:\Users\andre\OneDrive\Documentos\cosasJeffesron\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\dao\UsuarioDAO.java
-C:\Users\andre\OneDrive\Documentos\cosasJeffesron\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\mysql\AdministradorDAOImplement.java
-C:\Users\andre\OneDrive\Documentos\cosasJeffesron\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\mysql\AlumnoDAOImplement.java
-C:\Users\andre\OneDrive\Documentos\cosasJeffesron\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\mysql\BaseDAOImplement.java
-C:\Users\andre\OneDrive\Documentos\cosasJeffesron\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\mysql\ProfesorDAOImplement.java
-C:\Users\andre\OneDrive\Documentos\cosasJeffesron\LosMapacheDevs\WebHooke\WebHookeGestionUsuariosDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionusuarios\mysql\UsuarioDAOImplement.java
->>>>>>> origin/BranchAndres

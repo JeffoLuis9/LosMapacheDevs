@@ -32,7 +32,7 @@ public class AlumnoDAOImplement extends BaseDAOImplement<Alumno> implements Alum
     
     @Override
     protected CallableStatement comandoInsertar(Connection conn, Alumno usu) throws SQLException {
-        String sql = "{CALL insertarAlumno values(?,?,?,?,?,?,?)}";
+        String sql = "{CALL insertarAlumno(?,?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
@@ -47,7 +47,7 @@ public class AlumnoDAOImplement extends BaseDAOImplement<Alumno> implements Alum
     
     @Override
     protected CallableStatement comandoModificar(Connection conn, Alumno usu) throws SQLException {
-        String sql = "{CALL modificarAlumno(?,?,?,?,?,?,?}";
+        String sql = "{CALL modificarAlumno(?,?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
@@ -69,7 +69,7 @@ public class AlumnoDAOImplement extends BaseDAOImplement<Alumno> implements Alum
     
     @Override
     protected CallableStatement comandoBuscar(Connection conn, int id) throws SQLException {
-        String sql = "{CALL buscarAlumnoPorId}";
+        String sql = "{CALL buscarAlumnoPorId(?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setInt("p_id", id);
         return cmd;

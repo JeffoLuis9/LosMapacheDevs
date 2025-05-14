@@ -36,7 +36,7 @@ public class ProfesorDAOImplement extends BaseDAOImplement<Profesor> implements 
     
     @Override
     protected CallableStatement comandoInsertar(Connection conn, Profesor usu) throws SQLException {
-        String sql = "{CALL insertarProfesor values(?,?,?,?,?,?)}";
+        String sql = "{CALL insertarProfesor(?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
@@ -49,7 +49,7 @@ public class ProfesorDAOImplement extends BaseDAOImplement<Profesor> implements 
 
     @Override
     protected CallableStatement comandoModificar(Connection conn, Profesor usu) throws SQLException {
-        String sql = "{CALL modificarProfesor(?,?,?,?,?,?}";
+        String sql = "{CALL modificarProfesor(?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
@@ -72,7 +72,7 @@ public class ProfesorDAOImplement extends BaseDAOImplement<Profesor> implements 
 
     @Override
     protected CallableStatement comandoBuscar(Connection conn, int id) throws SQLException {
-        String sql = "{CALL buscarProfesorPorId}";
+        String sql = "{CALL buscarProfesorPorId(?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setInt("p_id", id);
         return cmd;
@@ -89,7 +89,7 @@ public class ProfesorDAOImplement extends BaseDAOImplement<Profesor> implements 
     @Override
     protected Profesor mapearModelo(ResultSet rs) throws SQLException {
         Profesor usu = new Profesor();
-        usu.setId(rs.getInt("id"));
+        usu.setId(rs.getInt("idUsuario"));
         usu.setNombre(rs.getString("nombre"));
         usu.setApellido(rs.getString("apellido"));
         usu.setDNI(rs.getString("DNI"));

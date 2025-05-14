@@ -15,144 +15,84 @@ import java.sql.Date;
 import pe.edu.pucp.prog03.webhooke.gestionacademia.model.Sede;
 import pe.edu.pucp.prog03.webhooke.gestionacademia.dao.SedeDAO;
 import pe.edu.pucp.prog03.webhooke.gestionacademia.mysql.SedeDAOImplement;
+import pe.edu.pucp.prog03.webhooke.gestionusuarios.dao.ProfesorDAO;
+import pe.edu.pucp.prog03.webhooke.gestionusuarios.model.Profesor;
+import pe.edu.pucp.prog03.webhooke.gestionusuarios.mysql.ProfesorDAOImplement;
+import pe.edu.pucp.prog03.webhooke.modalidades.model.TipoSesion;
+
+import pe.edu.pucp.prog03.webhooke.business.AlumnoBO;
+import pe.edu.pucp.prog03.webhooke.gestionusuarios.model.Alumno;
+import pe.edu.pucp.prog03.webhooke.business.CursoBO;
+import pe.edu.pucp.prog03.webhooke.business.SesionBO;
+import pe.edu.pucp.prog03.webhooke.modalidades.dao.TipoSesionDAO;
+import pe.edu.pucp.prog03.webhooke.modalidades.mysql.TipoSesionDAOImplement;
 /**
  * Hello world!
  */
 public class main {
     public static void main(String[] args) {
+    //prueba de registrar Alumno
+    AlumnoBO alumnoBO = new AlumnoBO();
+    
+    int idAlumno = alumnoBO.registrarAlumno("Jefferson", "Robles", "123456","correo@prueba.com",Date.valueOf("2020-04-23") , "Ingenieria Informatica");
+    System.out.println("El id del alumno ingresado es : "+ idAlumno);
+    
+    //prueba de registrar Curso
+    Profesor profesor = new Profesor();
+    profesor.setId(1);
+    profesor.setNombre("Alejandro");
+    profesor.setApellido("Barrantes");
+    profesor.setDNI("1234");
+    profesor.setEmail("QWERTy@correo.com");
+    profesor.setFechaNacimiento(Date.valueOf("1995-04-23"));    
+    
+    CursoBO cursoBO = new CursoBO();
+    int idCurso = cursoBO.registrarCurso("1INF30","CURSO", 7,profesor );
+    System.out.println("El id del curso ingresado es : "+ idAlumno);
+    
+    /*Registro de sesion*/
+    CursoDAO cursoDao = new CursoDAOImplement();
+    Curso curso = cursoDao.buscar(idCurso);
 
-          /*ACADEMIA*/
-//
-//        Academia academia = new Academia();
-//        System.out.println("ACADEMIA");
-//
-//        academia.setNombre("AcademiaHooke");
-//        academia.setRUC("12345678");
-//
-//        AcademiaDAO academiaDao = new AcademiaDAOImplement();
-//        //INSERTAR
-//        //int idAcademia = academiaDao.insertar(academia);
-//        //System.out.println("Insertar Academia");
-//        int idAcademia=1;
-////        System.out.println("id: "+idAcademia);
-////        //MODIFICAR
-////        System.out.println("Modificar Academia con id : "+idAcademia);
-////        academia.setId(idAcademia);
-////        academia.setNombre("NombreBuscado");
-////        academia.setRUC("12344321");
-////        if(academiaDao.modificar(academia)){
-////            System.out.println("Se modifico los datos de la academia con id: "+academia.getId());
-////        }
-//////        //BUSCAR
-////        System.out.println("Buscar Academia con id : "+idAcademia);
-////        Academia academia2 = academiaDao.buscar(idAcademia);
-////        System.out.println("El nombre de la academia encontrada es: "+academia2.getNombre());
-//        //System.out.println(academia2.getNombre());
-////        //eliminar
-//        System.out.println("Eliminar Academia con id : "+idAcademia);
-//        if(academiaDao.eliminar(idAcademia)){
-//            System.out.println("Se elimino la fila en Academia");
-//        }
-//
-//        /*SEDE*/
-//        System.out.println("SEDE");
-//        Sede sede = new Sede();
-//        sede.setDireccion("Av. La molina 240");
-//        sede.setDistrito("La Molina");
-//        sede.setNombre_Academia("AcademiaHooke");
-//
-//        //INSERTAR
-//        SedeDAO sedeDao = new SedeDAOImplement();
-//        System.out.println("Insertar Sede"
-//                + "");
-//        int idSede=sedeDao.insertar(sede);
-//        System.out.println("id: "+idSede);
-//        
-//        //MODIFICAR
-//        System.out.println("Modificar Sede con id : "+idSede);
-//        sede.setId(idSede);
-//        sede.setDireccion("Av. aviacion 240");
-//        sede.setDistrito("San Borja");
-//        sede.setNombre_Academia("AcademiaHooke");
-//        if(sedeDao.modificar(sede)){
-//            System.out.println("Se modifico los datos de la sede con id: "+sede.getId());
-//        }
-//        //BUSCAR
-//        Sede sede2 = sedeDao.buscar(idSede);
-//        System.out.println("Buscar Sede con id : "+idSede);
-//        System.out.println("La direccion de la sede encontrada : "+sede2.getDireccion());
-//        //ELIMINAR
-//        System.out.println("Eliminar Sede con id : "+idSede);
-//        if(sedeDao.eliminar(idSede)){
-//          System.out.println("Se elimino la fila en Sede");
-//        }
-//
-//        /*CURSO*/
-//        
-//        System.out.println("CURSO");
-//        Curso curso = new Curso();
-//        curso.setCodigo("1INF30");
-//        curso.setNombre("Programacion 3");
-//        curso.setNivel(7);
-//
-//        CursoDAO cursoDao = new CursoDAOImplement();
-//        //INSERTAR
-//        System.out.println("Insertar Curso");
-//        int idCurso = cursoDao.insertar(curso);
-//        System.out.println("id: "+idCurso);
-//        
-//        //MODIFICAR
-//        System.out.println("Modificar Curso con id : "+idCurso);
-//        curso.setId(idCurso);
-//        curso.setCodigo("1INF20");
-//        curso.setNombre("Programacion 2");
-//        curso.setNivel(6);
-//        if(cursoDao.modificar(curso)){
-//        System.out.println("Se modifico los datos de la curso con id: "+curso.getId());
-//        }
-//        //BUSCAR
-//        System.out.println("Buscar Curso con id : "+idCurso);
-//        Curso curso2 = cursoDao.buscar(idCurso);
-//        System.out.println("El nombre del curso encontrado es "+curso2.getNombre());
-//        //eliminar
-//        if(cursoDao.eliminar(idCurso)){
-//            System.out.println("Se elimino la fila en curso");
-//        }
-//         /*USUARIO*/
-//         
-//        System.out.println("USUARIO");
-//        Usuario usuario = new Usuario();
-//        usuario.setNombre("Jefferson");
-//        usuario.setApellido("Robles");
-//        usuario.setDNI("12345678");
-//        usuario.setEmail("JRC@gmail.com");
-//        usuario.setFechaNacimiento(Date.valueOf("2025-04-23"));
-//
-//        UsuarioDAO usuarioDao = new UsuarioDAOImplement();
-//        //        //INSERTAR
-//        System.out.println("Insertar Usuario:");
-//        int idUsuario = usuarioDao.insertar(usuario);
-//        System.out.println("id: "+idUsuario);
-//        //MODIFICAR
-//        System.out.println("Modificar Usuario con id :"+idUsuario);
-//        usuario.setId(idUsuario);
-//        usuario.setNombre("Jose");
-//        usuario.setApellido("Alma");
-//        usuario.setDNI("12345600");
-//        usuario.setEmail("JA000@gmail.com");
-//        usuario.setFechaNacimiento(Date.valueOf("2020-04-23"));
-//        if(usuarioDao.modificar(usuario)){
-//            System.out.println("Se modifico los datos del usuario con id: "+usuario.getId());
-//        }
-//        //buscar
-//        System.out.println("Buscar Usuario:");
-//        Usuario usuario2 = usuarioDao.buscar(idUsuario);
-//        System.out.println("El nombre de usuario encontrado es :"+usuario2.getNombre());
-//        //eliminar
-//        if(usuarioDao.eliminar(idUsuario)){
-//            System.out.println("Se elimino la fila en Usuario");
-//        }
-//        
+//    Curso curso = new Curso();
+//    curso.setCodigo("1INF30");
+//    curso.setNombre("Programacion 3");
+//    curso.setNivel(7);
+//    curso.setProfesor(profesor); 
+    
+    
+    
+    Alumno alumno = new Alumno();
+    alumno.setId(1);
+    alumno.setNombre("Renato");
+    alumno.setApellido("Tapia");
+    alumno.setDNI("123456789");
+    alumno.setEmail("alumno2@correo.com");
+    alumno.setFechaNacimiento(Date.valueOf("2008-04-23"));  
+    
+    TipoSesion tipoSesion = new TipoSesion();
+    tipoSesion.setIdModalidad(1);
+    tipoSesion.setPrecio(250);
+    tipoSesion.setTipo("Grupal");
+    
+    TipoSesionDAO tipoSesionDAO = new TipoSesionDAOImplement();
+    int idTipoSesion = tipoSesionDAO.insertar(tipoSesion);
+
+    Academia academia = new Academia();
+    academia.setNombre("AcademiaHooke");
+    academia.setRUC("12345678");
+    academia.setId(1);
+    
+    
+    
+    SedeDAO sedeDao = new SedeDAOImplement();
+    Sede sede = sedeDao.buscar(2);
+    SesionBO sesionBO = new SesionBO();
+        System.out.println("id de la sede: "+ sede.getId());
+        
+    int idSesion = sesionBO.registrarSesion(7, 10, Date.valueOf("2025-05-15"), "Virtual",curso, alumno, tipoSesion, sede);
+    System.out.println("El id de la sesion ingresada es : "+ idSesion);      
+    
   }
 
 }

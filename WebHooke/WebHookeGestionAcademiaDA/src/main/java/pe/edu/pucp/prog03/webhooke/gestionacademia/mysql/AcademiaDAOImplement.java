@@ -29,7 +29,7 @@ public class AcademiaDAOImplement extends BaseDAOImplement<Academia> implements 
 
     @Override
     protected CallableStatement comandoInsertar(Connection conn, Academia aca) throws SQLException {
-        String sql = "{CALL insertarAcademia values(?,?,?)}";
+        String sql = "{CALL insertarAcademia(?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", aca.getNombre());
         cmd.setString("p_RUC", aca.getRUC());
@@ -65,7 +65,7 @@ public class AcademiaDAOImplement extends BaseDAOImplement<Academia> implements 
 
     @Override
     protected CallableStatement comandoModificar(Connection conn, Academia aca) throws SQLException {
-        String sql = "{CALL modificarAcademia(?,?,?}";
+        String sql = "{CALL modificarAcademia(?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", aca.getNombre());
         cmd.setString("p_RUC", aca.getRUC());
@@ -115,9 +115,9 @@ public class AcademiaDAOImplement extends BaseDAOImplement<Academia> implements 
 
     @Override
     protected CallableStatement comandoBuscar(Connection conn, int id) throws SQLException{
-        String sql= "{CALL buscarAcademiaPorId}";
+        String sql= "{CALL buscarAcademiaPorId(?)}";
         CallableStatement cmd=conn.prepareCall(sql);
-        cmd.setInt("p_id",id);
+        cmd.setInt(1,id);
         return cmd;
     }
     
@@ -156,7 +156,7 @@ public class AcademiaDAOImplement extends BaseDAOImplement<Academia> implements 
     @Override
     protected Academia mapearModelo(ResultSet rs) throws SQLException{
         Academia aca= new Academia();
-        aca.setId(rs.getInt("id"));
+        aca.setId(rs.getInt("idAcademia"));
         aca.setNombre(rs.getString("Nombre"));
         aca.setRUC(rs.getString("RUC"));
         return aca;

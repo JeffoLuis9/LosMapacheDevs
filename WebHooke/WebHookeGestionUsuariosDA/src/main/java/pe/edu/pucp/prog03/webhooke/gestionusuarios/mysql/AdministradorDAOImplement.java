@@ -32,7 +32,7 @@ public class AdministradorDAOImplement extends BaseDAOImplement<Administrador> i
     
     @Override
     protected CallableStatement comandoInsertar(Connection conn, Administrador usu) throws SQLException {
-        String sql = "{CALL insertarAdministrador values(?,?,?,?,?,?)}";
+        String sql = "{CALL insertarAdministrador(?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
@@ -45,7 +45,7 @@ public class AdministradorDAOImplement extends BaseDAOImplement<Administrador> i
 
     @Override
     protected CallableStatement comandoModificar(Connection conn, Administrador usu) throws SQLException {
-        String sql = "{CALL modificarAdministrador(?,?,?,?,?,?}";
+        String sql = "{CALL modificarAdministrador(?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
@@ -68,7 +68,7 @@ public class AdministradorDAOImplement extends BaseDAOImplement<Administrador> i
 
     @Override
     protected CallableStatement comandoBuscar(Connection conn, int id) throws SQLException {
-        String sql = "{CALL buscarAdministradorPorId}";
+        String sql = "{CALL buscarAdministradorPorId(?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setInt("p_id", id);
         return cmd;

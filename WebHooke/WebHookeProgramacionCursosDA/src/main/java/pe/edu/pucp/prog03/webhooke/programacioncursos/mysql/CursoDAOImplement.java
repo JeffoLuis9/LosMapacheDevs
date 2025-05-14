@@ -12,10 +12,15 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.sql.Types;
+
 
 import pe.edu.pucp.prog03.webhooke.programacioncursos.dao.CursoDAO;
 import pe.edu.pucp.prog03.webhooke.programacioncursos.model.Curso;
+import pe.edu.pucp.prog03.webhooke.gestionusuarios.dao.ProfesorDAO;
+import pe.edu.pucp.prog03.webhooke.gestionusuarios.model.Profesor;
 import pe.edu.pucp.prog03.webhooke.config.DBManager;
+import pe.edu.pucp.prog03.webhooke.gestionusuarios.mysql.ProfesorDAOImplement;
 import pe.edu.pucp.prog03.webhooke.modalidades.model.TipoSesion;
 //import pe.edu.pucp.prog03.webhooke.gestionacademia.model.Sede;
 
@@ -30,34 +35,35 @@ public class CursoDAOImplement extends BaseDAOImplement<Curso> implements CursoD
     
     @Override
     protected CallableStatement comandoInsertar(Connection conn, Curso curso) throws SQLException {
-        String sql = "{CALL insertarTipoSesion values(?,?,?,?,?,?)}";
+        String sql = "{CALL insertarCurso(?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
-//        cmd.setString("p_nombre", usu.getNombre());
-//        cmd.setString("p_apellido", usu.getApellido());
-//        cmd.setString("p_dni", usu.getDNI());
-//        cmd.setString("p_email", usu.getEmail());
-//        cmd.setDate("p_fechanacimiento", usu.getFechaNacimiento());
-//        cmd.registerOutParameter("p_id", Types.INTEGER);
+        cmd.setString("p_codigo", curso.getCodigo());
+        cmd.setString("p_nombre", curso.getNombre());
+        cmd.setInt("p_nivel", curso.getNivel());
+        cmd.setInt("p_idProfesor",curso.getProfesor().getId());
+        cmd.registerOutParameter("p_id", Types.INTEGER);
         return cmd;
     }
 
 
     @Override
     protected CallableStatement comandoModificar(Connection conn, Curso curso) throws SQLException {
-        String sql = "{CALL modificarUsuario(?,?,?,?,?,?}";
+        String sql = "{CALL modificarCurso(?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
-//        cmd.setString("p_nombre", usu.getNombre());
-//        cmd.setString("p_apellido", usu.getApellido());
-//        cmd.setString("p_dni", usu.getDNI());
-//        cmd.setString("p_email", usu.getEmail());
-//        cmd.setDate("p_fechanacimiento", usu.getFechaNacimiento());
-//        cmd.setInt("p_id", usu.getId());
+
+        cmd.setString("p_codigo", curso.getCodigo());
+        cmd.setString("p_nombre", curso.getNombre());
+        cmd.setInt("p_nivel", curso.getNivel());
+        cmd.setInt("p_idProfesor",curso.getProfesor().getId());
+        cmd.setInt("p_id", curso.getId());
+
+
         return cmd;
     }
 
     @Override
     protected CallableStatement comandoEliminar(Connection conn, int id) throws SQLException {
-        String sql = "{CALL eliminarUsuario(?)}";
+        String sql = "{CALL eliminarCurso(?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setInt("p_id", id);
         return cmd;
@@ -66,7 +72,7 @@ public class CursoDAOImplement extends BaseDAOImplement<Curso> implements CursoD
 
     @Override
     protected CallableStatement comandoBuscar(Connection conn, int id) throws SQLException {
-        String sql = "{CALL buscarUsuarioPorId}";
+        String sql = "{CALL buscarCursoPorId(?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setInt("p_id", id);
         return cmd;
@@ -75,7 +81,7 @@ public class CursoDAOImplement extends BaseDAOImplement<Curso> implements CursoD
 
     @Override
     protected CallableStatement comandoListar(Connection conn) throws SQLException {
-        String sql = "{CALL listarUsuario()}";
+        String sql = "{CALL listarCurso()}";
         CallableStatement cmd = conn.prepareCall(sql);
         return cmd;
     }
@@ -83,19 +89,14 @@ public class CursoDAOImplement extends BaseDAOImplement<Curso> implements CursoD
     @Override
     protected Curso mapearModelo(ResultSet rs) throws SQLException {
         Curso usu = new Curso();
-//        usu.setId(rs.getInt("id"));
-//        usu.setNombre(rs.getString("Nombre"));
-//        usu.setApellido(rs.getString("Apellido"));
-//        usu.setDNI(rs.getString("DNI"));
-//        usu.setEmail(rs.getString("Email"));
-//        usu.setFechaNacimiento(rs.getDate("FechaNacimiento"));
+        
+        usu.setId(rs.getInt("idCurso"));
+        usu.setCodigo(rs.getString("codigo"));
+        usu.setNombre(rs.getString("nombre"));
+        usu.setNivel(rs.getInt("nivel"));
+        usu.setProfesor(new ProfesorDAOImplement().buscar(rs.getInt("idProfesor")));
 
-        //usuario.setId(rs.getInt("IdUsuario"));
-//            usuario.setNombre(rs.getString("Nombre"));
-//            usuario.setApellido(rs.getString("Apellido"));
-//            usuario.setDNI(rs.getString("DNI"));
-//            usuario.setEmail(rs.getString("Email"));
-//            usuario.setFechaNacimiento(rs.getDate("FechaNacimiento"));
+
         return usu;
     }    
     

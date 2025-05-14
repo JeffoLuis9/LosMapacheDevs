@@ -14,6 +14,8 @@ import java.util.List;
 
 
 public class Sede {
+
+   
     
     private int id;
     private String direccion;
@@ -104,5 +106,18 @@ public class Sede {
 //        for (Horario horario : horarios) {
 //            horario.ImprimirDatosHorario();
 //        }
+    }
+     /**
+     * @return the academia
+     */
+    public Academia getAcademia() {
+        return academia;
+    }
+
+    /**
+     * @param academia the academia to set
+     */
+    public void setAcademia(Academia academia) {
+        this.academia = academia;
     }
 }

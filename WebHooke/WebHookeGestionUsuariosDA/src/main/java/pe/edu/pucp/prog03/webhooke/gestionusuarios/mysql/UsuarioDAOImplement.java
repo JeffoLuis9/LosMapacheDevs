@@ -27,7 +27,7 @@ public class UsuarioDAOImplement extends BaseDAOImplement<Usuario> implements Us
 
     @Override
     protected CallableStatement comandoInsertar(Connection conn, Usuario usu) throws SQLException {
-        String sql = "{CALL insertarUsuario values(?,?,?,?,?,?)}";
+        String sql = "{CALL insertarUsuario(?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
@@ -40,7 +40,7 @@ public class UsuarioDAOImplement extends BaseDAOImplement<Usuario> implements Us
 
     @Override
     protected CallableStatement comandoModificar(Connection conn, Usuario usu) throws SQLException {
-        String sql = "{CALL modificarUsuario(?,?,?,?,?,?}";
+        String sql = "{CALL modificarUsuario(?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
@@ -63,7 +63,7 @@ public class UsuarioDAOImplement extends BaseDAOImplement<Usuario> implements Us
 
     @Override
     protected CallableStatement comandoBuscar(Connection conn, int id) throws SQLException {
-        String sql = "{CALL buscarUsuarioPorId}";
+        String sql = "{CALL buscarUsuarioPorId(?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setInt("p_id", id);
         return cmd;

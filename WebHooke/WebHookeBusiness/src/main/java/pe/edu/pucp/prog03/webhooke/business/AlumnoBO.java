@@ -1,0 +1,35 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package pe.edu.pucp.prog03.webhooke.business;
+
+import java.util.Date;
+import pe.edu.pucp.prog03.webhooke.gestionusuarios.dao.AlumnoDAO;
+import pe.edu.pucp.prog03.webhooke.gestionusuarios.model.Alumno;
+import pe.edu.pucp.prog03.webhooke.gestionusuarios.mysql.AlumnoDAOImplement;
+
+/**
+ *
+ * @author ASUS
+ */
+public class AlumnoBO {
+    private AlumnoDAO alumnoDAO;
+    
+    public AlumnoBO(){
+        alumnoDAO = new AlumnoDAOImplement();
+    }
+    
+    public int registrarAlumno(String nombre,String apellido,String DNI,String Email,Date fechaNacimiento,String carrera){
+        Alumno alumno = new Alumno();
+        
+        alumno.setNombre(nombre);
+        alumno.setApellido(apellido);
+        alumno.setDNI(DNI);
+        alumno.setEmail(Email);
+        alumno.setFechaNacimiento((java.sql.Date) fechaNacimiento);
+        alumno.setCarrera(carrera);
+        
+        return alumnoDAO.insertar(alumno);
+    }
+}

@@ -28,12 +28,12 @@ public class SedeDAOImplement extends BaseDAOImplement<Sede> implements SedeDAO 
 
     @Override
     protected CallableStatement comandoInsertar(Connection conn, Sede sed) throws SQLException {
-        String sql = "{CALL insertarSede values(?,?,?,?)}";
+        String sql = "{CALL insertarSede(?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
-//        cmd.setString("p_direccion", sed.getDireccion());
-//        cmd.setString("p_distrito", sed.getDistrito());
-//        cmd.setString("p_nombreAcademia", sed.getNombre_Academia());
-//        cmd.registerOutParameter("p_id", Types.INTEGER);
+        cmd.setString("p_direccion", sed.getDireccion());
+        cmd.setString("p_distrito", sed.getDistrito());
+        cmd.setInt("p_idAcademia", sed.getAcademia().getId());
+        cmd.registerOutParameter("p_id", Types.INTEGER);
         return cmd;
     }
 
@@ -66,12 +66,16 @@ public class SedeDAOImplement extends BaseDAOImplement<Sede> implements SedeDAO 
     
     @Override
     protected CallableStatement comandoModificar(Connection conn, Sede sed) throws SQLException {
-        String sql = "{CALL modificarSede(?,?,?,?}";
+        String sql = "{CALL modificarSede(?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
 //        cmd.setString("p_direccion", sed.getDireccion());
 //        cmd.setString("p_distrito", sed.getDistrito());
 //        cmd.setString("p_nombreAcademia", sed.getNombre_Academia());
 //        cmd.setInt("p_id", sed.getId());
+        cmd.setString("p_direccion", sed.getDireccion());
+        cmd.setString("p_distrito", sed.getDistrito());
+        cmd.setInt("p_idAcademia", sed.getAcademia().getId());
+        cmd.setInt("p_id", sed.getId());
         return cmd;
     }
     
@@ -148,7 +152,7 @@ public class SedeDAOImplement extends BaseDAOImplement<Sede> implements SedeDAO 
     
     @Override
     protected CallableStatement comandoBuscar(Connection conn, int id) throws SQLException{
-        String sql= "{CALL buscarSedePorId}";
+        String sql= "{CALL buscarSedePorId(?)}";
         CallableStatement cmd=conn.prepareCall(sql);
         cmd.setInt("p_id",id);
         return cmd;
@@ -163,10 +167,10 @@ public class SedeDAOImplement extends BaseDAOImplement<Sede> implements SedeDAO 
     @Override
     protected Sede mapearModelo(ResultSet rs) throws SQLException{
         Sede sed= new Sede();
-//        sed.setDireccion(rs.getString("direccion"));
-//        sed.setDistrito(rs.getString("distrito"));
-//        sed.setNombre_Academia(rs.getString("NombreAcademia"));
-        
+        sed.setDireccion(rs.getString("direccion"));
+        sed.setDistrito(rs.getString("distrito"));
+        sed.setAcademia(new AcademiaDAOImplement().buscar(rs.getInt("idAcademia")));
+        sed.setId(rs.getInt("idSede"));
         return sed;
     }
     

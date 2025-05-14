@@ -54,6 +54,21 @@
       <artifactId>WebHookeDBManager</artifactId>
       <version>${project.version}</version>
     </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>WebHookeGestionUsuariosDA</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>WebHookeModalidadesDA</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>WebHookeGestionAcademiaDA</artifactId>
+      <version>${project.version}</version>
+    </dependency>
   </dependencies>
 
   <build>
