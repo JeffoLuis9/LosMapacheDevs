@@ -16,7 +16,7 @@ public class Academia {
     private int id;
     private String nombre;
     private String ruc;
-    private ArrayList<Sede> sedes;
+    
 
     public Academia() {
         sedes = new ArrayList<Sede>();
