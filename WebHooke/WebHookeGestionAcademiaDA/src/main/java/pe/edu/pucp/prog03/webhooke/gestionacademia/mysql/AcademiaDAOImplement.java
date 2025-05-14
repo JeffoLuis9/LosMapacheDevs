@@ -156,9 +156,10 @@ public class AcademiaDAOImplement extends BaseDAOImplement<Academia> implements 
     @Override
     protected Academia mapearModelo(ResultSet rs) throws SQLException{
         Academia aca= new Academia();
+        //revisar si es que deberia ser Nombre o nombre
         aca.setId(rs.getInt("id"));
-        aca.setNombre(rs.getString("Nombre"));
-        aca.setRUC(rs.getString("RUC"));
+        aca.setNombre(rs.getString("nombre"));
+        aca.setRUC(rs.getString("ruc"));
         return aca;
     }
 }

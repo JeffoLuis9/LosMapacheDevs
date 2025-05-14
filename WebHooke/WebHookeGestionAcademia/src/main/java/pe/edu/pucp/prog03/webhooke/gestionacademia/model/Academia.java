@@ -16,10 +16,10 @@ public class Academia {
     private int id;
     private String nombre;
     private String ruc;
-    private ArrayList<Sede> sedes;
+    //private ArrayList<Sede> sedes;
 
     public Academia() {
-        sedes = new ArrayList<Sede>();
+        //sedes = new ArrayList<Sede>();
     }
 
     public Academia(String nombre, String ruc, int id) {
@@ -52,21 +52,21 @@ public class Academia {
         this.ruc = ruc;
     }
 
-    public List<Sede> getSede() {
-        List<Sede> auxsede = new ArrayList<Sede>();
-        for (Sede sed : sedes) {
-            Sede auxiliar = new Sede();
-            auxiliar.setDireccion(sed.getDireccion());
-            auxiliar.setDistrito(sed.getDistrito());
-            auxsede.add(auxiliar);
-        }
-        return auxsede;
-    }
-
-    public void IngresarSede(String direccion, String distrito,String Nombre_Academia,int id) {
-        Sede sede = new Sede(id,direccion, distrito, Nombre_Academia);
-        sedes.add(sede);
-    }
+//    public List<Sede> getSede() {
+//        List<Sede> auxsede = new ArrayList<Sede>();
+//        for (Sede sed : sedes) {
+//            Sede auxiliar = new Sede();
+//            auxiliar.setDireccion(sed.getDireccion());
+//            auxiliar.setDistrito(sed.getDistrito());
+//            auxsede.add(auxiliar);
+//        }
+//        return auxsede;
+//    }
+//
+//    public void IngresarSede(String direccion, String distrito,String Nombre_Academia,int id) {
+//        Sede sede = new Sede(id,direccion, distrito, Nombre_Academia);
+//        sedes.add(sede);
+//    }
 
     /*
 	public void ingresarSede (Sede sede){
@@ -76,8 +76,8 @@ public class Academia {
         System.out.println("Nombre de Academia: " + nombre);
         System.out.println("RUC: " + this.ruc);
         System.out.println("Sedes de la Academia " + nombre + " :");
-        for (Sede sede : sedes) {
-            sede.ImprimirDatosSede();
-        }
+//        for (Sede sede : sedes) {
+//            sede.ImprimirDatosSede();
+//        }
     }
 }

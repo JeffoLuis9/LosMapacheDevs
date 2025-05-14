@@ -55,18 +55,18 @@ public class main {
 //        }
 //
 //        /*SEDE*/
-        System.out.println("SEDE");
-        Sede sede = new Sede();
-        sede.setDireccion("Av. La molina 240");
-        sede.setDistrito("La Molina");
-        sede.setNombre_Academia("AcademiaHooke");
-
-        //INSERTAR
-        SedeDAO sedeDao = new SedeDAOImplement();
-        System.out.println("Insertar Sede"
-                + "");
-        int idSede=sedeDao.insertar(sede);
-        System.out.println("id: "+idSede);
+//        System.out.println("SEDE");
+//        Sede sede = new Sede();
+//        sede.setDireccion("Av. La molina 240");
+//        sede.setDistrito("La Molina");
+//        sede.setNombre_Academia("AcademiaHooke");
+//
+//        //INSERTAR
+//        SedeDAO sedeDao = new SedeDAOImplement();
+//        System.out.println("Insertar Sede"
+//                + "");
+//        int idSede=sedeDao.insertar(sede);
+//        System.out.println("id: "+idSede);
 //        
 //        //MODIFICAR
 //        System.out.println("Modificar Sede con id : "+idSede);
