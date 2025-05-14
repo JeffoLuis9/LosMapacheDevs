@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package pe.edu.pucp.prog03.webhooke.programacioncursos.model;
-
+import pe.edu.pucp.prog03.webhooke.gestionusuarios.model.Profesor;
 /**
  *
  * @author ASUS
@@ -13,20 +13,28 @@ import java.util.ArrayList;
 import java.util.List;
 */
 public class Curso{
-        private int id;
-	private String codigo;
-	private String nombre;
-	private int nivel;
-	
-	public Curso(){
-		
-	}
-	
-	public Curso(String codigo,String nombre, int numeroCiclo){
-		this.codigo=codigo;
-		this.nombre=nombre;
-		this.nivel=numeroCiclo;
-	}
+
+
+    private int id;
+    private String codigo;
+    private String nombre;
+    private int nivel;
+    private Profesor profesor;
+    public Curso(){
+
+    }
+
+    public Curso(String codigo,String nombre, int numeroCiclo,Profesor profesor){
+            this.codigo=codigo;
+            this.nombre=nombre;
+            this.nivel=numeroCiclo;
+            this.profesor.setId(profesor.getId());
+            this.profesor.setDNI(profesor.getDNI());
+            this.profesor.setNombre(profesor.getNombre());
+            this.profesor.setApellido(profesor.getApellido());
+            this.profesor.setEmail(profesor.getEmail());
+            this.profesor.setFechaNacimiento(profesor.getFechaNacimiento());
+    }
 	
     public String getCodigo() {
         return codigo;
@@ -60,7 +68,20 @@ public class Curso{
         this.nivel = numeroCiclo;
     }
 	
-	public void ImprimirDatosCurso(){
-		System.out.println(codigo+"			"+nombre+"				"+nivel);	
-	}
+    public void ImprimirDatosCurso(){
+            System.out.println(codigo+"			"+nombre+"				"+nivel);	
+    }
+    /**
+     * @return the profesor
+     */
+    public Profesor getProfesor() {
+        return profesor;
+    }
+
+    /**
+     * @param profesor the profesor to set
+     */
+    public void setProfesor(Profesor profesor) {
+        this.profesor = profesor;
+    }
 }

@@ -6,30 +6,18 @@ package pe.edu.pucp.prog03.webhooke.programacioncursos.mysql;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
-
-import pe.edu.pucp.prog03.webhooke.programacioncursos.dao.CursoDAO;
-import pe.edu.pucp.prog03.webhooke.programacioncursos.model.Curso;
-import pe.edu.pucp.prog03.webhooke.config.DBManager;
-import pe.edu.pucp.prog03.webhooke.modalidades.model.TipoSesion;
-//import pe.edu.pucp.prog03.webhooke.gestionacademia.model.Sede;
+import pe.edu.pucp.prog03.webhooke.programacioncursos.model.Sesion;
+import pe.edu.pucp.prog03.webhooke.programacioncursos.dao.SesionDAO;
 
 /**
  *
- * @author andre
+ * @author ASUS
  */
-
-
-
-public class CursoDAOImplement extends BaseDAOImplement<Curso> implements CursoDAO{
-    
+public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements SesionDAO{
     @Override
-    protected CallableStatement comandoInsertar(Connection conn, Curso curso) throws SQLException {
+    protected CallableStatement comandoInsertar(Connection conn, Sesion sesion) throws SQLException {
         String sql = "{CALL insertarTipoSesion values(?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
 //        cmd.setString("p_nombre", usu.getNombre());
@@ -43,7 +31,7 @@ public class CursoDAOImplement extends BaseDAOImplement<Curso> implements CursoD
 
 
     @Override
-    protected CallableStatement comandoModificar(Connection conn, Curso curso) throws SQLException {
+    protected CallableStatement comandoModificar(Connection conn, Sesion sesion) throws SQLException {
         String sql = "{CALL modificarUsuario(?,?,?,?,?,?}";
         CallableStatement cmd = conn.prepareCall(sql);
 //        cmd.setString("p_nombre", usu.getNombre());
@@ -81,8 +69,8 @@ public class CursoDAOImplement extends BaseDAOImplement<Curso> implements CursoD
     }
 
     @Override
-    protected Curso mapearModelo(ResultSet rs) throws SQLException {
-        Curso usu = new Curso();
+    protected Sesion mapearModelo(ResultSet rs) throws SQLException {
+        Sesion usu = new Sesion();
 //        usu.setId(rs.getInt("id"));
 //        usu.setNombre(rs.getString("Nombre"));
 //        usu.setApellido(rs.getString("Apellido"));

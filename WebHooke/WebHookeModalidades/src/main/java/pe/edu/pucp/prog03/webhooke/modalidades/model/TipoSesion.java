@@ -11,4 +11,5 @@ package pe.edu.pucp.prog03.webhooke.modalidades.model;
 public class TipoSesion {
     private int idModalidad;
     private double precio;
+    private String tipo;
 }

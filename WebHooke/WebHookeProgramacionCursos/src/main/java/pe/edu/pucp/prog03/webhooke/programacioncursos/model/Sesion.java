@@ -5,6 +5,8 @@
 package pe.edu.pucp.prog03.webhooke.programacioncursos.model;
 import pe.edu.pucp.prog03.webhooke.modalidades.model.TipoSesion;
 import java.util.Date;
+import pe.edu.pucp.prog03.webhooke.gestionacademia.model.Sede;
+import pe.edu.pucp.prog03.webhooke.gestionusuarios.model.Alumno;
 
 
 /**
@@ -12,15 +14,16 @@ import java.util.Date;
  * @author ASUS
  */
 public class Sesion {
-
     private int idHorario;
     private int horaInicio;
     private int horaFin;
     private Date fecha;
     private String modalidad;
+    private Curso curso;
+    private Alumno alumno;
     private TipoSesion tipoSesion;
-    private Curso curso;    
-
+    private Sede sede;
+        
     /**
      * @return the idHorario
      */
@@ -92,20 +95,6 @@ public class Sesion {
     }
 
     /**
-     * @return the tipoSesion
-     */
-    public TipoSesion getTipoSesion() {
-        return tipoSesion;
-    }
-
-    /**
-     * @param tipoSesion the tipoSesion to set
-     */
-    public void setTipoSesion(TipoSesion tipoSesion) {
-        this.tipoSesion = tipoSesion;
-    }
-    
-    /**
      * @return the curso
      */
     public Curso getCurso() {
@@ -118,4 +107,47 @@ public class Sesion {
     public void setCurso(Curso curso) {
         this.curso = curso;
     }
+
+    /**
+     * @return the alumno
+     */
+    public Alumno getAlumno() {
+        return alumno;
+    }
+
+    /**
+     * @param alumno the alumno to set
+     */
+    public void setAlumno(Alumno alumno) {
+        this.alumno = alumno;
+    }
+
+    /**
+     * @return the tipoSesion
+     */
+    public TipoSesion getTipoSesion() {
+        return tipoSesion;
+    }
+
+    /**
+     * @param tipoSesion the tipoSesion to set
+     */
+    public void setTipoSesion(TipoSesion tipoSesion) {
+        this.tipoSesion = tipoSesion;
+    }
+
+    /**
+     * @return the sede
+     */
+    public Sede getSede() {
+        return sede;
+    }
+
+    /**
+     * @param sede the sede to set
+     */
+    public void setSede(Sede sede) {
+        this.sede = sede;
+    }
+
 }

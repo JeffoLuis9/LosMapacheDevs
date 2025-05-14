@@ -1,1 +1,3 @@
-pe\edu\pucp\prog03\webhookemodalidadesda\App.class
+pe\edu\pucp\prog03\webhooke\modalidades\dao\TipoSesionDAO.class
+pe\edu\pucp\prog03\webhooke\modalidades\mysql\NewClass.class
+pe\edu\pucp\prog03\webhooke\modalidades\dao\ICRUD.class
