@@ -6,8 +6,9 @@ package pe.edu.pucp.prog03.webhooke.gestionusuarios.mysql;
 
 /**
  *
- * @author ASUS
+ * @author andre
  */
+
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -19,76 +20,79 @@ import java.sql.Date;
 import java.util.List;
 import java.sql.Types;
 
-import pe.edu.pucp.prog03.webhooke.gestionusuarios.dao.UsuarioDAO;
-import pe.edu.pucp.prog03.webhooke.gestionusuarios.model.Usuario;
+import pe.edu.pucp.prog03.webhooke.gestionusuarios.dao.AlumnoDAO;
+import pe.edu.pucp.prog03.webhooke.gestionusuarios.model.Alumno;
 import pe.edu.pucp.prog03.webhooke.config.DBManager;
 
-public class UsuarioDAOImplement extends BaseDAOImplement<Usuario> implements UsuarioDAO {
 
+
+
+public class AlumnoDAOImplement extends BaseDAOImplement<Alumno> implements AlumnoDAO {
+    
+    
     @Override
-    protected CallableStatement comandoInsertar(Connection conn, Usuario usu) throws SQLException {
-        String sql = "{CALL insertarUsuario values(?,?,?,?,?,?)}";
+    protected CallableStatement comandoInsertar(Connection conn, Alumno usu) throws SQLException {
+        String sql = "{CALL insertarAlumno values(?,?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
         cmd.setString("p_dni", usu.getDNI());
         cmd.setString("p_email", usu.getEmail());
         cmd.setDate("p_fechanacimiento", usu.getFechaNacimiento());
+        cmd.setString("p_carrera", usu.getCarrera());
         cmd.registerOutParameter("p_id", Types.INTEGER);
         return cmd;
     }
-
+    
+    
     @Override
-    protected CallableStatement comandoModificar(Connection conn, Usuario usu) throws SQLException {
-        String sql = "{CALL modificarUsuario(?,?,?,?,?,?}";
+    protected CallableStatement comandoModificar(Connection conn, Alumno usu) throws SQLException {
+        String sql = "{CALL modificarAlumno(?,?,?,?,?,?,?}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
         cmd.setString("p_dni", usu.getDNI());
         cmd.setString("p_email", usu.getEmail());
         cmd.setDate("p_fechanacimiento", usu.getFechaNacimiento());
+        cmd.setString("p_carrera", usu.getCarrera());
         cmd.setInt("p_id", usu.getId());
         return cmd;
     }
-
-
+    
     @Override
     protected CallableStatement comandoEliminar(Connection conn, int id) throws SQLException {
-        String sql = "{CALL eliminarUsuario(?)}";
+        String sql = "{CALL eliminarAlumno(?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setInt("p_id", id);
         return cmd;
     }
-
-
+    
     @Override
     protected CallableStatement comandoBuscar(Connection conn, int id) throws SQLException {
-        String sql = "{CALL buscarUsuarioPorId}";
+        String sql = "{CALL buscarAlumnoPorId}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setInt("p_id", id);
         return cmd;
     }
-
-
+    
     @Override
     protected CallableStatement comandoListar(Connection conn) throws SQLException {
-        String sql = "{CALL listarUsuario()}";
+        String sql = "{CALL listarAlumno()}";
         CallableStatement cmd = conn.prepareCall(sql);
         return cmd;
     }
-
+    
     @Override
-    protected Usuario mapearModelo(ResultSet rs) throws SQLException {
-        Usuario usu = new Usuario();
+    protected Alumno mapearModelo(ResultSet rs) throws SQLException {
+        Alumno usu = new Alumno();
         usu.setId(rs.getInt("id"));
-        usu.setNombre(rs.getString("Nombre"));
-        usu.setApellido(rs.getString("Apellido"));
+        usu.setNombre(rs.getString("nombre"));
+        usu.setApellido(rs.getString("apellido"));
         usu.setDNI(rs.getString("DNI"));
-        usu.setEmail(rs.getString("Email"));
-        usu.setFechaNacimiento(rs.getDate("FechaNacimiento"));
-
-
+        usu.setEmail(rs.getString("email"));
+        usu.setFechaNacimiento(rs.getDate("fechaNacimiento"));
+        usu.setCarrera(rs.getString("carrera"));
         return usu;
     }
-
+    
 }
