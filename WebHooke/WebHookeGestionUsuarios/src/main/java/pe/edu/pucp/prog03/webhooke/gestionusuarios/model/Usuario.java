@@ -20,6 +20,7 @@ public class Usuario {
     private String email;
     private Date fechaNacimiento;
 
+    
     public Usuario() {
 
     }
