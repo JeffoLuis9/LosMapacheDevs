@@ -20,7 +20,11 @@ public class Usuario {
     private String email;
     private Date fechaNacimiento;
 
+
     
+
+//preguntar para ver sis agregamos el pssword como hash
+
     public Usuario() {
 
     }
