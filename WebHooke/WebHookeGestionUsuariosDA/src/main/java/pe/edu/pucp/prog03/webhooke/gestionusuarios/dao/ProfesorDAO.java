@@ -3,11 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package pe.edu.pucp.prog03.webhooke.gestionusuarios.dao;
-import pe.edu.pucp.prog03.webhooke.gestionusuarios.model.Administrador;
+import pe.edu.pucp.prog03.webhooke.gestionusuarios.model.Profesor;
 /**
  *
  * @author andre
  */
-public interface AdministradorDAO extends ICRUD<Administrador> {
-    //xde
+public interface ProfesorDAO extends ICRUD<Profesor>{
+    
 }

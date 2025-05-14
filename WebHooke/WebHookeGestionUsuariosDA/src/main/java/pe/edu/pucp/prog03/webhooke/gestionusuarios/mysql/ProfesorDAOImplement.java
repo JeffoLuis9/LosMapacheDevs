@@ -4,10 +4,15 @@
  */
 package pe.edu.pucp.prog03.webhooke.gestionusuarios.mysql;
 
+
+
 /**
  *
- * @author ASUS
+ * @author andre
  */
+
+
+
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -19,15 +24,19 @@ import java.sql.Date;
 import java.util.List;
 import java.sql.Types;
 
-import pe.edu.pucp.prog03.webhooke.gestionusuarios.dao.UsuarioDAO;
-import pe.edu.pucp.prog03.webhooke.gestionusuarios.model.Usuario;
+import pe.edu.pucp.prog03.webhooke.gestionusuarios.dao.ProfesorDAO;
+import pe.edu.pucp.prog03.webhooke.gestionusuarios.model.Profesor;
 import pe.edu.pucp.prog03.webhooke.config.DBManager;
 
-public class UsuarioDAOImplement extends BaseDAOImplement<Usuario> implements UsuarioDAO {
 
+
+
+public class ProfesorDAOImplement extends BaseDAOImplement<Profesor> implements ProfesorDAO{
+    
+    
     @Override
-    protected CallableStatement comandoInsertar(Connection conn, Usuario usu) throws SQLException {
-        String sql = "{CALL insertarUsuario values(?,?,?,?,?,?)}";
+    protected CallableStatement comandoInsertar(Connection conn, Profesor usu) throws SQLException {
+        String sql = "{CALL insertarProfesor values(?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
@@ -39,8 +48,8 @@ public class UsuarioDAOImplement extends BaseDAOImplement<Usuario> implements Us
     }
 
     @Override
-    protected CallableStatement comandoModificar(Connection conn, Usuario usu) throws SQLException {
-        String sql = "{CALL modificarUsuario(?,?,?,?,?,?}";
+    protected CallableStatement comandoModificar(Connection conn, Profesor usu) throws SQLException {
+        String sql = "{CALL modificarProfesor(?,?,?,?,?,?}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
@@ -54,7 +63,7 @@ public class UsuarioDAOImplement extends BaseDAOImplement<Usuario> implements Us
 
     @Override
     protected CallableStatement comandoEliminar(Connection conn, int id) throws SQLException {
-        String sql = "{CALL eliminarUsuario(?)}";
+        String sql = "{CALL eliminarProfesor(?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setInt("p_id", id);
         return cmd;
@@ -63,7 +72,7 @@ public class UsuarioDAOImplement extends BaseDAOImplement<Usuario> implements Us
 
     @Override
     protected CallableStatement comandoBuscar(Connection conn, int id) throws SQLException {
-        String sql = "{CALL buscarUsuarioPorId}";
+        String sql = "{CALL buscarProfesorPorId}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setInt("p_id", id);
         return cmd;
@@ -72,23 +81,21 @@ public class UsuarioDAOImplement extends BaseDAOImplement<Usuario> implements Us
 
     @Override
     protected CallableStatement comandoListar(Connection conn) throws SQLException {
-        String sql = "{CALL listarUsuario()}";
+        String sql = "{CALL listarProfesor()}";
         CallableStatement cmd = conn.prepareCall(sql);
         return cmd;
     }
 
     @Override
-    protected Usuario mapearModelo(ResultSet rs) throws SQLException {
-        Usuario usu = new Usuario();
+    protected Profesor mapearModelo(ResultSet rs) throws SQLException {
+        Profesor usu = new Profesor();
         usu.setId(rs.getInt("id"));
         usu.setNombre(rs.getString("nombre"));
         usu.setApellido(rs.getString("apellido"));
         usu.setDNI(rs.getString("DNI"));
         usu.setEmail(rs.getString("email"));
         usu.setFechaNacimiento(rs.getDate("fechaNacimiento"));
-
-
         return usu;
     }
-
+    
 }
