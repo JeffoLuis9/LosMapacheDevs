@@ -1,0 +1,12 @@
+/WebHooke/WebHookeGestionUsuarios/target/
+/WebHooke/WebHookeDBManager/target/
+/WebHooke/WebHookeGestionUsuariosDA/target/
+/WebHooke/WebHookeGestionAcademiaDA/target/
+/WebHooke/WebHookeAppTest/target/
+/WebHooke/WebHookeModalidadesDA/target/
+target/
+*.jar
+*.class
+*.dumpstream
+*.xml
+*.txt
