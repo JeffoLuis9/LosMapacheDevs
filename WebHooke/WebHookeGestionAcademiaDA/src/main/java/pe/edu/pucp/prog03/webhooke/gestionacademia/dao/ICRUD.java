@@ -4,6 +4,8 @@
  */
 package pe.edu.pucp.prog03.webhooke.gestionacademia.dao;
 
+import java.util.List;
+
 /**
  *
  * @author andre
@@ -12,5 +14,6 @@ public interface ICRUD<T> {
     int insertar(T modelo);
     boolean modificar(T modelo);
     boolean eliminar(int id);
+    List<T>listar();
     T buscar(int id);
 }
