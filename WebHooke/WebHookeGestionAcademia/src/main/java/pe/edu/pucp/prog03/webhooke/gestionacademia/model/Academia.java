@@ -19,7 +19,7 @@ public class Academia {
     
 
     public Academia() {
-        sedes = new ArrayList<Sede>();
+        
     }
 
     public Academia(String nombre, String ruc, int id) {
@@ -50,34 +50,5 @@ public class Academia {
 
     public void setRUC(String ruc) {
         this.ruc = ruc;
-    }
-
-    public List<Sede> getSede() {
-        List<Sede> auxsede = new ArrayList<Sede>();
-        for (Sede sed : sedes) {
-            Sede auxiliar = new Sede();
-            auxiliar.setDireccion(sed.getDireccion());
-            auxiliar.setDistrito(sed.getDistrito());
-            auxsede.add(auxiliar);
-        }
-        return auxsede;
-    }
-
-    public void IngresarSede(String direccion, String distrito,String Nombre_Academia,int id) {
-        Sede sede = new Sede(id,direccion, distrito, Nombre_Academia);
-        sedes.add(sede);
-    }
-
-    /*
-	public void ingresarSede (Sede sede){
-		sedes.add(sede);
-	}*/
-    public void ImprimirInfoAcademia() {
-        System.out.println("Nombre de Academia: " + nombre);
-        System.out.println("RUC: " + this.ruc);
-        System.out.println("Sedes de la Academia " + nombre + " :");
-        for (Sede sede : sedes) {
-            sede.ImprimirDatosSede();
-        }
     }
 }
