@@ -4,7 +4,7 @@
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\ASUS\Downloads\intnetos22\intnetos22\WebHooke (1)\WebHooke\WebHookeProgramacionCursos\target\test-classes;C:\Users\ASUS\Downloads\intnetos22\intnetos22\WebHooke (1)\WebHooke\WebHookeProgramacionCursos\target\classes;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\ASUS\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\ASUS\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;C:\Users\ASUS\Downloads\intnetos22\intnetos22\WebHooke (1)\WebHooke\WebHookeModalidades\target\WebHookeModalidades-1.0-SNAPSHOT.jar;"/>
+    <property name="java.class.path" value="D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeProgramacionCursos\target\test-classes;D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeProgramacionCursos\target\classes;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\ASUS\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\ASUS\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeModalidades\target\WebHookeModalidades-1.0-SNAPSHOT.jar;D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionUsuarios\target\WebHookeGestionUsuarios-1.0-SNAPSHOT.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="user.country" value="PE"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
-    <property name="sun.java.command" value="C:\Users\ASUS\AppData\Local\Temp\surefire644228991655613142\surefirebooter-20250513163542078_6.jar C:\Users\ASUS\AppData\Local\Temp\surefire644228991655613142 2025-05-13T16-35-40_562-jvmRun1 surefire-20250513163542078_4tmp surefire_1-20250513163542078_5tmp"/>
+    <property name="sun.java.command" value="C:\Users\ASUS\AppData\Local\Temp\surefire7209232567534230009\surefirebooter-20250514003258127_9.jar C:\Users\ASUS\AppData\Local\Temp\surefire7209232567534230009 2025-05-14T00-32-55_860-jvmRun1 surefire-20250514003258127_7tmp surefire_2-20250514003258127_8tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\ASUS\Downloads\intnetos22\intnetos22\WebHooke (1)\WebHooke\WebHookeProgramacionCursos\target\test-classes;C:\Users\ASUS\Downloads\intnetos22\intnetos22\WebHooke (1)\WebHooke\WebHookeProgramacionCursos\target\classes;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\ASUS\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\ASUS\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;C:\Users\ASUS\Downloads\intnetos22\intnetos22\WebHooke (1)\WebHooke\WebHookeModalidades\target\WebHookeModalidades-1.0-SNAPSHOT.jar;"/>
+    <property name="surefire.test.class.path" value="D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeProgramacionCursos\target\test-classes;D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeProgramacionCursos\target\classes;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\ASUS\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\ASUS\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeModalidades\target\WebHookeModalidades-1.0-SNAPSHOT.jar;D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionUsuarios\target\WebHookeGestionUsuarios-1.0-SNAPSHOT.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\ASUS"/>
     <property name="user.language" value="es"/>
@@ -25,12 +25,12 @@
     <property name="java.version.date" value="2024-10-15"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-23"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\ASUS\Downloads\intnetos22\intnetos22\WebHooke (1)\WebHooke\WebHookeProgramacionCursos"/>
+    <property name="basedir" value="D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeProgramacionCursos"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ASUS\AppData\Local\Temp\surefire644228991655613142\surefirebooter-20250513163542078_6.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ASUS\AppData\Local\Temp\surefire7209232567534230009\surefirebooter-20250514003258127_9.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.1+11-39"/>
@@ -46,7 +46,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\ASUS\AppData\Local\Temp\"/>
     <property name="java.version" value="23.0.1"/>
-    <property name="user.dir" value="C:\Users\ASUS\Downloads\intnetos22\intnetos22\WebHooke (1)\WebHooke\WebHookeProgramacionCursos"/>
+    <property name="user.dir" value="D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeProgramacionCursos"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>

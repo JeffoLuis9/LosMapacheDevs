@@ -1,4 +1,4 @@
-package pe.edu.pucp.prog03.webhookemodalidadesda;
+package pe.edu.pucp.prog03.webhooke.modalidades.dao;
 
 /**
  * Hello world!

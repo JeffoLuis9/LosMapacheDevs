@@ -14,25 +14,24 @@ import java.util.List;
 
 
 public class Sede {
-    
+
+
     private int id;
+    private Academia academia;
     private String direccion;
     private String distrito;
-//    private ArrayList<Usuario> usuarios;
-//    private ArrayList<Curso> cursos;
-    private List<TipoSesion> sesiones;
-    private String Nombre_Academia;
+    
 
     public Sede() {
-        sesiones = new ArrayList<>();
+        
     }
 
     public Sede(int id,String direccion, String distrito, String Nombre_Academia) {
-        sesiones = new ArrayList<>();
+        
         this.direccion = distrito;
         this.direccion = direccion;
         this.id=id;
-        this.Nombre_Academia = Nombre_Academia;
+        
     }
 
     public int getId() {
@@ -46,15 +45,7 @@ public class Sede {
     public String getDireccion() {
         return direccion;
     }
-
-    public String getNombre_Academia() {
-        return Nombre_Academia;
-    }
-
-    public void setNombre_Academia(String Nombre_Academia) {
-        this.Nombre_Academia = Nombre_Academia;
-    }
-
+    
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
@@ -66,7 +57,21 @@ public class Sede {
     public void setDistrito(String distrito) {
         this.distrito = distrito;
     }
+    
+        /**
+     * @return the academia
+     */
+    public Academia getAcademia() {
+        return academia;
+    }
 
+    /**
+     * @param academia the academia to set
+     */
+    public void setAcademia(Academia academia) {
+        this.academia = academia;
+    }
+    
 ////	public void IngresaUsuario(String nombre,String apellido,String DNI, Date fechaNacimiento){
 ////		Usuario usuario=new Usuario(nombre,apellido,DNI,fechaNacimiento);
 ////		usuarios.add(usuario);

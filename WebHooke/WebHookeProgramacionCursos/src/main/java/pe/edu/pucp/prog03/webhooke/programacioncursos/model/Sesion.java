@@ -4,6 +4,7 @@
  */
 package pe.edu.pucp.prog03.webhooke.programacioncursos.model;
 import pe.edu.pucp.prog03.webhooke.modalidades.model.TipoSesion;
+import pe.edu.pucp.prog03.webhooke.gestionusuarios.model.Alumno;
 import java.util.Date;
 
 
@@ -20,6 +21,7 @@ public class Sesion {
     private String modalidad;
     private TipoSesion tipoSesion;
     private Curso curso;    
+    private Alumno alumno; 
 
     /**
      * @return the idHorario

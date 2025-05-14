@@ -29,14 +29,14 @@ public class SedeDAOImplement implements SedeDAO{
     
     @Override
     public int insertar(Sede sed){
-        String sql ="Insert Sede (Direccion,Distrito,Nombre_Academia) values(?,?,?)";
+        String sql ="Insert Sede (Direccion,Distrito) values(?,?,)";
         
         try (Connection conn = DBManager.getInstance().getConnection();
             PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)){
             
             ps.setString(1, sed.getDireccion());
             ps.setString(2, sed.getDistrito());
-            ps.setString(3, sed.getNombre_Academia());
+            
             
             if (ps.executeUpdate()==0){
                 throw new SQLException("ERROR EN LA INSERCION DE SEDES");
@@ -59,14 +59,14 @@ public class SedeDAOImplement implements SedeDAO{
     
     @Override
     public boolean modificar(Sede sed){
-        String sql = "UPDATE Sede SET Direccion = ?, Distrito = ? ,Nombre_Academia = ? WHERE IdSede = ?";
+        String sql = "UPDATE Sede SET Direccion = ?, Distrito = ?  WHERE IdSede = ?";
         
         try (Connection conn = DBManager.getInstance().getConnection();
             PreparedStatement cs = conn.prepareCall(sql)){
             
             cs.setString(1, sed.getDireccion());
             cs.setString(2, sed.getDistrito());
-            cs.setString(3,sed.getNombre_Academia());
+            
             cs.setInt(4, sed.getId());
             return cs.executeUpdate() > 0;
         }
@@ -111,7 +111,6 @@ public class SedeDAOImplement implements SedeDAO{
             sed.setId(rs.getInt("IdSede"));
             sed.setDireccion(rs.getString("Direccion"));
             sed.setDistrito(rs.getString("Distrito"));
-            sed.setNombre_Academia(rs.getString("Nombre_Academia"));
             return sed;  
         }
         catch (Exception e) {
