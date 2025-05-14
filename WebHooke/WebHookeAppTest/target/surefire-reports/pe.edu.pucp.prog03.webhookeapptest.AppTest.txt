@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: pe.edu.pucp.prog03.webhookeapptest.AppTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s -- in pe.edu.pucp.prog03.webhookeapptest.AppTest
+=======
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s -- in pe.edu.pucp.prog03.webhookeapptest.AppTest
+>>>>>>> origin/BranchJefferson

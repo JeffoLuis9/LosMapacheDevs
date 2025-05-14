@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="pe.edu.pucp.prog03.gestionacademia.AppTest" time="0.038" tests="1" errors="0" skipped="0" failures="0">
+=======
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="pe.edu.pucp.prog03.gestionacademia.AppTest" time="0.041" tests="1" errors="0" skipped="0" failures="0">
+>>>>>>> origin/BranchJefferson
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +19,11 @@
     <property name="user.country" value="PE"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
+<<<<<<< HEAD
     <property name="sun.java.command" value="C:\Users\ASUS\AppData\Local\Temp\surefire1836447922923584481\surefirebooter-20250514035932287_3.jar C:\Users\ASUS\AppData\Local\Temp\surefire1836447922923584481 2025-05-14T03-59-32_144-jvmRun1 surefire-20250514035932287_1tmp surefire_0-20250514035932287_2tmp"/>
+=======
+    <property name="sun.java.command" value="C:\Users\ASUS\AppData\Local\Temp\surefire9164806680645399649\surefirebooter-20250514040143609_3.jar C:\Users\ASUS\AppData\Local\Temp\surefire9164806680645399649 2025-05-14T04-01-43_483-jvmRun1 surefire-20250514040143609_1tmp surefire_0-20250514040143609_2tmp"/>
+>>>>>>> origin/BranchJefferson
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionAcademia\target\test-classes;D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionAcademia\target\classes;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\ASUS\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\ASUS\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +38,11 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
+<<<<<<< HEAD
     <property name="surefire.real.class.path" value="C:\Users\ASUS\AppData\Local\Temp\surefire1836447922923584481\surefirebooter-20250514035932287_3.jar"/>
+=======
+    <property name="surefire.real.class.path" value="C:\Users\ASUS\AppData\Local\Temp\surefire9164806680645399649\surefirebooter-20250514040143609_3.jar"/>
+>>>>>>> origin/BranchJefferson
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.1+11-39"/>
@@ -59,5 +71,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="pe.edu.pucp.prog03.gestionacademia.AppTest" time="0.017"/>
+  <testcase name="shouldAnswerWithTrue" classname="pe.edu.pucp.prog03.gestionacademia.AppTest" time="0.015"/>
 </testsuite>
