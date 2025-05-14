@@ -44,16 +44,6 @@
       <artifactId>junit-jupiter-params</artifactId>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>WebHookeProgramacionCursos</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>WebHookeGestionUsuarios</artifactId>
-      <version>${project.version}</version>
-    </dependency>
   </dependencies>
 
   <build>
