@@ -14,7 +14,7 @@ import pe.edu.pucp.prog03.webhooke.gestionusuarios.mysql.AlumnoDAOImplement;
  * @author ASUS
  */
 public class AlumnoBO {
-    /*vmaos a probar los cambios a ver que tal*/
+    /*vamos a probar los cambios a ver que tal*/
     private AlumnoDAO alumnoDAO;
     
     public AlumnoBO(){
@@ -27,9 +27,10 @@ public class AlumnoBO {
         alumno.setNombre(nombre);
         alumno.setApellido(apellido);
         alumno.setDNI(DNI);
-        alumno.setEmail(Email);
         alumno.setFechaNacimiento((java.sql.Date) fechaNacimiento);
         alumno.setCarrera(carrera);
+        alumno.setEmail(Email);
+        
         
         return alumnoDAO.insertar(alumno);
     }

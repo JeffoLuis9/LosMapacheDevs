@@ -1,6 +1,6 @@
-D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionAcademiaDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionacademia\dao\AcademiaDAO.java
-D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionAcademiaDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionacademia\dao\ICRUD.java
-D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionAcademiaDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionacademia\dao\SedeDAO.java
-D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionAcademiaDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionacademia\mysql\AcademiaDAOImplement.java
-D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionAcademiaDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionacademia\mysql\BaseDAOImplement.java
-D:\TrabajoAcademicoProg3\LosMapacheDevs\WebHooke\WebHookeGestionAcademiaDA\src\main\java\pe\edu\pucp\prog03\webhooke\gestionacademia\mysql\SedeDAOImplement.java
+/home/jefferson/TAProgrmacion3/LosMapacheDevs/WebHooke/WebHookeGestionAcademiaDA/src/main/java/pe/edu/pucp/prog03/webhooke/gestionacademia/dao/AcademiaDAO.java
+/home/jefferson/TAProgrmacion3/LosMapacheDevs/WebHooke/WebHookeGestionAcademiaDA/src/main/java/pe/edu/pucp/prog03/webhooke/gestionacademia/dao/ICRUD.java
+/home/jefferson/TAProgrmacion3/LosMapacheDevs/WebHooke/WebHookeGestionAcademiaDA/src/main/java/pe/edu/pucp/prog03/webhooke/gestionacademia/dao/SedeDAO.java
+/home/jefferson/TAProgrmacion3/LosMapacheDevs/WebHooke/WebHookeGestionAcademiaDA/src/main/java/pe/edu/pucp/prog03/webhooke/gestionacademia/mysql/AcademiaDAOImplement.java
+/home/jefferson/TAProgrmacion3/LosMapacheDevs/WebHooke/WebHookeGestionAcademiaDA/src/main/java/pe/edu/pucp/prog03/webhooke/gestionacademia/mysql/BaseDAOImplement.java
+/home/jefferson/TAProgrmacion3/LosMapacheDevs/WebHooke/WebHookeGestionAcademiaDA/src/main/java/pe/edu/pucp/prog03/webhooke/gestionacademia/mysql/SedeDAOImplement.java
