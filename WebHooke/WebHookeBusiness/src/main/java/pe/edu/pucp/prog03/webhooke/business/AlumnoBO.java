@@ -22,7 +22,9 @@ public class AlumnoBO {
     
     public int registrarAlumno(String nombre,String apellido,String DNI,String Email,Date fechaNacimiento,String carrera){
         Alumno alumno = new Alumno();
+        Alumno alumno2 = new Alumno();
         
+        alumno2.setNombre(nombre);
         alumno.setNombre(nombre);
         alumno.setApellido(apellido);
         alumno.setDNI(DNI);
