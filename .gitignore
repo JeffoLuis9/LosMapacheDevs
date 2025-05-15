@@ -8,6 +8,5 @@ target/
 *.jar
 *.class
 *.dumpstream
-*.xml
 *.txt
 
