@@ -78,10 +78,10 @@ public class main {
     TipoSesionDAO tipoSesionDAO = new TipoSesionDAOImplement();
     int idTipoSesion = tipoSesionDAO.insertar(tipoSesion);
 
-    Academia academia = new Academia();
-    academia.setNombre("AcademiaHooke");
-    academia.setRUC("12345678");
-    academia.setId(1);
+//    Academia academia = new Academia();
+//    academia.setNombre("AcademiaHooke");
+//    academia.setRUC("12345678");
+//    academia.setId(1);
     
     
     

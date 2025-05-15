@@ -1,6 +1,10 @@
+pe/edu/pucp/prog03/webhooke/gestionusuarios/dao/UsuarioDAO.class
 pe/edu/pucp/prog03/webhooke/gestionusuarios/mysql/ProfesorDAOImplement.class
 pe/edu/pucp/prog03/webhooke/gestionusuarios/dao/ProfesorDAO.class
 pe/edu/pucp/prog03/webhooke/gestionusuarios/dao/AdministradorDAO.class
 pe/edu/pucp/prog03/webhooke/gestionusuarios/mysql/AlumnoDAOImplement.class
+pe/edu/pucp/prog03/webhooke/gestionusuarios/dao/ICRUD.class
+pe/edu/pucp/prog03/webhooke/gestionusuarios/mysql/BaseDAOImplement.class
 pe/edu/pucp/prog03/webhooke/gestionusuarios/dao/AlumnoDAO.class
+pe/edu/pucp/prog03/webhooke/gestionusuarios/mysql/UsuarioDAOImplement.class
 pe/edu/pucp/prog03/webhooke/gestionusuarios/mysql/AdministradorDAOImplement.class
