@@ -3,8 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package pe.edu.pucp.prog03.webhooke.dao.gestionusuarios;
-import pe.edu.pucp.prog03.webhooke.dao.ICrud;
 import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Alumno;
+import pe.edu.pucp.prog03.webhooke.dao.ICrud;
 /**
  *
  * @author andre

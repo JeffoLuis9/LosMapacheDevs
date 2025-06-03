@@ -3,8 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
 package pe.edu.pucp.prog03.webhooke.dao.gestionacademia;
-import pe.edu.pucp.prog03.webhooke.dao.ICrud;
 import pe.edu.pucp.prog03.webhooke.modelo.gestionacademia.Academia;
+import pe.edu.pucp.prog03.webhooke.dao.ICrud;
 
 /**
  *

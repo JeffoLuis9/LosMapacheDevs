@@ -3,8 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package pe.edu.pucp.prog03.webhooke.dao.programacioncursos;
-import pe.edu.pucp.prog03.webhooke.dao.ICrud;
 import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Sesion;
+import pe.edu.pucp.prog03.webhooke.dao.ICrud;
 /**
  *
  * @author ASUS
