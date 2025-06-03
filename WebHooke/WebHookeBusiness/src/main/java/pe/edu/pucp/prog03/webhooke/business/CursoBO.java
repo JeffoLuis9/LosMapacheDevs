@@ -4,10 +4,12 @@
  */
 package pe.edu.pucp.prog03.webhooke.business;
 
-import pe.edu.pucp.prog03.webhooke.gestionusuarios.model.Profesor;
-import pe.edu.pucp.prog03.webhooke.programacioncursos.dao.CursoDAO;
-import pe.edu.pucp.prog03.webhooke.programacioncursos.model.Curso;
-import pe.edu.pucp.prog03.webhooke.programacioncursos.mysql.CursoDAOImplement;
+import pe.edu.pucp.prog03.webhooke.dao.programacioncursos.CursoDAO;
+import pe.edu.pucp.prog03.webhooke.daoimpl.programacioncursos.CursoDAOImplement;
+import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Profesor;
+import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Curso;
+
+
 
 /**
  *

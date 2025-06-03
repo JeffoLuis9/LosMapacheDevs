@@ -5,9 +5,9 @@
 package pe.edu.pucp.prog03.webhooke.business;
 
 import java.util.Date;
-import pe.edu.pucp.prog03.webhooke.gestionusuarios.dao.AlumnoDAO;
-import pe.edu.pucp.prog03.webhooke.gestionusuarios.model.Alumno;
-import pe.edu.pucp.prog03.webhooke.gestionusuarios.mysql.AlumnoDAOImplement;
+import pe.edu.pucp.prog03.webhooke.dao.gestionusuarios.AlumnoDAO;
+import pe.edu.pucp.prog03.webhooke.daoimpl.gestionusuarios.AlumnoDAOImplement;
+import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Alumno;
 
 /**
  *
@@ -16,15 +16,14 @@ import pe.edu.pucp.prog03.webhooke.gestionusuarios.mysql.AlumnoDAOImplement;
 public class AlumnoBO {
     private AlumnoDAO alumnoDAO;
     
+    
     public AlumnoBO(){
         alumnoDAO = new AlumnoDAOImplement();
     }
     
     public int registrarAlumno(String nombre,String apellido,String DNI,String Email,Date fechaNacimiento,String carrera){
         Alumno alumno = new Alumno();
-        Alumno alumno2 = new Alumno();
         
-        alumno2.setNombre(nombre);
         alumno.setNombre(nombre);
         alumno.setApellido(apellido);
         alumno.setDNI(DNI);
@@ -35,3 +34,5 @@ public class AlumnoBO {
         return alumnoDAO.insertar(alumno);
     }
 }
+
+

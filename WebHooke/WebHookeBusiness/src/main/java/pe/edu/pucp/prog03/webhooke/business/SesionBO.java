@@ -1,13 +1,16 @@
-package pe.edu.pucp.prog03.webhooke.business;
-import java.util.Date;
-import pe.edu.pucp.prog03.webhooke.gestionacademia.model.Sede;
-import pe.edu.pucp.prog03.webhooke.gestionusuarios.model.Alumno;
-import pe.edu.pucp.prog03.webhooke.modalidades.model.TipoSesion;
-import pe.edu.pucp.prog03.webhooke.programacioncursos.dao.SesionDAO;
-import pe.edu.pucp.prog03.webhooke.programacioncursos.model.Curso;
-import pe.edu.pucp.prog03.webhooke.programacioncursos.model.Sesion;
-import pe.edu.pucp.prog03.webhooke.programacioncursos.mysql.SesionDAOImplement;
 
+package pe.edu.pucp.prog03.webhooke.business;
+
+import pe.edu.pucp.prog03.webhooke.dao.programacioncursos.SesionDAO;
+import pe.edu.pucp.prog03.webhooke.daoimpl.programacioncursos.SesionDAOImplement;
+
+import pe.edu.pucp.prog03.webhooke.modelo.gestionacademia.Sede;
+import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Alumno;
+import pe.edu.pucp.prog03.webhooke.modelo.modalidades.TipoSesion;
+import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Curso;
+import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Sesion;
+
+import java.util.Date;
 /**
  * Hello world!
  */
