@@ -1,5 +1,5 @@
 
-package pe.edu.pucp.prog03.webhooke.business;
+package pe.edu.pucp.prog03.webhooke.boimpl;
 
 import pe.edu.pucp.prog03.webhooke.dao.programacioncursos.SesionDAO;
 import pe.edu.pucp.prog03.webhooke.daoimpl.programacioncursos.SesionDAOImplement;
@@ -14,10 +14,10 @@ import java.util.Date;
 /**
  * Hello world!
  */
-public class SesionBO {
+public class SesionBOImpl {
     private SesionDAO sesionDAO;
     
-    public SesionBO(){
+    public SesionBOImpl(){
         this.sesionDAO= new SesionDAOImplement();
     }
     
