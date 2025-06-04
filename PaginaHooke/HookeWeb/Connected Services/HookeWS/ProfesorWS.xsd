@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.webhooke.pucp.edu.pe/" targetNamespace="http://services.webhooke.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarProfesor" type="tns:eliminarProfesor" />
+  <xs:element name="eliminarProfesorResponse" type="tns:eliminarProfesorResponse" />
+  <xs:element name="guardarProfesor" type="tns:guardarProfesor" />
+  <xs:element name="guardarProfesorResponse" type="tns:guardarProfesorResponse" />
+  <xs:element name="listarProfesores" type="tns:listarProfesores" />
+  <xs:element name="listarProfesoresPorCurso" type="tns:listarProfesoresPorCurso" />
+  <xs:element name="listarProfesoresPorCursoResponse" type="tns:listarProfesoresPorCursoResponse" />
+  <xs:element name="listarProfesoresResponse" type="tns:listarProfesoresResponse" />
+  <xs:element name="obtenerProfesor" type="tns:obtenerProfesor" />
+  <xs:element name="obtenerProfesorResponse" type="tns:obtenerProfesorResponse" />
+  <xs:complexType name="eliminarProfesor">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarProfesorResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="obtenerProfesor">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerProfesorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:profesor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="profesor">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:usuario">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="curso" type="tns:curso" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="usuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellido" type="xs:string" />
+      <xs:element minOccurs="0" name="DNI" type="xs:string" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaNacimiento" type="tns:date" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="curso">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigo" type="xs:string" />
+      <xs:element name="horaFin" type="xs:int" />
+      <xs:element name="horaInicio" type="xs:int" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element name="nivel" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="date">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="guardarProfesor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="profesor" type="tns:profesor" />
+      <xs:element minOccurs="0" name="estado" type="tns:estado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="guardarProfesorResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarProfesores">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarProfesoresResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:profesor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarProfesoresPorCurso">
+    <xs:sequence>
+      <xs:element name="idCurso" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarProfesoresPorCursoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:profesor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="estado">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Nuevo" />
+      <xs:enumeration value="Modificar" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.webhooke.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="ProfesorWS" targetNamespace="http://services.webhooke.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WebHookeWS/ProfesorWS?xsd=1" namespace="http://services.webhooke.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="listarProfesoresPorCurso">
+    <part name="parameters" element="tns:listarProfesoresPorCurso" />
+  </message>
+  <message name="listarProfesoresPorCursoResponse">
+    <part name="parameters" element="tns:listarProfesoresPorCursoResponse" />
+  </message>
+  <message name="eliminarProfesor">
+    <part name="parameters" element="tns:eliminarProfesor" />
+  </message>
+  <message name="eliminarProfesorResponse">
+    <part name="parameters" element="tns:eliminarProfesorResponse" />
+  </message>
+  <message name="listarProfesores">
+    <part name="parameters" element="tns:listarProfesores" />
+  </message>
+  <message name="listarProfesoresResponse">
+    <part name="parameters" element="tns:listarProfesoresResponse" />
+  </message>
+  <message name="guardarProfesor">
+    <part name="parameters" element="tns:guardarProfesor" />
+  </message>
+  <message name="guardarProfesorResponse">
+    <part name="parameters" element="tns:guardarProfesorResponse" />
+  </message>
+  <message name="obtenerProfesor">
+    <part name="parameters" element="tns:obtenerProfesor" />
+  </message>
+  <message name="obtenerProfesorResponse">
+    <part name="parameters" element="tns:obtenerProfesorResponse" />
+  </message>
+  <portType name="ProfesorWS">
+    <operation name="listarProfesoresPorCurso">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresPorCursoRequest" message="tns:listarProfesoresPorCurso" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresPorCursoResponse" message="tns:listarProfesoresPorCursoResponse" />
+    </operation>
+    <operation name="eliminarProfesor">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/eliminarProfesorRequest" message="tns:eliminarProfesor" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/eliminarProfesorResponse" message="tns:eliminarProfesorResponse" />
+    </operation>
+    <operation name="listarProfesores">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresRequest" message="tns:listarProfesores" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresResponse" message="tns:listarProfesoresResponse" />
+    </operation>
+    <operation name="guardarProfesor">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/guardarProfesorRequest" message="tns:guardarProfesor" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/guardarProfesorResponse" message="tns:guardarProfesorResponse" />
+    </operation>
+    <operation name="obtenerProfesor">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/obtenerProfesorRequest" message="tns:obtenerProfesor" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/obtenerProfesorResponse" message="tns:obtenerProfesorResponse" />
+    </operation>
+  </portType>
+  <binding name="ProfesorWSPortBinding" type="tns:ProfesorWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarProfesoresPorCurso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarProfesor">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarProfesores">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="guardarProfesor">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerProfesor">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ProfesorWS">
+    <port name="ProfesorWSPort" binding="tns:ProfesorWSPortBinding">
+      <soap:address location="http://localhost:8080/WebHookeWS/ProfesorWS" />
+    </port>
+  </service>
+</definitions>

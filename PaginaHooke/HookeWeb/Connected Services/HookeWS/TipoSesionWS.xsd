@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.webhooke.pucp.edu.pe/" targetNamespace="http://services.webhooke.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarTipoSesion" type="tns:eliminarTipoSesion" />
+  <xs:element name="eliminarTipoSesionResponse" type="tns:eliminarTipoSesionResponse" />
+  <xs:element name="guardarTipoSesion" type="tns:guardarTipoSesion" />
+  <xs:element name="guardarTipoSesionResponse" type="tns:guardarTipoSesionResponse" />
+  <xs:element name="listarTipoSesiones" type="tns:listarTipoSesiones" />
+  <xs:element name="listarTipoSesionesResponse" type="tns:listarTipoSesionesResponse" />
+  <xs:element name="obtenerTipoSesion" type="tns:obtenerTipoSesion" />
+  <xs:element name="obtenerTipoSesionResponse" type="tns:obtenerTipoSesionResponse" />
+  <xs:complexType name="guardarTipoSesion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="tipoSesion" type="tns:tipoSesion" />
+      <xs:element minOccurs="0" name="estado" type="tns:estado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tipoSesion">
+    <xs:sequence>
+      <xs:element name="idModalidad" type="xs:int" />
+      <xs:element name="precio" type="xs:double" />
+      <xs:element minOccurs="0" name="tipo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="guardarTipoSesionResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTipoSesiones">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTipoSesionesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:tipoSesion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerTipoSesion">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerTipoSesionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:tipoSesion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarTipoSesion">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarTipoSesionResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:simpleType name="estado">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Nuevo" />
+      <xs:enumeration value="Modificar" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
