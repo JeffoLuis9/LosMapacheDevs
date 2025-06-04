@@ -18,9 +18,12 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.TestInstance;
 import pe.edu.pucp.prog03.webhooke.dao.gestionusuarios.ProfesorDAO;
+import pe.edu.pucp.prog03.webhooke.dao.programacioncursos.CursoDAO;
 import pe.edu.pucp.prog03.webhooke.daoimpl.gestionusuarios.ProfesorDAOImplement;
+import pe.edu.pucp.prog03.webhooke.daoimpl.programacioncursos.CursoDAOImplement;
 
 import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Profesor;
+import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Curso;
 import pe.edu.pucp.prog03.webhooke.test.CrudDaoTest;
 
 /**
@@ -38,6 +41,10 @@ public class ProfesorDaoTest implements CrudDaoTest{
     @Order(1)
     @Override
     public void debeInsertar() {
+        
+        CursoDAO cursoDao = new CursoDAOImplement();
+        Curso curso = cursoDao.buscar(1);
+        
         ProfesorDAO profesorDao = new ProfesorDAOImplement();
         Profesor profesor = new Profesor();
         profesor.setDNI("12345678");
@@ -45,6 +52,7 @@ public class ProfesorDaoTest implements CrudDaoTest{
         profesor.setApellido("Profesor Apellido 1");
         profesor.setEmail("profesor1@prueba.test");
         profesor.setFechaNacimiento(Date.valueOf("2000-01-01"));
+        profesor.setCurso(curso);
         
         this.testId=profesorDao.insertar(profesor);
         
@@ -55,6 +63,10 @@ public class ProfesorDaoTest implements CrudDaoTest{
     @Order(2)
     @Override
     public void debeModificarSiIdExiste() {
+        
+        CursoDAO cursoDao = new CursoDAOImplement();
+        Curso curso = cursoDao.buscar(2);
+        
         ProfesorDAO profesorDao = new ProfesorDAOImplement();
         Profesor profesor = new Profesor();
         profesor.setId(this.testId);
@@ -63,6 +75,7 @@ public class ProfesorDaoTest implements CrudDaoTest{
         profesor.setApellido("Profesor Apellido 2");
         profesor.setEmail("profesor2@prueba.test");
         profesor.setFechaNacimiento(Date.valueOf("2000-01-28"));
+        profesor.setCurso(curso);
         
         boolean modificado = profesorDao.modificar(profesor);
         
@@ -75,12 +88,17 @@ public class ProfesorDaoTest implements CrudDaoTest{
         assertEquals(profesorModificado.getNombre(),"Profesor nombre 2" );
         assertEquals(profesorModificado.getApellido(),"Profesor Apellido 2" );
         assertEquals(profesorModificado.getEmail(),"profesor2@prueba.test" );
+        assertEquals(profesorModificado.getCurso().getId(), curso.getId());
     }
 
     @Test
     @Order(3)
     @Override
     public void noDebeModificarSiIdNoExiste() {
+        
+        CursoDAO cursoDao = new CursoDAOImplement();
+        Curso curso = cursoDao.buscar(1);
+        
         ProfesorDAO profesorDao = new ProfesorDAOImplement();
         Profesor profesor = new Profesor();
         profesor.setId(this.idIncorrecto);
@@ -89,6 +107,7 @@ public class ProfesorDaoTest implements CrudDaoTest{
         profesor.setApellido("Profesor Apellido 2");
         profesor.setEmail("profesor2@prueba.test");
         profesor.setFechaNacimiento(Date.valueOf("2000-01-28"));
+        profesor.setCurso(curso);
         
         boolean modificado = profesorDao.modificar(profesor);
         

@@ -2,8 +2,13 @@ package pe.edu.pucp.prog03.webhookeapptest;
 //import pe.edu.pucp.prog03.webhooke.gestionacademia.model.Academia;
 //import pe.edu.pucp.prog03.webhooke.gestionacademia.dao.AcademiaDAO;
 
-import pe.edu.pucp.prog03.webhooke.business.ProfesorBO;
-import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Profesor;
+import java.util.List;
+import pe.edu.pucp.prog03.webhooke.bo.IProfesorBO;
+import pe.edu.pucp.prog03.webhooke.boimpl.ProfesorBOImpl;
+import pe.edu.pucp.prog03.webhooke.dao.programacioncursos.CursoDAO;
+import pe.edu.pucp.prog03.webhooke.daoimpl.programacioncursos.CursoDAOImplement;
+import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Curso;
+
 
 //import pe.edu.pucp.prog03.webhooke.gestionacademia.mysql.AcademiaDAOImplement;
 //
@@ -39,7 +44,7 @@ public class main {
         
     
     int idProfesor;
-        ProfesorBO profesorBO = new ProfesorBO();
+        IProfesorBO profesorBO = new ProfesorBOImpl();
     //INSERTAR DATOS ALEATORIOS DE PROFESOR
     
 //    for(int i=0;i<10;i++){
@@ -66,10 +71,10 @@ public class main {
 //    }
     
     //PRUEBAS DE MODIFICAR 
-
-    Profesor profesor = profesorBO.buscarProfesor(15);
-    profesor.setEmail("profesor13@prueba.com");
-    profesorBO.actualizarProfesor(profesor);
+//
+//    Profesor profesor = profesorBO.b(15);
+//    profesor.setEmail("profesor13@prueba.com");
+//    profesorBO.actualizarProfesor(profesor);
     //prueba de registrar Alumno
 //    AlumnoBO alumnoBO = new AlumnoBO();
 //    
@@ -134,6 +139,9 @@ public class main {
 //    int idSesion = sesionBO.registrarSesion(7, 10, Date.valueOf("2025-05-15"), "Virtual",curso, alumno, tipoSesion, sede);
 //    System.out.println("El id de la sesion ingresada es : "+ idSesion);      
 //    
+        CursoDAO cursoDao = new CursoDAOImplement();
+        List<Curso> cursos = cursoDao.buscarCursoPorNivel(1);
+        
   }
 
 }

@@ -17,14 +17,9 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.TestInstance;
 
-
-import pe.edu.pucp.prog03.webhooke.dao.gestionusuarios.ProfesorDAO;
 import pe.edu.pucp.prog03.webhooke.dao.programacioncursos.CursoDAO;
-import pe.edu.pucp.prog03.webhooke.daoimpl.gestionusuarios.ProfesorDAOImplement;
 import pe.edu.pucp.prog03.webhooke.daoimpl.programacioncursos.CursoDAOImplement;
-import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Profesor;
 import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Curso;
-
 
 import pe.edu.pucp.prog03.webhooke.test.CrudDaoTest;
 
@@ -43,16 +38,14 @@ public class CursoDaoTest implements CrudDaoTest{
     @Order(1)
     @Override
     public void debeInsertar() {
-        //extraer profesor
-        ProfesorDAO profesorDao = new ProfesorDAOImplement();
-        Profesor profesor = profesorDao.buscar(12);
         
         CursoDAO cursoDao= new CursoDAOImplement();
         Curso curso = new Curso();
         curso.setCodigo("CT1");
         curso.setNivel(5);
         curso.setNombre("Curso test 1");
-        curso.setProfesor(profesor);
+        curso.setHoraFin(10);
+        curso.setHoraFin(12);
         
         this.testId = cursoDao.insertar(curso);
         assertTrue(this.testId > 0);
@@ -63,8 +56,6 @@ public class CursoDaoTest implements CrudDaoTest{
     @Override
     public void debeModificarSiIdExiste() {
         
-        ProfesorDAO profesorDao = new ProfesorDAOImplement();
-        Profesor profesor = profesorDao.buscar(13);
         
         CursoDAO cursoDao= new CursoDAOImplement();
         Curso curso = new Curso();
@@ -72,7 +63,8 @@ public class CursoDaoTest implements CrudDaoTest{
         curso.setCodigo("CT2");
         curso.setNivel(4);
         curso.setNombre("Curso test 2");
-        curso.setProfesor(profesor);
+        curso.setHoraFin(10);
+        curso.setHoraFin(12);
         
         boolean modifico = cursoDao.modificar(curso);
         assertTrue(modifico);
@@ -81,7 +73,7 @@ public class CursoDaoTest implements CrudDaoTest{
         assertEquals(cursoModificado.getNombre(), "Curso test 2");
         assertEquals(cursoModificado.getCodigo(), "CT2");
         assertEquals(cursoModificado.getNivel(), 4);
-        assertEquals(cursoModificado.getProfesor().getId(), 13);
+        assertEquals(cursoModificado.getHoraFin(),12);
     }
     
     @Test
@@ -89,16 +81,14 @@ public class CursoDaoTest implements CrudDaoTest{
     @Override
     public void noDebeModificarSiIdNoExiste() {
         
-        ProfesorDAO profesorDao = new ProfesorDAOImplement();
-        Profesor profesor = profesorDao.buscar(13);
-        
         CursoDAO cursoDao= new CursoDAOImplement();
         Curso curso = new Curso();
         curso.setId(this.idIncorrecto);
         curso.setCodigo("CT2");
         curso.setNivel(4);
         curso.setNombre("Curso test 2");
-        curso.setProfesor(profesor);
+        curso.setHoraFin(10);
+        curso.setHoraFin(12);
         
         boolean modifico = cursoDao.modificar(curso);
         assertFalse(modifico);

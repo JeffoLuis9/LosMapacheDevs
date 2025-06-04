@@ -15,11 +15,16 @@ package pe.edu.pucp.prog03.webhooke.daoimpl.gestionusuarios;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Types;
+import java.util.ArrayList;
+import java.util.List;
+import pe.edu.pucp.prog03.webhooke.config.DBManager;
 import pe.edu.pucp.prog03.webhooke.dao.gestionusuarios.ProfesorDAO;
 import pe.edu.pucp.prog03.webhooke.daoimpl.BaseDAOImplement;
+import pe.edu.pucp.prog03.webhooke.daoimpl.programacioncursos.CursoDAOImplement;
 
 
 import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Profesor;
@@ -32,26 +37,28 @@ public class ProfesorDAOImplement extends BaseDAOImplement<Profesor> implements 
     
     @Override
     protected CallableStatement comandoInsertar(Connection conn, Profesor usu) throws SQLException {
-        String sql = "{CALL insertarProfesor(?,?,?,?,?,?)}";
+        String sql = "{CALL insertarProfesor(?,?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
         cmd.setString("p_dni", usu.getDNI());
         cmd.setString("p_email", usu.getEmail());
         cmd.setDate("p_fechanacimiento", usu.getFechaNacimiento());
+        cmd.setInt("p_curso",usu.getCurso().getId());
         cmd.registerOutParameter("p_id", Types.INTEGER);
         return cmd;
     }
 
     @Override
     protected CallableStatement comandoModificar(Connection conn, Profesor usu) throws SQLException {
-        String sql = "{CALL modificarProfesor(?,?,?,?,?,?)}";
+        String sql = "{CALL modificarProfesor(?,?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
         cmd.setString("p_dni", usu.getDNI());
         cmd.setString("p_email", usu.getEmail());
         cmd.setDate("p_fechanacimiento", usu.getFechaNacimiento());
+        cmd.setInt("p_curso",usu.getCurso().getId());
         cmd.setInt("p_id", usu.getId());
         return cmd;
     }
@@ -91,7 +98,36 @@ public class ProfesorDAOImplement extends BaseDAOImplement<Profesor> implements 
         usu.setDNI(rs.getString("DNI"));
         usu.setEmail(rs.getString("email"));
         usu.setFechaNacimiento(rs.getDate("fechaNacimiento"));
+        usu.setCurso(new CursoDAOImplement().buscar(rs.getInt("idCurso")));
         return usu;
     }
     
+    
+    @Override
+    public List<Profesor>buscarProfesorPorCurso (int idCurso){
+       try (
+            Connection conn = DBManager.getInstance().getConnection(); PreparedStatement ps = this.comandoBuscarProfesorPorCurso(conn,idCurso);) {
+            ResultSet rs = ps.executeQuery();
+
+            List<Profesor> modelos = new ArrayList<>();
+            while (rs.next()) {
+                modelos.add(this.mapearModelo(rs));
+            }
+
+            return modelos;
+        } catch (SQLException e) {
+            System.err.println("Error SQL durante el listado: " + e.getMessage());
+            throw new RuntimeException("No se pudo listar el registro.", e);
+        } catch (Exception e) {
+            System.err.println("Error inpesperado: " + e.getMessage());
+            throw new RuntimeException("Error inesperado al listar los registros.", e);
+        }
+    }
+    
+    protected CallableStatement comandoBuscarProfesorPorCurso(Connection conn, int idCurso) throws SQLException {
+        String sql = "{CALL buscarProfesorPorCurso(?)}";
+        CallableStatement cmd = conn.prepareCall(sql);
+        cmd.setInt("p_id", idCurso);
+        return cmd;
+    }
 }
