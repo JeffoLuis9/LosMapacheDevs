@@ -30,7 +30,7 @@ public class AcademiaWS {
     }
     
     @WebMethod(operationName = "guardarAcademia")
-    public void guardarAcademia(@WebParam(name = "alumno") Academia academia, @WebParam(name = "estado") Estado estado) {
+    public void guardarAcademia(@WebParam(name = "academia") Academia academia, @WebParam(name = "estado") Estado estado) {
         this.academiaBo.guardar(academia, estado);
     }
     

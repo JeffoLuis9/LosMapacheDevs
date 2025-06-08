@@ -35,7 +35,8 @@ public class AlumnoDAOImplement extends BaseDAOImplement<Alumno> implements Alum
         cmd.setString("p_apellido", usu.getApellido());
         cmd.setString("p_dni", usu.getDNI());
         cmd.setString("p_email", usu.getEmail());
-        cmd.setDate("p_fechanacimiento", usu.getFechaNacimiento());
+//        cmd.setDate("p_fechanacimiento", usu.getFechaNacimiento());
+        cmd.setDate("p_fechanacimiento",  new java.sql.Date(usu.getFechaNacimiento().getTime()));
         cmd.setString("p_carrera", usu.getCarrera());
         cmd.registerOutParameter("p_id", Types.INTEGER);
         return cmd;
@@ -50,7 +51,7 @@ public class AlumnoDAOImplement extends BaseDAOImplement<Alumno> implements Alum
         cmd.setString("p_apellido", usu.getApellido());
         cmd.setString("p_dni", usu.getDNI());
         cmd.setString("p_email", usu.getEmail());
-        cmd.setDate("p_fechanacimiento", usu.getFechaNacimiento());
+        cmd.setDate("p_fechanacimiento",  new java.sql.Date(usu.getFechaNacimiento().getTime()));
         cmd.setString("p_carrera", usu.getCarrera());
         cmd.setInt("p_id", usu.getId());
         return cmd;

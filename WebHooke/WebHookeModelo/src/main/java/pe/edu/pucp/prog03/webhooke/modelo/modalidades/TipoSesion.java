@@ -16,6 +16,10 @@ public class TipoSesion {
     /**
      * @return the idModalidad
      */
+    public TipoSesion(){
+        
+    }
+    
     public int getIdModalidad() {
         return idModalidad;
     }

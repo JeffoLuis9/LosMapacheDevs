@@ -25,7 +25,7 @@
   </xs:complexType>
   <xs:complexType name="guardarAcademia">
     <xs:sequence>
-      <xs:element minOccurs="0" name="alumno" type="tns:academia" />
+      <xs:element minOccurs="0" name="academia" type="tns:academia" />
       <xs:element minOccurs="0" name="estado" type="tns:estado" />
     </xs:sequence>
   </xs:complexType>

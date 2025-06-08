@@ -6,7 +6,7 @@ package pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios;
 
 
 import java.text.SimpleDateFormat;
-import java.sql.Date;
+import java.util.Date;
 
 /**
  *

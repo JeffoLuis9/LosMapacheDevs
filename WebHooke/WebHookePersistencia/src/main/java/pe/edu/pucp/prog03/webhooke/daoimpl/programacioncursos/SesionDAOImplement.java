@@ -28,8 +28,9 @@ public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements Sesi
     protected CallableStatement comandoInsertar(Connection conn, Sesion sesion) throws SQLException {
         String sql = "{CALL insertarSesion(?,?,?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
-       
-        cmd.setDate("p_fecha", (Date) sesion.getFecha());
+        
+        //cmd.setDate("p_fechanacimiento", java.sql.Date.valueOf(usu.getFechaNacimiento()));
+        cmd.setDate("p_fecha", new java.sql.Date(sesion.getFecha().getTime()));
         cmd.setString("p_modalidad",sesion.getModalidad());
         cmd.setInt("p_idCurso", sesion.getCurso().getId());
         cmd.setInt("p_idAlumno", sesion.getAlumno().getId());
@@ -46,7 +47,7 @@ public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements Sesi
         String sql = "{CALL modificarSesion(?,?,?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         
-        cmd.setDate("p_fecha", (Date) sesion.getFecha());
+        cmd.setDate("p_fecha",new java.sql.Date(sesion.getFecha().getTime()));
         cmd.setString("p_modalidad",sesion.getModalidad());
         cmd.setInt("p_idCurso", sesion.getCurso().getId());
         cmd.setInt("p_idAlumno", sesion.getAlumno().getId());
@@ -87,6 +88,7 @@ public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements Sesi
         Sesion sesion = new Sesion();
         sesion.setIdHorario(rs.getInt("idSesion"));
         sesion.setFecha(rs.getDate("fecha"));
+        
         sesion.setModalidad(rs.getString("Modalidad"));
         sesion.setCurso(new CursoDAOImplement().buscar(rs.getInt("idCurso")));
         sesion.setAlumno(new AlumnoDAOImplement().buscar(rs.getInt("idAlumno")));

@@ -1,7 +1,9 @@
 ﻿using PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS;
 using System;
 using System.ComponentModel;
+using System.ServiceModel;
 using System.Web.UI.WebControls;
+using NodaTime;
 
 namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
 {
@@ -89,13 +91,22 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
             estado estado;
             estado = estado.Nuevo;
             sesion = new sesion();
-            sesion.fecha = DateTime.Parse("2025-06-04");
+            sesion.fecha = DateTime.Parse("2025-04-06").Date;
             sesion.modalidad = TxtModalidad.Text;
-            sesion.curso = cursoWS2.obtenerCurso(int.Parse(DdlCursos.SelectedValue));
+            sesion.curso = cursoWS2.obtenerCurso(1);
             sesion.alumno = alumnoWS.obtenerAlumno(1);
-            sesion.tipoSesion = tipoSesionWS2.obtenerTipoSesion(int.Parse(DdlTipoSesion.SelectedValue));
-            sesion.profesor = profesorWS2.obtenerProfesor(int.Parse(DdlProfesores.SelectedValue));
-            sesion.sede = sedeWS2.obtenerSede(int.Parse(DdlSede.SelectedValue));
+            sesion.tipoSesion = tipoSesionWS2.obtenerTipoSesion(1);
+            sesion.profesor = profesorWS2.obtenerProfesor(1);
+            sesion.sede = sedeWS2.obtenerSede(1);
+
+            sesion sesionPrueba = new sesion();
+            sesionPrueba = sesionWS.obtenerSesion(2);
+            if (sesion.alumno.fechaNacimiento == null || sesion.profesor.fechaNacimiento == null)
+            {
+                // Mostrar mensaje de error o manejar la situación
+                Response.Write("Error: Uno o más datos referenciados no existen.");
+                return;
+            }
             sesionWS.guardarSesion(sesion, estado);
             Response.Redirect("Home.aspx");
         }

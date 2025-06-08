@@ -25,11 +25,17 @@ public class SesionWS {
     public SesionWS(){
         sesionBO = new SesionBOImpl();
     }
-    
+//    
     @WebMethod(operationName = "guardarSesion")
-    public void guardarSesion(@WebParam(name = "profesor") Sesion sesion, @WebParam(name = "estado") Estado estado) {
+    public void guardarSesion(@WebParam(name = "sesion") Sesion sesion, @WebParam(name = "estado") Estado estado) {
         this.sesionBO.guardar(sesion, estado);
     }
+    
+//    @WebMethod(operationName = "guardarSesionVersion2")
+//    public void guardarSesionVersion2(@WebParam(name = "sesion") Sesion sesion, @WebParam(name = "estado") Estado estado) {
+//        
+//    }
+    
     
     @WebMethod(operationName = "obtenerSesion")
     public Sesion obtenerSesion(@WebParam(name = "id") int id) {

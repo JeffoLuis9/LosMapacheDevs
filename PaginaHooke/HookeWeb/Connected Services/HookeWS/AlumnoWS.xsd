@@ -28,13 +28,10 @@
       <xs:element minOccurs="0" name="apellido" type="xs:string" />
       <xs:element minOccurs="0" name="DNI" type="xs:string" />
       <xs:element minOccurs="0" name="email" type="xs:string" />
-      <xs:element minOccurs="0" name="fechaNacimiento" type="tns:date" />
+      <xs:element minOccurs="0" name="fechaNacimiento" type="xs:dateTime" />
       <xs:element name="id" type="xs:int" />
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
     </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="date">
-    <xs:sequence />
   </xs:complexType>
   <xs:complexType name="guardarAlumnoResponse">
     <xs:sequence />
@@ -47,6 +44,14 @@
   <xs:complexType name="eliminarAlumnoResponse">
     <xs:sequence />
   </xs:complexType>
+  <xs:complexType name="listarAlumnos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarAlumnosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:alumno" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="obtenerAlumno">
     <xs:sequence>
       <xs:element name="id" type="xs:int" />
@@ -55,14 +60,6 @@
   <xs:complexType name="obtenerAlumnoResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="tns:alumno" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="listarAlumnos">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="listarAlumnosResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:alumno" />
     </xs:sequence>
   </xs:complexType>
   <xs:simpleType name="estado">

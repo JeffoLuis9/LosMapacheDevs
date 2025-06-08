@@ -14,6 +14,7 @@ import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Profesor;
  *
  * @author ASUS
  */
+
 public class Sesion {
 
     /**
@@ -29,9 +30,11 @@ public class Sesion {
     private TipoSesion tipoSesion;
     private Sede sede;
         
-    /**
-     * @return the idHorario
-     */
+    
+    public Sesion(){
+        
+    }
+    
     public int getIdHorario() {
         return idHorario;
     }

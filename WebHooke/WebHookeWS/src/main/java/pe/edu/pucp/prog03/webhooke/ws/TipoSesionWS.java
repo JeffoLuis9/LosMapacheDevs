@@ -30,8 +30,8 @@ public class TipoSesionWS {
     }
     
     @WebMethod(operationName = "guardarTipoSesion")
-    public void guardarTipoSesion(@WebParam(name = "tipoSesion") TipoSesion alumno, @WebParam(name = "estado") Estado estado) {
-        this.tipoSesionBO.guardar(alumno, estado);
+    public void guardarTipoSesion(@WebParam(name = "tipoSesion") TipoSesion tipoSesion, @WebParam(name = "estado") Estado estado) {
+        this.tipoSesionBO.guardar(tipoSesion, estado);
     }
     
     @WebMethod(operationName = "obtenerTipoSesion")

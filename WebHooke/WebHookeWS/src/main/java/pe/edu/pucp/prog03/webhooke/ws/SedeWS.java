@@ -30,8 +30,8 @@ public class SedeWS {
     }
     
     @WebMethod(operationName = "guardarSede")
-    public void guardarSede(@WebParam(name = "sede") Sede alumno, @WebParam(name = "estado") Estado estado) {
-        this.sedeBO.guardar(alumno, estado);
+    public void guardarSede(@WebParam(name = "sede") Sede sede, @WebParam(name = "estado") Estado estado) {
+        this.sedeBO.guardar(sede, estado);
     }
     
     @WebMethod(operationName = "obtenerSede")
