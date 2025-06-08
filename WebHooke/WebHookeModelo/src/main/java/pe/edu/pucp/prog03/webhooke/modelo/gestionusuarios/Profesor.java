@@ -4,7 +4,24 @@
  */
 package pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios;
 
+import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Curso;
+
 
 public class Profesor extends Usuario {
+    
+    private Curso curso;
+    /**
+     * @return the curso
+     */
+    public Curso getCurso() {
+        return curso;
+    }
 
+    /**
+     * @param curso the curso to set
+     */
+    public void setCurso(Curso curso) {
+        this.curso = curso;
+    }
+    
 }

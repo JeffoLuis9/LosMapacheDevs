@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.webhooke.pucp.edu.pe/" targetNamespace="http://services.webhooke.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarCurso" type="tns:eliminarCurso" />
+  <xs:element name="eliminarCursoResponse" type="tns:eliminarCursoResponse" />
+  <xs:element name="guardarCurso" type="tns:guardarCurso" />
+  <xs:element name="guardarCursoResponse" type="tns:guardarCursoResponse" />
+  <xs:element name="listarCursos" type="tns:listarCursos" />
+  <xs:element name="listarCursosPorNivel" type="tns:listarCursosPorNivel" />
+  <xs:element name="listarCursosPorNivelResponse" type="tns:listarCursosPorNivelResponse" />
+  <xs:element name="listarCursosResponse" type="tns:listarCursosResponse" />
+  <xs:element name="obtenerCurso" type="tns:obtenerCurso" />
+  <xs:element name="obtenerCursoResponse" type="tns:obtenerCursoResponse" />
+  <xs:complexType name="listarCursosPorNivel">
+    <xs:sequence>
+      <xs:element name="nivel" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarCursosPorNivelResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:curso" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="curso">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigo" type="xs:string" />
+      <xs:element name="horaFin" type="xs:int" />
+      <xs:element name="horaInicio" type="xs:int" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element name="nivel" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarCursos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarCursosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:curso" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerCurso">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerCursoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:curso" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="guardarCurso">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="curso" type="tns:curso" />
+      <xs:element minOccurs="0" name="estado" type="tns:estado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="guardarCursoResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="eliminarCurso">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarCursoResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:simpleType name="estado">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Nuevo" />
+      <xs:enumeration value="Modificar" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

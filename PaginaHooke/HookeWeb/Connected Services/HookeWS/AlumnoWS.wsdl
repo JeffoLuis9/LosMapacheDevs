@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.webhooke.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="AlumnoWS" targetNamespace="http://services.webhooke.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WebHookeWS/AlumnoWS?xsd=1" namespace="http://services.webhooke.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="eliminarAlumno">
+    <part name="parameters" element="tns:eliminarAlumno" />
+  </message>
+  <message name="eliminarAlumnoResponse">
+    <part name="parameters" element="tns:eliminarAlumnoResponse" />
+  </message>
+  <message name="listarAlumnos">
+    <part name="parameters" element="tns:listarAlumnos" />
+  </message>
+  <message name="listarAlumnosResponse">
+    <part name="parameters" element="tns:listarAlumnosResponse" />
+  </message>
+  <message name="guardarAlumno">
+    <part name="parameters" element="tns:guardarAlumno" />
+  </message>
+  <message name="guardarAlumnoResponse">
+    <part name="parameters" element="tns:guardarAlumnoResponse" />
+  </message>
+  <message name="obtenerAlumno">
+    <part name="parameters" element="tns:obtenerAlumno" />
+  </message>
+  <message name="obtenerAlumnoResponse">
+    <part name="parameters" element="tns:obtenerAlumnoResponse" />
+  </message>
+  <portType name="AlumnoWS">
+    <operation name="eliminarAlumno">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/eliminarAlumnoRequest" message="tns:eliminarAlumno" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/eliminarAlumnoResponse" message="tns:eliminarAlumnoResponse" />
+    </operation>
+    <operation name="listarAlumnos">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/listarAlumnosRequest" message="tns:listarAlumnos" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/listarAlumnosResponse" message="tns:listarAlumnosResponse" />
+    </operation>
+    <operation name="guardarAlumno">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/guardarAlumnoRequest" message="tns:guardarAlumno" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/guardarAlumnoResponse" message="tns:guardarAlumnoResponse" />
+    </operation>
+    <operation name="obtenerAlumno">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/obtenerAlumnoRequest" message="tns:obtenerAlumno" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/obtenerAlumnoResponse" message="tns:obtenerAlumnoResponse" />
+    </operation>
+  </portType>
+  <binding name="AlumnoWSPortBinding" type="tns:AlumnoWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="eliminarAlumno">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarAlumnos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="guardarAlumno">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerAlumno">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="AlumnoWS">
+    <port name="AlumnoWSPort" binding="tns:AlumnoWSPortBinding">
+      <soap:address location="http://localhost:8080/WebHookeWS/AlumnoWS" />
+    </port>
+  </service>
+</definitions>

@@ -29,7 +29,7 @@ public class UsuarioDAOImplement extends BaseDAOImplement<Usuario> implements Us
         cmd.setString("p_apellido", usu.getApellido());
         cmd.setString("p_dni", usu.getDNI());
         cmd.setString("p_email", usu.getEmail());
-        cmd.setDate("p_fechanacimiento", usu.getFechaNacimiento());
+        cmd.setDate("p_fechanacimiento", new java.sql.Date(usu.getFechaNacimiento().getTime()));
         cmd.registerOutParameter("p_id", Types.INTEGER);
         return cmd;
     }
@@ -42,7 +42,7 @@ public class UsuarioDAOImplement extends BaseDAOImplement<Usuario> implements Us
         cmd.setString("p_apellido", usu.getApellido());
         cmd.setString("p_dni", usu.getDNI());
         cmd.setString("p_email", usu.getEmail());
-        cmd.setDate("p_fechanacimiento", usu.getFechaNacimiento());
+        cmd.setDate("p_fechanacimiento", new java.sql.Date(usu.getFechaNacimiento().getTime()));
         cmd.setInt("p_id", usu.getId());
         return cmd;
     }
@@ -81,7 +81,7 @@ public class UsuarioDAOImplement extends BaseDAOImplement<Usuario> implements Us
         usu.setApellido(rs.getString("Apellido"));
         usu.setDNI(rs.getString("DNI"));
         usu.setEmail(rs.getString("Email"));
-        usu.setFechaNacimiento(rs.getDate("FechaNacimiento"));
+        usu.setFechaNacimiento(rs.getDate("fechaNacimiento"));
 
 
         return usu;

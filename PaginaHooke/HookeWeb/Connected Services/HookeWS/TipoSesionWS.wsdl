@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.webhooke.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="TipoSesionWS" targetNamespace="http://services.webhooke.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WebHookeWS/TipoSesionWS?xsd=1" namespace="http://services.webhooke.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="eliminarTipoSesion">
+    <part name="parameters" element="tns:eliminarTipoSesion" />
+  </message>
+  <message name="eliminarTipoSesionResponse">
+    <part name="parameters" element="tns:eliminarTipoSesionResponse" />
+  </message>
+  <message name="guardarTipoSesion">
+    <part name="parameters" element="tns:guardarTipoSesion" />
+  </message>
+  <message name="guardarTipoSesionResponse">
+    <part name="parameters" element="tns:guardarTipoSesionResponse" />
+  </message>
+  <message name="obtenerTipoSesion">
+    <part name="parameters" element="tns:obtenerTipoSesion" />
+  </message>
+  <message name="obtenerTipoSesionResponse">
+    <part name="parameters" element="tns:obtenerTipoSesionResponse" />
+  </message>
+  <message name="listarTipoSesiones">
+    <part name="parameters" element="tns:listarTipoSesiones" />
+  </message>
+  <message name="listarTipoSesionesResponse">
+    <part name="parameters" element="tns:listarTipoSesionesResponse" />
+  </message>
+  <portType name="TipoSesionWS">
+    <operation name="eliminarTipoSesion">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/eliminarTipoSesionRequest" message="tns:eliminarTipoSesion" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/eliminarTipoSesionResponse" message="tns:eliminarTipoSesionResponse" />
+    </operation>
+    <operation name="guardarTipoSesion">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/guardarTipoSesionRequest" message="tns:guardarTipoSesion" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/guardarTipoSesionResponse" message="tns:guardarTipoSesionResponse" />
+    </operation>
+    <operation name="obtenerTipoSesion">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/obtenerTipoSesionRequest" message="tns:obtenerTipoSesion" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/obtenerTipoSesionResponse" message="tns:obtenerTipoSesionResponse" />
+    </operation>
+    <operation name="listarTipoSesiones">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/listarTipoSesionesRequest" message="tns:listarTipoSesiones" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/listarTipoSesionesResponse" message="tns:listarTipoSesionesResponse" />
+    </operation>
+  </portType>
+  <binding name="TipoSesionWSPortBinding" type="tns:TipoSesionWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="eliminarTipoSesion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="guardarTipoSesion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerTipoSesion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTipoSesiones">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="TipoSesionWS">
+    <port name="TipoSesionWSPort" binding="tns:TipoSesionWSPortBinding">
+      <soap:address location="http://localhost:8080/WebHookeWS/TipoSesionWS" />
+    </port>
+  </service>
+</definitions>

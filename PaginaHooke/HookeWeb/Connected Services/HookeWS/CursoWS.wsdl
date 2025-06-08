@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.webhooke.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="CursoWS" targetNamespace="http://services.webhooke.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WebHookeWS/CursoWS?xsd=1" namespace="http://services.webhooke.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="listarCursosPorNivel">
+    <part name="parameters" element="tns:listarCursosPorNivel" />
+  </message>
+  <message name="listarCursosPorNivelResponse">
+    <part name="parameters" element="tns:listarCursosPorNivelResponse" />
+  </message>
+  <message name="guardarCurso">
+    <part name="parameters" element="tns:guardarCurso" />
+  </message>
+  <message name="guardarCursoResponse">
+    <part name="parameters" element="tns:guardarCursoResponse" />
+  </message>
+  <message name="eliminarCurso">
+    <part name="parameters" element="tns:eliminarCurso" />
+  </message>
+  <message name="eliminarCursoResponse">
+    <part name="parameters" element="tns:eliminarCursoResponse" />
+  </message>
+  <message name="obtenerCurso">
+    <part name="parameters" element="tns:obtenerCurso" />
+  </message>
+  <message name="obtenerCursoResponse">
+    <part name="parameters" element="tns:obtenerCursoResponse" />
+  </message>
+  <message name="listarCursos">
+    <part name="parameters" element="tns:listarCursos" />
+  </message>
+  <message name="listarCursosResponse">
+    <part name="parameters" element="tns:listarCursosResponse" />
+  </message>
+  <portType name="CursoWS">
+    <operation name="listarCursosPorNivel">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosPorNivelRequest" message="tns:listarCursosPorNivel" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosPorNivelResponse" message="tns:listarCursosPorNivelResponse" />
+    </operation>
+    <operation name="guardarCurso">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/guardarCursoRequest" message="tns:guardarCurso" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/guardarCursoResponse" message="tns:guardarCursoResponse" />
+    </operation>
+    <operation name="eliminarCurso">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/eliminarCursoRequest" message="tns:eliminarCurso" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/eliminarCursoResponse" message="tns:eliminarCursoResponse" />
+    </operation>
+    <operation name="obtenerCurso">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/obtenerCursoRequest" message="tns:obtenerCurso" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/obtenerCursoResponse" message="tns:obtenerCursoResponse" />
+    </operation>
+    <operation name="listarCursos">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosRequest" message="tns:listarCursos" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosResponse" message="tns:listarCursosResponse" />
+    </operation>
+  </portType>
+  <binding name="CursoWSPortBinding" type="tns:CursoWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarCursosPorNivel">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="guardarCurso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarCurso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerCurso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarCursos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="CursoWS">
+    <port name="CursoWSPort" binding="tns:CursoWSPortBinding">
+      <soap:address location="http://localhost:8080/WebHookeWS/CursoWS" />
+    </port>
+  </service>
+</definitions>

@@ -6,7 +6,7 @@ package pe.edu.pucp.prog03.webhooke.boimpl;
 
 import java.util.List;
 import pe.edu.pucp.prog03.webhooke.bo.Estado;
-import pe.edu.pucp.prog03.webhooke.bo.IBaseBO;
+import pe.edu.pucp.prog03.webhooke.bo.ICursoBO;
 import pe.edu.pucp.prog03.webhooke.dao.programacioncursos.CursoDAO;
 import pe.edu.pucp.prog03.webhooke.daoimpl.programacioncursos.CursoDAOImplement;
 import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Profesor;
@@ -18,7 +18,7 @@ import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Curso;
  *
  * @author ASUS
  */
-public class CursoBOImpl implements IBaseBO<Curso>{
+public class CursoBOImpl implements ICursoBO{
     private CursoDAO cursoDAO;
     
     public CursoBOImpl(){
@@ -39,6 +39,11 @@ public class CursoBOImpl implements IBaseBO<Curso>{
     @Override
     public List<Curso> listar() {
         return this.cursoDAO.listar();
+    }
+    
+    @Override
+    public List<Curso> listarCursosPorNivel(int nivel) {
+        return this.cursoDAO.buscarCursoPorNivel(nivel);
     }
 
     @Override

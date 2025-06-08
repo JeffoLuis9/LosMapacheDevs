@@ -7,7 +7,7 @@ package pe.edu.pucp.prog03.webhooke.boimpl;
 import java.util.Date;
 import java.util.List;
 import pe.edu.pucp.prog03.webhooke.bo.Estado;
-import pe.edu.pucp.prog03.webhooke.bo.IBaseBO;
+import pe.edu.pucp.prog03.webhooke.bo.IAlumnoBO;
 import pe.edu.pucp.prog03.webhooke.dao.gestionusuarios.AlumnoDAO;
 import pe.edu.pucp.prog03.webhooke.daoimpl.gestionusuarios.AlumnoDAOImplement;
 import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Alumno;
@@ -16,7 +16,7 @@ import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Alumno;
  *
  * @author ASUS
  */
-public class AlumnoBOImpl implements IBaseBO<Alumno>{
+public class AlumnoBOImpl implements IAlumnoBO{
     private AlumnoDAO alumnoDAO;
     
     

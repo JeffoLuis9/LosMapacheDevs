@@ -9,9 +9,6 @@ package pe.edu.pucp.prog03.webhooke.modelo.gestionacademia;
  *
  * @author ASUS
  */
-import java.util.ArrayList;
-import java.util.List;
-
 
 public class Sede {
 

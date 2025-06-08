@@ -4,6 +4,7 @@
  */
 package pe.edu.pucp.prog03.webhooke.dao.gestionusuarios;
 
+import java.util.List;
 import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Profesor;
 import pe.edu.pucp.prog03.webhooke.dao.ICrud;
 /**
@@ -12,4 +13,6 @@ import pe.edu.pucp.prog03.webhooke.dao.ICrud;
  */
 public interface ProfesorDAO extends ICrud<Profesor>{
     
+    List<Profesor> buscarProfesorPorCurso(int idCurso);
 }
+

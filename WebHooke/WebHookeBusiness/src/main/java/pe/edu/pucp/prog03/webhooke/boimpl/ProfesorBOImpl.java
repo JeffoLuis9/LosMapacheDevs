@@ -7,7 +7,7 @@ package pe.edu.pucp.prog03.webhooke.boimpl;
 import java.sql.Date;
 import java.util.List;
 import pe.edu.pucp.prog03.webhooke.bo.Estado;
-import pe.edu.pucp.prog03.webhooke.bo.IBaseBO;
+import pe.edu.pucp.prog03.webhooke.bo.IProfesorBO;
 import pe.edu.pucp.prog03.webhooke.dao.gestionusuarios.ProfesorDAO;
 import pe.edu.pucp.prog03.webhooke.daoimpl.gestionusuarios.ProfesorDAOImplement;
 import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Profesor;
@@ -19,7 +19,7 @@ import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Profesor;
  *
  * @author ASUS
  */
-public class ProfesorBOImpl implements IBaseBO<Profesor>{
+public class ProfesorBOImpl implements IProfesorBO{
     private ProfesorDAO profesorDAO;
     
     public ProfesorBOImpl(){
@@ -56,6 +56,11 @@ public class ProfesorBOImpl implements IBaseBO<Profesor>{
         return this.profesorDAO.buscar(id);
     }
 
+    @Override
+    public List<Profesor> buscarProfesorPorCurso(int idCurso) {
+        return this.profesorDAO.buscarProfesorPorCurso(idCurso);
+    }
+    
     @Override
     public void eliminar(int id) {
         this.profesorDAO.eliminar(id);

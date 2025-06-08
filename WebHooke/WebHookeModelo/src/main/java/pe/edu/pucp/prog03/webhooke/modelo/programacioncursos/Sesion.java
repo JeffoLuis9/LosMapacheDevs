@@ -9,24 +9,32 @@ import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Alumno;
 import pe.edu.pucp.prog03.webhooke.modelo.modalidades.TipoSesion;
 
 import java.util.Date;
+import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Profesor;
 /**
  *
  * @author ASUS
  */
+
 public class Sesion {
+
+    /**
+     * @return the profesor
+     */
+    
     private int idHorario;
-    private int horaInicio;
-    private int horaFin;
     private Date fecha;
     private String modalidad;
     private Curso curso;
     private Alumno alumno;
+    private Profesor profesor;
     private TipoSesion tipoSesion;
     private Sede sede;
         
-    /**
-     * @return the idHorario
-     */
+    
+    public Sesion(){
+        
+    }
+    
     public int getIdHorario() {
         return idHorario;
     }
@@ -41,30 +49,6 @@ public class Sesion {
     /**
      * @return the horaInicio
      */
-    public int getHoraInicio() {
-        return horaInicio;
-    }
-
-    /**
-     * @param horaInicio the horaInicio to set
-     */
-    public void setHoraInicio(int horaInicio) {
-        this.horaInicio = horaInicio;
-    }
-
-    /**
-     * @return the horaFin
-     */
-    public int getHoraFin() {
-        return horaFin;
-    }
-
-    /**
-     * @param horaFin the horaFin to set
-     */
-    public void setHoraFin(int horaFin) {
-        this.horaFin = horaFin;
-    }
 
     /**
      * @return the fecha
@@ -149,5 +133,15 @@ public class Sesion {
     public void setSede(Sede sede) {
         this.sede = sede;
     }
+    
+    public Profesor getProfesor() {
+        return profesor;
+    }
 
+    /**
+     * @param profesor the profesor to set
+     */
+    public void setProfesor(Profesor profesor) {
+        this.profesor = profesor;
+    }
 }

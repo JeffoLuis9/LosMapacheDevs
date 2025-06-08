@@ -4,8 +4,6 @@
  */
 package pe.edu.pucp.prog03.webhooke.modelo.programacioncursos;
 
-import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Profesor;
-
 /**
  *
  * @author ASUS
@@ -17,25 +15,25 @@ import java.util.List;
 public class Curso{
 
 
+
+
     private int id;
     private String codigo;
     private String nombre;
     private int nivel;
-    private Profesor profesor;
+    private int horaInicio;
+    private int horaFin;
+    
     public Curso(){
 
     }
 
-    public Curso(String codigo,String nombre, int numeroCiclo,Profesor profesor){
+    public Curso(String codigo,String nombre, int numeroCiclo,int horaInicio, int horaFin){
             this.codigo=codigo;
             this.nombre=nombre;
             this.nivel=numeroCiclo;
-            this.profesor.setId(profesor.getId());
-            this.profesor.setDNI(profesor.getDNI());
-            this.profesor.setNombre(profesor.getNombre());
-            this.profesor.setApellido(profesor.getApellido());
-            this.profesor.setEmail(profesor.getEmail());
-            this.profesor.setFechaNacimiento(profesor.getFechaNacimiento());
+            this.horaFin=horaFin;
+            this.horaInicio=horaInicio;
     }
 	
     public String getCodigo() {
@@ -74,16 +72,30 @@ public class Curso{
             System.out.println(codigo+"			"+nombre+"				"+nivel);	
     }
     /**
-     * @return the profesor
+     * @return the horaInicio
      */
-    public Profesor getProfesor() {
-        return profesor;
+    public int getHoraInicio() {
+        return horaInicio;
     }
 
     /**
-     * @param profesor the profesor to set
+     * @param horaInicio the horaInicio to set
      */
-    public void setProfesor(Profesor profesor) {
-        this.profesor = profesor;
+    public void setHoraInicio(int horaInicio) {
+        this.horaInicio = horaInicio;
+    }
+
+    /**
+     * @return the horaFin
+     */
+    public int getHoraFin() {
+        return horaFin;
+    }
+
+    /**
+     * @param horaFin the horaFin to set
+     */
+    public void setHoraFin(int horaFin) {
+        this.horaFin = horaFin;
     }
 }

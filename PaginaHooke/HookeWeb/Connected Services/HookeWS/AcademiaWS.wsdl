@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://services.webhooke.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="AcademiaWS" targetNamespace="http://services.webhooke.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WebHookeWS/AcademiaWS?xsd=1" namespace="http://services.webhooke.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="guardarAcademia">
+    <part name="parameters" element="tns:guardarAcademia" />
+  </message>
+  <message name="guardarAcademiaResponse">
+    <part name="parameters" element="tns:guardarAcademiaResponse" />
+  </message>
+  <message name="obtenerAcademia">
+    <part name="parameters" element="tns:obtenerAcademia" />
+  </message>
+  <message name="obtenerAcademiaResponse">
+    <part name="parameters" element="tns:obtenerAcademiaResponse" />
+  </message>
+  <message name="eliminarAcademia">
+    <part name="parameters" element="tns:eliminarAcademia" />
+  </message>
+  <message name="eliminarAcademiaResponse">
+    <part name="parameters" element="tns:eliminarAcademiaResponse" />
+  </message>
+  <message name="listarAcademias">
+    <part name="parameters" element="tns:listarAcademias" />
+  </message>
+  <message name="listarAcademiasResponse">
+    <part name="parameters" element="tns:listarAcademiasResponse" />
+  </message>
+  <portType name="AcademiaWS">
+    <operation name="guardarAcademia">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/guardarAcademiaRequest" message="tns:guardarAcademia" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/guardarAcademiaResponse" message="tns:guardarAcademiaResponse" />
+    </operation>
+    <operation name="obtenerAcademia">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/obtenerAcademiaRequest" message="tns:obtenerAcademia" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/obtenerAcademiaResponse" message="tns:obtenerAcademiaResponse" />
+    </operation>
+    <operation name="eliminarAcademia">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/eliminarAcademiaRequest" message="tns:eliminarAcademia" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/eliminarAcademiaResponse" message="tns:eliminarAcademiaResponse" />
+    </operation>
+    <operation name="listarAcademias">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/listarAcademiasRequest" message="tns:listarAcademias" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/listarAcademiasResponse" message="tns:listarAcademiasResponse" />
+    </operation>
+  </portType>
+  <binding name="AcademiaWSPortBinding" type="tns:AcademiaWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="guardarAcademia">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerAcademia">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarAcademia">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarAcademias">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="AcademiaWS">
+    <port name="AcademiaWSPort" binding="tns:AcademiaWSPortBinding">
+      <soap:address location="http://localhost:8080/WebHookeWS/AcademiaWS" />
+    </port>
+  </service>
+</definitions>
