@@ -11,7 +11,7 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
 {
 
 
-    public partial class Home
+    public partial class Profesor
     {
     }
 }

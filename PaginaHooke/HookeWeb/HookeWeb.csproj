@@ -111,6 +111,8 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\HookeWS\CursoWS.wsdl" />
+    <Content Include="Administrador.aspx" />
+    <Content Include="Alumno.aspx" />
     <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.academia.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -248,11 +250,8 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\estilo.css" />
     <Content Include="favicon.ico" />
-    <Content Include="GestionarCurso.aspx" />
-    <Content Include="GestionarProfesores.aspx" />
-    <Content Include="Home.aspx" />
-    <Content Include="ListarProfesores.aspx" />
-    <Content Include="Matricula.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Profesor.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -331,12 +330,26 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
-    <Content Include="Site.Master" />
+    <Content Include="SiteAlumno.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrador.aspx.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador.aspx.designer.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alumno.aspx.cs">
+      <DependentUpon>Alumno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alumno.aspx.designer.cs">
+      <DependentUpon>Alumno.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Connected Services\HookeWS\Reference.cs">
@@ -344,48 +357,34 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="GestionarCurso.aspx.cs">
-      <DependentUpon>GestionarCurso.aspx</DependentUpon>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GestionarCurso.aspx.designer.cs">
-      <DependentUpon>GestionarCurso.aspx</DependentUpon>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GestionarProfesores.aspx.cs">
-      <DependentUpon>GestionarProfesores.aspx</DependentUpon>
+    <Compile Include="Profesor.aspx.cs">
+      <DependentUpon>Profesor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GestionarProfesores.aspx.designer.cs">
-      <DependentUpon>GestionarProfesores.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ListarProfesores.aspx.cs">
-      <DependentUpon>ListarProfesores.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ListarProfesores.aspx.designer.cs">
-      <DependentUpon>ListarProfesores.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Matricula.aspx.cs">
-      <DependentUpon>Matricula.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Matricula.aspx.designer.cs">
-      <DependentUpon>Matricula.aspx</DependentUpon>
+    <Compile Include="Profesor.aspx.designer.cs">
+      <DependentUpon>Profesor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Site.Master.cs">
-      <DependentUpon>Site.Master</DependentUpon>
+    <Compile Include="SiteAdministrador.Master.cs">
+      <DependentUpon>SiteAdministrador.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Site.Master.designer.cs">
-      <DependentUpon>Site.Master</DependentUpon>
+    <Compile Include="SiteAdministrador.Master.designer.cs">
+      <DependentUpon>SiteAdministrador.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteAlumno.Master.cs">
+      <DependentUpon>SiteAlumno.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteAlumno.Master.designer.cs">
+      <DependentUpon>SiteAlumno.Master</DependentUpon>
     </Compile>
     <Compile Include="Site.Mobile.Master.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
@@ -393,6 +392,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteProfesor.Master.cs">
+      <DependentUpon>SiteProfesor.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteProfesor.Master.designer.cs">
+      <DependentUpon>SiteProfesor.Master</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -410,6 +416,8 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.0.min.map" />
+    <Content Include="SiteProfesor.Master" />
+    <Content Include="SiteAdministrador.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

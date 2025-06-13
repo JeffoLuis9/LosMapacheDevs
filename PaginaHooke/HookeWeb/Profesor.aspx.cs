@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace HookeWeb
+namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
 {
-    public partial class SiteMaster : MasterPage
+    public partial class Profesor : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
