@@ -23,26 +23,28 @@ public class UsuarioDAOImplement extends BaseDAOImplement<Usuario> implements Us
 
     @Override
     protected CallableStatement comandoInsertar(Connection conn, Usuario usu) throws SQLException {
-        String sql = "{CALL insertarUsuario(?,?,?,?,?,?)}";
+        String sql = "{CALL insertarUsuario(?,?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
         cmd.setString("p_dni", usu.getDNI());
         cmd.setString("p_email", usu.getEmail());
         cmd.setDate("p_fechanacimiento", new java.sql.Date(usu.getFechaNacimiento().getTime()));
+        cmd.setString("p_tipoUsuario", String.valueOf(usu.getTipoUsuario()));
         cmd.registerOutParameter("p_id", Types.INTEGER);
         return cmd;
     }
 
     @Override
     protected CallableStatement comandoModificar(Connection conn, Usuario usu) throws SQLException {
-        String sql = "{CALL modificarUsuario(?,?,?,?,?,?)}";
+        String sql = "{CALL modificarUsuario(?,?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
         cmd.setString("p_dni", usu.getDNI());
         cmd.setString("p_email", usu.getEmail());
         cmd.setDate("p_fechanacimiento", new java.sql.Date(usu.getFechaNacimiento().getTime()));
+        cmd.setString("p_tipoUsuario", String.valueOf(usu.getTipoUsuario()));
         cmd.setInt("p_id", usu.getId());
         return cmd;
     }
@@ -82,8 +84,7 @@ public class UsuarioDAOImplement extends BaseDAOImplement<Usuario> implements Us
         usu.setDNI(rs.getString("DNI"));
         usu.setEmail(rs.getString("Email"));
         usu.setFechaNacimiento(rs.getDate("fechaNacimiento"));
-
-
+        usu.setTipoUsuario(rs.getString("tipoUsuario").charAt(0));
         return usu;
     }
 

@@ -19,7 +19,7 @@ public class Usuario {
     private String DNI;
     private String email;
     private Date fechaNacimiento;
-
+    private char tipoUsuario;
 
     
 
@@ -30,13 +30,13 @@ public class Usuario {
     }
 
     public Usuario(String nombre, String apellido, String DNI, String email,
-            Date fechaNacimiento) {
+            Date fechaNacimiento, char tipoUsuario) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.DNI = DNI;
         this.email = email;
         this.fechaNacimiento = fechaNacimiento;
-
+        this.tipoUsuario = tipoUsuario;
     }
     
     public int getId(){
@@ -91,5 +91,15 @@ public class Usuario {
         SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
         System.out.println(apellido + "," + nombre + "		" + DNI + "			" + email + "		" + format);
     }
+
+    public char getTipoUsuario() {
+        return tipoUsuario;
+    }
+
+    public void setTipoUsuario(char tipoUsuario) {
+        this.tipoUsuario = tipoUsuario;
+    }
+    
+    
 
 }
