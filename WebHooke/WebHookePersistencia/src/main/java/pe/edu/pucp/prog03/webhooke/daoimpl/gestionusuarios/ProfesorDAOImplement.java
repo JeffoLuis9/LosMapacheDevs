@@ -37,7 +37,7 @@ public class ProfesorDAOImplement extends BaseDAOImplement<Profesor> implements 
     
     @Override
     protected CallableStatement comandoInsertar(Connection conn, Profesor usu) throws SQLException {
-        String sql = "{CALL insertarProfesor(?,?,?,?,?,?,?,?)}";
+        String sql = "{CALL insertarProfesor(?,?,?,?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
@@ -46,13 +46,14 @@ public class ProfesorDAOImplement extends BaseDAOImplement<Profesor> implements 
         cmd.setDate("p_fechanacimiento", new java.sql.Date(usu.getFechaNacimiento().getTime()));
         cmd.setInt("p_curso", usu.getCurso().getId());
         cmd.setString("p_tipoUsuario", String.valueOf(usu.getTipoUsuario()));
+        cmd.setString("p_password", usu.getPassword());
         cmd.registerOutParameter("p_id", Types.INTEGER);
         return cmd;
     }
 
     @Override
     protected CallableStatement comandoModificar(Connection conn, Profesor usu) throws SQLException {
-        String sql = "{CALL modificarProfesor(?,?,?,?,?,?,?,?)}";
+        String sql = "{CALL modificarProfesor(?,?,?,?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
@@ -61,6 +62,7 @@ public class ProfesorDAOImplement extends BaseDAOImplement<Profesor> implements 
         cmd.setDate("p_fechanacimiento", new java.sql.Date(usu.getFechaNacimiento().getTime()));
         cmd.setInt("p_curso",usu.getCurso().getId());
         cmd.setInt("p_id", usu.getId());
+        cmd.setString("p_password", usu.getPassword());
         cmd.setString("p_tipoUsuario", String.valueOf(usu.getTipoUsuario()));
         return cmd;
     }
@@ -102,6 +104,7 @@ public class ProfesorDAOImplement extends BaseDAOImplement<Profesor> implements 
         usu.setFechaNacimiento(rs.getDate("fechaNacimiento"));
         usu.setCurso(new CursoDAOImplement().buscar(rs.getInt("idCurso")));
         usu.setTipoUsuario(rs.getString("tipoUsuario").charAt(0));
+        usu.setPassword(rs.getString("password"));
         return usu;
     }
     

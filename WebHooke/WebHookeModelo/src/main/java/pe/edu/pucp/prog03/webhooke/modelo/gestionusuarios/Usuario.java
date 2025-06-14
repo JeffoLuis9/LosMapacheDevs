@@ -20,7 +20,7 @@ public class Usuario {
     private String email;
     private Date fechaNacimiento;
     private char tipoUsuario;
-
+    private String password;
     
 
 //preguntar para ver sis agregamos el pssword como hash
@@ -30,13 +30,14 @@ public class Usuario {
     }
 
     public Usuario(String nombre, String apellido, String DNI, String email,
-            Date fechaNacimiento, char tipoUsuario) {
+            Date fechaNacimiento, char tipoUsuario, String password) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.DNI = DNI;
         this.email = email;
         this.fechaNacimiento = fechaNacimiento;
         this.tipoUsuario = tipoUsuario;
+        this.password = password;
     }
     
     public int getId(){
@@ -99,7 +100,13 @@ public class Usuario {
     public void setTipoUsuario(char tipoUsuario) {
         this.tipoUsuario = tipoUsuario;
     }
-    
-    
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
 }
