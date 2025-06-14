@@ -3,6 +3,29 @@
   "WorkspaceRootPath": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|d:\\universidad\\7m-8vo ciclo\\programaci\u00F3n 3\\git\\losmapachedevs\\paginahooke\\hookeweb\\registrar.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\registrar.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\hookeweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|HookeWeb||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|d:\\universidad\\7m-8vo ciclo\\programaci\u00F3n 3\\git\\losmapachedevs\\paginahooke\\hookeweb\\web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|d:\\universidad\\7m-8vo ciclo\\programaci\u00F3n 3\\git\\losmapachedevs\\paginahooke\\hookeweb\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|d:\\universidad\\7m-8vo ciclo\\programaci\u00F3n 3\\git\\losmapachedevs\\paginahooke\\hookeweb\\registrar.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\registrar.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|d:\\universidad\\7m-8vo ciclo\\programaci\u00F3n 3\\git\\losmapachedevs\\paginahooke\\hookeweb\\siteprofesor.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\siteprofesor.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
@@ -27,10 +50,6 @@
       "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\profesor.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|d:\\universidad\\7m-8vo ciclo\\programaci\u00F3n 3\\git\\losmapachedevs\\paginahooke\\hookeweb\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|d:\\universidad\\7m-8vo ciclo\\programaci\u00F3n 3\\git\\losmapachedevs\\paginahooke\\hookeweb\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
@@ -51,11 +70,7 @@
       "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\connected services\\hookews\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|HookeWeb||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\hookeweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|d:\\universidad\\7m-8vo ciclo\\programaci\u00F3n 3\\git\\losmapachedevs\\paginahooke\\hookeweb\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -65,24 +80,127 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Alumno.aspx",
-              "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Alumno.aspx",
-              "RelativeDocumentMoniker": "HookeWeb\\Alumno.aspx",
-              "ToolTip": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Alumno.aspx",
-              "RelativeToolTip": "HookeWeb\\Alumno.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-13T23:36:45.237Z",
+              "DocumentIndex": 14,
+              "Title": "SiteAlumno.Master.cs",
+              "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\SiteAlumno.Master.cs",
+              "RelativeDocumentMoniker": "HookeWeb\\SiteAlumno.Master.cs",
+              "ToolTip": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\SiteAlumno.Master.cs",
+              "RelativeToolTip": "HookeWeb\\SiteAlumno.Master.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T23:31:05.694Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "SiteAlumno.Master",
+              "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\SiteAlumno.Master",
+              "RelativeDocumentMoniker": "HookeWeb\\SiteAlumno.Master",
+              "ToolTip": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\SiteAlumno.Master",
+              "RelativeToolTip": "HookeWeb\\SiteAlumno.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-04T11:29:27.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SiteAdministrador.Master",
+              "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\SiteAdministrador.Master",
+              "RelativeDocumentMoniker": "HookeWeb\\SiteAdministrador.Master",
+              "ToolTip": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\SiteAdministrador.Master",
+              "RelativeToolTip": "HookeWeb\\SiteAdministrador.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-13T23:25:25.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.aspx.cs",
+              "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Login.aspx.cs",
+              "RelativeDocumentMoniker": "HookeWeb\\Login.aspx.cs",
+              "ToolTip": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Login.aspx.cs",
+              "RelativeToolTip": "HookeWeb\\Login.aspx.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T23:35:31.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HookeWeb",
+              "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\HookeWeb.csproj",
+              "RelativeDocumentMoniker": "HookeWeb\\HookeWeb.csproj",
+              "ToolTip": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\HookeWeb.csproj",
+              "RelativeToolTip": "HookeWeb\\HookeWeb.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-04T21:28:43.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Web.config",
+              "RelativeDocumentMoniker": "HookeWeb\\Web.config",
+              "ToolTip": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Web.config",
+              "RelativeToolTip": "HookeWeb\\Web.config",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-06-04T11:10:49.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Registrar.aspx.cs",
+              "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Registrar.aspx.cs",
+              "RelativeDocumentMoniker": "HookeWeb\\Registrar.aspx.cs",
+              "ToolTip": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Registrar.aspx.cs",
+              "RelativeToolTip": "HookeWeb\\Registrar.aspx.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T02:29:29.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Registrar.aspx",
+              "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Registrar.aspx",
+              "RelativeDocumentMoniker": "HookeWeb\\Registrar.aspx",
+              "ToolTip": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Registrar.aspx",
+              "RelativeToolTip": "HookeWeb\\Registrar.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-14T02:27:57.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Web.Debug.config",
+              "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Web.Debug.config",
+              "RelativeDocumentMoniker": "HookeWeb\\Web.Debug.config",
+              "ToolTip": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Web.Debug.config",
+              "RelativeToolTip": "HookeWeb\\Web.Debug.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-06-14T02:31:59.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "SiteProfesor.Master.cs",
               "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\SiteProfesor.Master.cs",
               "RelativeDocumentMoniker": "HookeWeb\\SiteProfesor.Master.cs",
@@ -96,45 +214,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "SiteAlumno.Master.cs",
-              "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\SiteAlumno.Master.cs",
-              "RelativeDocumentMoniker": "HookeWeb\\SiteAlumno.Master.cs",
-              "ToolTip": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\SiteAlumno.Master.cs",
-              "RelativeToolTip": "HookeWeb\\SiteAlumno.Master.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBoAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T23:31:05.694Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SiteAlumno.Master",
-              "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\SiteAlumno.Master",
-              "RelativeDocumentMoniker": "HookeWeb\\SiteAlumno.Master",
-              "ToolTip": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\SiteAlumno.Master",
-              "RelativeToolTip": "HookeWeb\\SiteAlumno.Master",
+              "Title": "Alumno.aspx",
+              "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Alumno.aspx",
+              "RelativeDocumentMoniker": "HookeWeb\\Alumno.aspx",
+              "ToolTip": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Alumno.aspx",
+              "RelativeToolTip": "HookeWeb\\Alumno.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-04T11:29:27.959Z",
+              "WhenOpened": "2025-06-13T23:36:45.237Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SiteAdministrador.Master",
-              "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\SiteAdministrador.Master",
-              "RelativeDocumentMoniker": "HookeWeb\\SiteAdministrador.Master",
-              "ToolTip": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\SiteAdministrador.Master",
-              "RelativeToolTip": "HookeWeb\\SiteAdministrador.Master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-13T23:25:25.116Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "SiteProfesor.Master",
               "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\SiteProfesor.Master",
               "RelativeDocumentMoniker": "HookeWeb\\SiteProfesor.Master",
@@ -147,20 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.aspx.cs",
-              "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Login.aspx.cs",
-              "RelativeDocumentMoniker": "HookeWeb\\Login.aspx.cs",
-              "ToolTip": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Login.aspx.cs",
-              "RelativeToolTip": "HookeWeb\\Login.aspx.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T23:35:31.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "Administrador.aspx",
               "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Administrador.aspx",
               "RelativeDocumentMoniker": "HookeWeb\\Administrador.aspx",
@@ -173,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Profesor.aspx",
               "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Profesor.aspx",
               "RelativeDocumentMoniker": "HookeWeb\\Profesor.aspx",
@@ -186,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Login.aspx",
               "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Login.aspx",
               "RelativeDocumentMoniker": "HookeWeb\\Login.aspx",
@@ -199,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "SiteAdministrador.Master.cs",
               "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\SiteAdministrador.Master.cs",
               "RelativeDocumentMoniker": "HookeWeb\\SiteAdministrador.Master.cs",
@@ -212,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "Reference.cs",
               "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Connected Services\\HookeWS\\Reference.cs",
               "RelativeDocumentMoniker": "HookeWeb\\Connected Services\\HookeWS\\Reference.cs",
@@ -221,30 +300,6 @@
               "ViewState": "AgIAAEQBAAAAAAAAAAAnwKQBAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-07T05:32:19.893Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "HookeWeb",
-              "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\HookeWeb.csproj",
-              "RelativeDocumentMoniker": "HookeWeb\\HookeWeb.csproj",
-              "ToolTip": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\HookeWeb.csproj",
-              "RelativeToolTip": "HookeWeb\\HookeWeb.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-04T21:28:43.55Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Web.config",
-              "DocumentMoniker": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Web.config",
-              "RelativeDocumentMoniker": "HookeWeb\\Web.config",
-              "ToolTip": "D:\\Universidad\\7m-8vo Ciclo\\Programaci\u00F3n 3\\GIT\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Web.config",
-              "RelativeToolTip": "HookeWeb\\Web.config",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAFAAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-06-04T11:10:49.213Z",
               "EditorCaption": ""
             }
           ]

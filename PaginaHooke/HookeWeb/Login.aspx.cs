@@ -41,7 +41,7 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
 
         protected void btnRegister_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("Registrar.aspx");
         }
     }
 }
