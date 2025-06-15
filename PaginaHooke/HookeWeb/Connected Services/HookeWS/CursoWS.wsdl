@@ -5,11 +5,17 @@
       <xsd:import schemaLocation="http://localhost:8080/WebHookeWS/CursoWS?xsd=1" namespace="http://services.webhooke.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="listarCursosPorNivel">
-    <part name="parameters" element="tns:listarCursosPorNivel" />
+  <message name="listarCursos">
+    <part name="parameters" element="tns:listarCursos" />
   </message>
-  <message name="listarCursosPorNivelResponse">
-    <part name="parameters" element="tns:listarCursosPorNivelResponse" />
+  <message name="listarCursosResponse">
+    <part name="parameters" element="tns:listarCursosResponse" />
+  </message>
+  <message name="obtenerCurso">
+    <part name="parameters" element="tns:obtenerCurso" />
+  </message>
+  <message name="obtenerCursoResponse">
+    <part name="parameters" element="tns:obtenerCursoResponse" />
   </message>
   <message name="guardarCurso">
     <part name="parameters" element="tns:guardarCurso" />
@@ -23,22 +29,20 @@
   <message name="eliminarCursoResponse">
     <part name="parameters" element="tns:eliminarCursoResponse" />
   </message>
-  <message name="obtenerCurso">
-    <part name="parameters" element="tns:obtenerCurso" />
+  <message name="listarCursosPorNivel">
+    <part name="parameters" element="tns:listarCursosPorNivel" />
   </message>
-  <message name="obtenerCursoResponse">
-    <part name="parameters" element="tns:obtenerCursoResponse" />
-  </message>
-  <message name="listarCursos">
-    <part name="parameters" element="tns:listarCursos" />
-  </message>
-  <message name="listarCursosResponse">
-    <part name="parameters" element="tns:listarCursosResponse" />
+  <message name="listarCursosPorNivelResponse">
+    <part name="parameters" element="tns:listarCursosPorNivelResponse" />
   </message>
   <portType name="CursoWS">
-    <operation name="listarCursosPorNivel">
-      <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosPorNivelRequest" message="tns:listarCursosPorNivel" />
-      <output wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosPorNivelResponse" message="tns:listarCursosPorNivelResponse" />
+    <operation name="listarCursos">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosRequest" message="tns:listarCursos" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosResponse" message="tns:listarCursosResponse" />
+    </operation>
+    <operation name="obtenerCurso">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/obtenerCursoRequest" message="tns:obtenerCurso" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/obtenerCursoResponse" message="tns:obtenerCursoResponse" />
     </operation>
     <operation name="guardarCurso">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/guardarCursoRequest" message="tns:guardarCurso" />
@@ -48,18 +52,23 @@
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/eliminarCursoRequest" message="tns:eliminarCurso" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/eliminarCursoResponse" message="tns:eliminarCursoResponse" />
     </operation>
-    <operation name="obtenerCurso">
-      <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/obtenerCursoRequest" message="tns:obtenerCurso" />
-      <output wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/obtenerCursoResponse" message="tns:obtenerCursoResponse" />
-    </operation>
-    <operation name="listarCursos">
-      <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosRequest" message="tns:listarCursos" />
-      <output wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosResponse" message="tns:listarCursosResponse" />
+    <operation name="listarCursosPorNivel">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosPorNivelRequest" message="tns:listarCursosPorNivel" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosPorNivelResponse" message="tns:listarCursosPorNivelResponse" />
     </operation>
   </portType>
   <binding name="CursoWSPortBinding" type="tns:CursoWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="listarCursosPorNivel">
+    <operation name="listarCursos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerCurso">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -86,16 +95,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="obtenerCurso">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarCursos">
+    <operation name="listarCursosPorNivel">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

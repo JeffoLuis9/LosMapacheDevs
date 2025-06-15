@@ -156,6 +156,9 @@
     <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSedeResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarTipoSesionResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -217,9 +220,6 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.tipoSesion.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Connected Services\HookeWS\SedeWS.wsdl" />

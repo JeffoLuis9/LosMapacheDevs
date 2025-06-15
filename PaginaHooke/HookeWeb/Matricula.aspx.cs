@@ -10,6 +10,7 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
     public partial class Matricula : System.Web.UI.Page
     {
         private sesion sesion;
+
         private TipoSesionWSClient tipoSesionWS;
         private SedeWSClient sedeWS;
         private ProfesorWSClient profesorWS;
@@ -91,14 +92,14 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
             estado estado;
             estado = estado.Nuevo;
             sesion = new sesion();
-            sesion.fecha = DateTime.Parse("2025-04-06").Date;
+            sesion.fecha = DateTime.Parse("2025-04-06");
+            sesion.fechaSpecified = true;
             sesion.modalidad = TxtModalidad.Text;
             sesion.curso = cursoWS2.obtenerCurso(1);
             sesion.alumno = alumnoWS.obtenerAlumno(1);
             sesion.tipoSesion = tipoSesionWS2.obtenerTipoSesion(1);
             sesion.profesor = profesorWS2.obtenerProfesor(1);
             sesion.sede = sedeWS2.obtenerSede(1);
-
             sesion sesionPrueba = new sesion();
             sesionPrueba = sesionWS.obtenerSesion(2);
             if (sesion.alumno.fechaNacimiento == null || sesion.profesor.fechaNacimiento == null)

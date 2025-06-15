@@ -5,11 +5,11 @@
       <xsd:import schemaLocation="http://localhost:8080/WebHookeWS/AcademiaWS?xsd=1" namespace="http://services.webhooke.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="guardarAcademia">
-    <part name="parameters" element="tns:guardarAcademia" />
+  <message name="listarAcademias">
+    <part name="parameters" element="tns:listarAcademias" />
   </message>
-  <message name="guardarAcademiaResponse">
-    <part name="parameters" element="tns:guardarAcademiaResponse" />
+  <message name="listarAcademiasResponse">
+    <part name="parameters" element="tns:listarAcademiasResponse" />
   </message>
   <message name="obtenerAcademia">
     <part name="parameters" element="tns:obtenerAcademia" />
@@ -23,16 +23,16 @@
   <message name="eliminarAcademiaResponse">
     <part name="parameters" element="tns:eliminarAcademiaResponse" />
   </message>
-  <message name="listarAcademias">
-    <part name="parameters" element="tns:listarAcademias" />
+  <message name="guardarAcademia">
+    <part name="parameters" element="tns:guardarAcademia" />
   </message>
-  <message name="listarAcademiasResponse">
-    <part name="parameters" element="tns:listarAcademiasResponse" />
+  <message name="guardarAcademiaResponse">
+    <part name="parameters" element="tns:guardarAcademiaResponse" />
   </message>
   <portType name="AcademiaWS">
-    <operation name="guardarAcademia">
-      <input wsam:Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/guardarAcademiaRequest" message="tns:guardarAcademia" />
-      <output wsam:Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/guardarAcademiaResponse" message="tns:guardarAcademiaResponse" />
+    <operation name="listarAcademias">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/listarAcademiasRequest" message="tns:listarAcademias" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/listarAcademiasResponse" message="tns:listarAcademiasResponse" />
     </operation>
     <operation name="obtenerAcademia">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/obtenerAcademiaRequest" message="tns:obtenerAcademia" />
@@ -42,14 +42,14 @@
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/eliminarAcademiaRequest" message="tns:eliminarAcademia" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/eliminarAcademiaResponse" message="tns:eliminarAcademiaResponse" />
     </operation>
-    <operation name="listarAcademias">
-      <input wsam:Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/listarAcademiasRequest" message="tns:listarAcademias" />
-      <output wsam:Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/listarAcademiasResponse" message="tns:listarAcademiasResponse" />
+    <operation name="guardarAcademia">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/guardarAcademiaRequest" message="tns:guardarAcademia" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/guardarAcademiaResponse" message="tns:guardarAcademiaResponse" />
     </operation>
   </portType>
   <binding name="AcademiaWSPortBinding" type="tns:AcademiaWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="guardarAcademia">
+    <operation name="listarAcademias">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -76,7 +76,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarAcademias">
+    <operation name="guardarAcademia">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
