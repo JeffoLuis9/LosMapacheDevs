@@ -1,22 +1,27 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteAdministrador.Master" AutoEventWireup="true" CodeBehind="ListarProfesor.aspx.cs" Inherits="PUCP.Edu.Pe.Prog03HookeWeb.Web.ListarProfesor" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteAdministrador.Master" AutoEventWireup="true" CodeBehind="ListarCursos.aspx.cs" Inherits="PUCP.Edu.Pe.Prog03HookeWeb.Web.ListarCursos" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-    Mostrar Profesores
+    Mostrar curso
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <style>
-        /* Estilos para el contenedor principal (mantener como está) */
-        .list-profesor-container {
+        /* Estilos generales para el contenedor */
+        .list-container { /* Un nombre más genérico que 'list-profesor-container' */
             background-color: #1a1a1a;
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             width: 100%;
-            max-width: 900px;
-            margin: 20px auto;
+            max-width: 900px; /* Ajusta según el ancho deseado para tu grilla */
             box-sizing: border-box;
+            margin: 20px auto;
+            text-align: center;
         }
-
-        /* Estilos para el encabezado con Flexbox (mantener como está) */
+        .list-container h2 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 28px;
+            float: left; /* Flota el título a la izquierda */
+        }
         .header-section {
             display: flex;
             justify-content: space-between;
@@ -30,9 +35,9 @@
             margin: 0;
             padding: 0;
         }
-
+        /* Estilo para el botón de registro, flotado a la derecha */
         .btn-add-new {
-            background-color: #28a745;
+            background-color: #28a745; /* Verde */
             color: white;
             padding: 10px 20px;
             border: none;
@@ -42,14 +47,20 @@
             font-weight: bold;
             text-decoration: none;
             display: inline-block;
+            margin-bottom: 20px;
             transition: background-color 0.3s;
-            margin: 0;
+            float: right; /* ¡Flota a la derecha! */
         }
         .btn-add-new:hover {
             background-color: #218838;
         }
 
-        /* INICIO DE MODIFICACIONES CLAVE PARA LA GRILLA */
+        /* Clearfix para limpiar el float */
+        .list-container::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
 
         /* Estilos del GridView */
         .gvStyle { /* Un nombre de clase genérico para el GridView */
@@ -112,30 +123,29 @@
         }
     </style>
 
-    <div class="list-profesor-container">
+    <div class="list-container">
         <div class="header-section">
-            <h2>Lista de Profesores</h2>
+            <h2>Lista de Cursos</h2>
             <asp:LinkButton ID="btnRegistrarNuevo" runat="server" Text="Registrar" 
                 CssClass="btn-add-new" OnClick="btnRegistrarNuevo_Click" />
         </div>
-        
-        <asp:GridView ID="gvProfesores" runat="server" AutoGenerateColumns="False" 
-            DataKeyNames="idUsuario" CssClass="gvStyle"
-            OnRowDeleting="gvProfesores_RowDeleting" OnRowCommand="gvProfesores_RowCommand"
-            EmptyDataText="No hay profesores registrados aún.">
+     
+        <asp:GridView ID="gvCursos" runat="server" AutoGenerateColumns="False" 
+            DataKeyNames="idCurso" CssClass="gvStyle"
+            OnRowDeleting="gvCursos_RowDeleting" OnRowCommand="gvCursos_RowCommand"
+            EmptyDataText="No hay cursos registrados aún.">
             <Columns>
-                <asp:BoundField DataField="NombreCompleto" HeaderText="Nombre del Profesor" ItemStyle-HorizontalAlign="Left" HeaderStyle-HorizontalAlign="Left" />
-                <asp:BoundField DataField="NombreCurso" HeaderText="Curso Asignado" ItemStyle-HorizontalAlign="Left" HeaderStyle-HorizontalAlign="Left" />
-                
-                <asp:TemplateField HeaderText="Acciones">
+                <asp:BoundField DataField="Codigo" HeaderText="Código" ItemStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center" />
+                <asp:BoundField DataField="Nombre" HeaderText="Nombre del Curso" ItemStyle-HorizontalAlign="Left" HeaderStyle-HorizontalAlign="Left" />
+
+                <asp:TemplateField HeaderText="Acciones" ItemStyle-CssClass="gv-action-buttons">
                     <ItemTemplate>
-                        <asp:LinkButton ID="lnkModificar" runat="server" CommandName="ModificarProfesor" 
-                            CommandArgument='<%# Eval("idUsuario") %>' CssClass="btn-modificar">Modificar</asp:LinkButton>
-                        <asp:LinkButton ID="lnkEliminar" runat="server" CommandName="EliminarProfesor" 
-                            CommandArgument='<%# Eval("idUsuario") %>' CssClass="btn-eliminar"
-                            OnClientClick='return confirm("¿Estás seguro de que quieres eliminar a este profesor?");'>Eliminar</asp:LinkButton>
+                        <asp:LinkButton ID="lnkModificar" runat="server" CommandName="ModificarCurso" 
+                            CommandArgument='<%# Eval("idCurso") %>' CssClass="btn-modificar">Modificar</asp:LinkButton>
+                        <asp:LinkButton ID="lnkEliminar" runat="server" CommandName="EliminarCurso" 
+                            CommandArgument='<%# Eval("idCurso") %>' CssClass="btn-eliminar"
+                            OnClientClick='return confirm("¿Estás seguro de que quieres eliminar este curso?");'>Eliminar</asp:LinkButton>
                     </ItemTemplate>
-                    <ItemStyle CssClass="gv-action-buttons" />
                 </asp:TemplateField>
             </Columns>
             <EmptyDataRowStyle CssClass="empty-grid-message" />

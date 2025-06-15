@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteAdministrador.Master" AutoEventWireup="true" CodeBehind="RegistrarProfesor.aspx.cs" Inherits="PUCP.Edu.Pe.Prog03HookeWeb.Web.RegistrarProfesor" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-    Registar Profesor
+    <asp:Literal ID="litPageTitle" runat="server">Registrar Profesor</asp:Literal> 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <style>
@@ -88,7 +88,7 @@
     </style>
 
     <div class="register-profesor-container">
-        <h2>Registrar Nuevo Profesor</h2>
+        <h2 id="formTitle" runat="server">Registrar Nuevo Profesor</h2>
 
         <div class="form-group">
             <label for="txtNombre">Nombre:</label>
@@ -152,6 +152,6 @@
         </div>
 
         <asp:Button ID="btnRegistrar" runat="server" Text="Registrar Profesor" CssClass="btn-register" OnClick="btnRegistrar_Click" />
-
+        <asp:HiddenField ID="hdnProfesorId" runat="server" Value="0" /> 
     </div>
 </asp:Content>

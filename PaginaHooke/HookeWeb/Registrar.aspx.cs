@@ -11,7 +11,7 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+          
         }
 
         protected void btnRegistrar_Click(object sender, EventArgs e)

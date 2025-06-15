@@ -1,5 +1,7 @@
-﻿using System;
+﻿using PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,6 +13,23 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                DataTable dt = new DataTable();
+                dt.Columns.Add("idUsuario", typeof(int));
+                dt.Columns.Add("NombreCompleto", typeof(string));
+                dt.Columns.Add("NombreCurso", typeof(string));
+
+                // Agregando registros de ejemplo
+                dt.Rows.Add(1, "Juan Pérez", "Matemáticas I");
+                dt.Rows.Add(2, "María García", "Física II");
+                dt.Rows.Add(3, "Carlos López", "Química General");
+                dt.Rows.Add(4, "Ana Fernández", "Literatura Peruana");
+                dt.Rows.Add(5, "Pedro Martínez", "Historia Universal");
+                gvProfesores.DataSource = dt;
+                gvProfesores.DataBind();
+            }
+            
             //Listar Profesores;
         }
 
@@ -34,6 +53,11 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
         protected void gvProfesores_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             //Listar Profesores;
+        }
+
+        protected void btnRegistrarNuevo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("RegistrarProfesor.aspx");
         }
     }
 }
