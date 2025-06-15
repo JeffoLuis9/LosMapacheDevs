@@ -250,9 +250,11 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\estilo.css" />
     <Content Include="favicon.ico" />
+    <Content Include="ListarProfesor.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Profesor.aspx" />
     <Content Include="Registrar.aspx" />
+    <Content Include="RegistrarProfesor.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -358,6 +360,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="ListarProfesor.aspx.cs">
+      <DependentUpon>ListarProfesor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListarProfesor.aspx.designer.cs">
+      <DependentUpon>ListarProfesor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -379,6 +388,13 @@
     </Compile>
     <Compile Include="Registrar.aspx.designer.cs">
       <DependentUpon>Registrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarProfesor.aspx.cs">
+      <DependentUpon>RegistrarProfesor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarProfesor.aspx.designer.cs">
+      <DependentUpon>RegistrarProfesor.aspx</DependentUpon>
     </Compile>
     <Compile Include="SiteAdministrador.Master.cs">
       <DependentUpon>SiteAdministrador.Master</DependentUpon>

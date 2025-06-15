@@ -131,13 +131,13 @@
             </div>
 
             <div class="form-group">
-                <label for="txtFechaNacimiento">Fecha de Nacimiento:</label>
+                <label for="txtFechaNacimiento">Fecha de Nacimiento (Opcional):</label>
                 <asp:TextBox ID="txtFechaNacimiento" runat="server" CssClass="form-control" TextMode="Date"></asp:TextBox>
             </div>
 
             <div class="form-group">
                 <label for="txtCarrera">Carrera:</label>
-                <asp:TextBox ID="txtCarrera" runat="server" CssClass="form-control" Placeholder="Ingresa tu carrera"></asp:TextBox>
+                <asp:TextBox ID="txtCarrera" runat="server" CssClass="form-control" Placeholder="Ingresa tu carrera (Opcional):"></asp:TextBox>
                 </div>
 
             <div class="form-group">

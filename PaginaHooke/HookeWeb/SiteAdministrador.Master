@@ -155,7 +155,8 @@
             <div class="sidebar">
                 <ul>
                     <li><a href="Administrador.aspx"><i class="fa-solid fa-house me-2"></i> Inicio</a></li>
-                    <li><a href="Login.aspx">Volver Administrador</a></li>
+                    <li><a href="RegistrarProfesor.aspx">Ingresar Profesor</a></li>
+                    <li><a href="ListarProfesor.aspx">Mostrar Profesores</a></li>
                 </ul>
             </div>
             <div class="page-content">
