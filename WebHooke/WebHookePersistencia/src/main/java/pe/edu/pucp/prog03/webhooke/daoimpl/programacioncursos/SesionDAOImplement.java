@@ -26,7 +26,7 @@ import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Sesion;
 public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements SesionDAO{
     @Override
     protected CallableStatement comandoInsertar(Connection conn, Sesion sesion) throws SQLException {
-        String sql = "{CALL insertarSesion(?,?,?,?,?,?,?,?)}";
+        String sql = "{CALL insertarSesion(?,?,?,?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         
         //cmd.setDate("p_fechanacimiento", java.sql.Date.valueOf(usu.getFechaNacimiento()));
@@ -37,6 +37,13 @@ public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements Sesi
         cmd.setInt("p_idTipoSesion", sesion.getTipoSesion().getIdModalidad());
         cmd.setInt("p_idProfesor", sesion.getProfesor().getId());
         cmd.setInt("p_idSede", sesion.getSede().getId());
+        
+        if (sesion.getVoucher() != null && sesion.getVoucher().getId()>0) {
+            cmd.setInt("p_idVoucher", sesion.getVoucher().getId()); // p_idVoucher
+        } else {
+            cmd.setNull("p_idVoucher", java.sql.Types.INTEGER);     // p_idVoucher = NULL
+        }
+        
         cmd.registerOutParameter("p_id", Types.INTEGER);
         return cmd;
     }
@@ -44,7 +51,7 @@ public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements Sesi
 
     @Override
     protected CallableStatement comandoModificar(Connection conn, Sesion sesion) throws SQLException {
-        String sql = "{CALL modificarSesion(?,?,?,?,?,?,?,?)}";
+        String sql = "{CALL modificarSesion(?,?,?,?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         
         cmd.setDate("p_fecha",new java.sql.Date(sesion.getFecha().getTime()));
@@ -54,6 +61,11 @@ public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements Sesi
         cmd.setInt("p_idTipoSesion", sesion.getTipoSesion().getIdModalidad());
         cmd.setInt("p_idProfesor", sesion.getProfesor().getId());
         cmd.setInt("p_idSede", sesion.getSede().getId());
+        if (sesion.getVoucher() != null && sesion.getVoucher().getId()>0) {
+            cmd.setInt("p_idVoucher", sesion.getVoucher().getId()); // p_idVoucher
+        } else {
+            cmd.setNull("p_idVoucher", java.sql.Types.INTEGER);     // p_idVoucher = NULL
+        }
         cmd.setInt("p_id", sesion.getIdHorario());
         return cmd;
     }
@@ -96,6 +108,13 @@ public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements Sesi
         sesion.setProfesor(new ProfesorDAOImplement().buscar(rs.getInt("idProfesor")));
         
         sesion.setSede(new SedeDAOImplement().buscar(rs.getInt("idSede")));
+        
+        
+        int idVoucher = rs.getInt("idVoucher");
+        if(idVoucher >0)
+            sesion.setVoucher(new VoucherDAOImplement().buscar(rs.getInt("idVoucher")));
+        else
+            sesion.setVoucher(null);
         
         return sesion;
     }    

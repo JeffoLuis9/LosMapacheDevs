@@ -62,6 +62,7 @@ CREATE TABLE Sesion (
     idSesion INT AUTO_INCREMENT PRIMARY KEY,
     fecha DATE,
     Modalidad VARCHAR(30),
+    estado boolean default false,
     idCurso INT,
     idAlumno INT,
     idTipoSesion INT,

@@ -15,21 +15,17 @@ import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Profesor;
  * @author ASUS
  */
 
-public class Sesion {
-
-    /**
-     * @return the profesor
-     */
-    
+public class Sesion { 
     private int idHorario;
     private Date fecha;
     private String modalidad;
+    private boolean estado;
     private Curso curso;
     private Alumno alumno;
     private Profesor profesor;
     private TipoSesion tipoSesion;
     private Sede sede;
-        
+    private Voucher voucher;
     
     public Sesion(){
         
@@ -144,4 +140,33 @@ public class Sesion {
     public void setProfesor(Profesor profesor) {
         this.profesor = profesor;
     }
+    
+     /**
+     * @return the voucher
+     */
+    public Voucher getVoucher() {
+        return voucher;
+    }
+
+    /**
+     * @param voucher the voucher to set
+     */
+    public void setVoucher(Voucher voucher) {
+        this.voucher = voucher;
+    }
+    
+     /**
+     * @return the estado
+     */
+    public boolean isEstado() {
+        return estado;
+    }
+
+    /**
+     * @param estado the estado to set
+     */
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
+
 }

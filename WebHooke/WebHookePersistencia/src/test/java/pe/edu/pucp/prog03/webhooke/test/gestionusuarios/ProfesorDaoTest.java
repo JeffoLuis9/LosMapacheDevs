@@ -39,6 +39,7 @@
 //    
 //    private int testId;
 //    private final int idIncorrecto = 99999;
+//    private int idCurso =1;
 //
 //    @Test
 //    @Order(1)
@@ -46,7 +47,7 @@
 //    public void debeInsertar() {
 //        
 //        CursoDAO cursoDao = new CursoDAOImplement();
-//        Curso curso = cursoDao.buscar(1);
+//        Curso curso = cursoDao.buscar(idCurso);
 //        
 //        ProfesorDAO profesorDao = new ProfesorDAOImplement();
 //        Profesor profesor = new Profesor();
@@ -60,7 +61,7 @@
 //            Logger.getLogger(ProfesorDaoTest.class.getName()).log(Level.SEVERE, null, ex);
 //        }
 //        profesor.setCurso(curso);
-//        
+//        profesor.setPassword("pass1234");
 //        this.testId=profesorDao.insertar(profesor);
 //        
 //        assertTrue(this.testId>0);
@@ -72,7 +73,7 @@
 //    public void debeModificarSiIdExiste() {
 //        
 //        CursoDAO cursoDao = new CursoDAOImplement();
-//        Curso curso = cursoDao.buscar(2);
+//        Curso curso = cursoDao.buscar(idCurso);
 //        
 //        ProfesorDAO profesorDao = new ProfesorDAOImplement();
 //        Profesor profesor = new Profesor();
@@ -87,7 +88,7 @@
 //            Logger.getLogger(ProfesorDaoTest.class.getName()).log(Level.SEVERE, null, ex);
 //        }
 //        profesor.setCurso(curso);
-//        
+//        profesor.setPassword("pass1111");
 //        boolean modificado = profesorDao.modificar(profesor);
 //        
 //        assertTrue(modificado);
@@ -100,6 +101,7 @@
 //        assertEquals(profesorModificado.getApellido(),"Profesor Apellido 2" );
 //        assertEquals(profesorModificado.getEmail(),"profesor2@prueba.test" );
 //        assertEquals(profesorModificado.getCurso().getId(), curso.getId());
+//        assertEquals(profesorModificado.getPassword(), "pass1111");
 //    }
 //
 //    @Test
@@ -108,7 +110,7 @@
 //    public void noDebeModificarSiIdNoExiste() {
 //        
 //        CursoDAO cursoDao = new CursoDAOImplement();
-//        Curso curso = cursoDao.buscar(1);
+//        Curso curso = cursoDao.buscar(idCurso);
 //        
 //        ProfesorDAO profesorDao = new ProfesorDAOImplement();
 //        Profesor profesor = new Profesor();
@@ -122,6 +124,7 @@
 //        } catch (ParseException ex) {
 //            Logger.getLogger(ProfesorDaoTest.class.getName()).log(Level.SEVERE, null, ex);
 //        }
+//        profesor.setPassword("pass123456789");
 //        profesor.setCurso(curso);
 //        
 //        boolean modificado = profesorDao.modificar(profesor);
