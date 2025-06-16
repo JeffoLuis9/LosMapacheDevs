@@ -5,23 +5,17 @@
       <xsd:import schemaLocation="http://localhost:8080/WebHookeWS/TipoSesionWS?xsd=1" namespace="http://services.webhooke.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="listarTipoSesiones">
-    <part name="parameters" element="tns:listarTipoSesiones" />
-  </message>
-  <message name="listarTipoSesionesResponse">
-    <part name="parameters" element="tns:listarTipoSesionesResponse" />
-  </message>
   <message name="obtenerTipoSesion">
     <part name="parameters" element="tns:obtenerTipoSesion" />
   </message>
   <message name="obtenerTipoSesionResponse">
     <part name="parameters" element="tns:obtenerTipoSesionResponse" />
   </message>
-  <message name="eliminarTipoSesion">
-    <part name="parameters" element="tns:eliminarTipoSesion" />
+  <message name="listarTipoSesiones">
+    <part name="parameters" element="tns:listarTipoSesiones" />
   </message>
-  <message name="eliminarTipoSesionResponse">
-    <part name="parameters" element="tns:eliminarTipoSesionResponse" />
+  <message name="listarTipoSesionesResponse">
+    <part name="parameters" element="tns:listarTipoSesionesResponse" />
   </message>
   <message name="guardarTipoSesion">
     <part name="parameters" element="tns:guardarTipoSesion" />
@@ -29,35 +23,32 @@
   <message name="guardarTipoSesionResponse">
     <part name="parameters" element="tns:guardarTipoSesionResponse" />
   </message>
+  <message name="eliminarTipoSesion">
+    <part name="parameters" element="tns:eliminarTipoSesion" />
+  </message>
+  <message name="eliminarTipoSesionResponse">
+    <part name="parameters" element="tns:eliminarTipoSesionResponse" />
+  </message>
   <portType name="TipoSesionWS">
-    <operation name="listarTipoSesiones">
-      <input wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/listarTipoSesionesRequest" message="tns:listarTipoSesiones" />
-      <output wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/listarTipoSesionesResponse" message="tns:listarTipoSesionesResponse" />
-    </operation>
     <operation name="obtenerTipoSesion">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/obtenerTipoSesionRequest" message="tns:obtenerTipoSesion" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/obtenerTipoSesionResponse" message="tns:obtenerTipoSesionResponse" />
     </operation>
-    <operation name="eliminarTipoSesion">
-      <input wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/eliminarTipoSesionRequest" message="tns:eliminarTipoSesion" />
-      <output wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/eliminarTipoSesionResponse" message="tns:eliminarTipoSesionResponse" />
+    <operation name="listarTipoSesiones">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/listarTipoSesionesRequest" message="tns:listarTipoSesiones" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/listarTipoSesionesResponse" message="tns:listarTipoSesionesResponse" />
     </operation>
     <operation name="guardarTipoSesion">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/guardarTipoSesionRequest" message="tns:guardarTipoSesion" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/guardarTipoSesionResponse" message="tns:guardarTipoSesionResponse" />
     </operation>
+    <operation name="eliminarTipoSesion">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/eliminarTipoSesionRequest" message="tns:eliminarTipoSesion" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/eliminarTipoSesionResponse" message="tns:eliminarTipoSesionResponse" />
+    </operation>
   </portType>
   <binding name="TipoSesionWSPortBinding" type="tns:TipoSesionWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="listarTipoSesiones">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="obtenerTipoSesion">
       <soap:operation soapAction="" />
       <input>
@@ -67,7 +58,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="eliminarTipoSesion">
+    <operation name="listarTipoSesiones">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -77,6 +68,15 @@
       </output>
     </operation>
     <operation name="guardarTipoSesion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarTipoSesion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

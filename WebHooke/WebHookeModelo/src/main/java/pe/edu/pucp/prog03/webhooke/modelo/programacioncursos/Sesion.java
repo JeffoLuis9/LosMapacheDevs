@@ -4,6 +4,7 @@
  */
 
 package pe.edu.pucp.prog03.webhooke.modelo.programacioncursos;
+import jakarta.json.bind.annotation.JsonbDateFormat;
 import pe.edu.pucp.prog03.webhooke.modelo.gestionacademia.Sede;
 import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Alumno;
 import pe.edu.pucp.prog03.webhooke.modelo.modalidades.TipoSesion;
@@ -17,6 +18,7 @@ import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Profesor;
 
 public class Sesion { 
     private int idHorario;
+    @JsonbDateFormat("yyyy-MM-dd'T'HH:mm:ss")
     private Date fecha;
     private String modalidad;
     private boolean estado;

@@ -6,19 +6,27 @@ package pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios;
 
 
 import java.text.SimpleDateFormat;
+import jakarta.json.bind.annotation.JsonbDateFormat;
+
+
 import java.util.Date;
 
 /**
  *
  * @author andre
  */
+
 public class Usuario {
     private int id;
     private String nombre;
     private String apellido;
     private String DNI;
     private String email;
+    
+   
+    @JsonbDateFormat("yyyy-MM-dd'T'HH:mm:ss")
     private Date fechaNacimiento;
+    
     private char tipoUsuario;
     private String password;
     

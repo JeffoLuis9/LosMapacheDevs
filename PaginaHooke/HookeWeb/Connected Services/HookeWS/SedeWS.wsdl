@@ -5,23 +5,11 @@
       <xsd:import schemaLocation="http://localhost:8080/WebHookeWS/SedeWS?xsd=1" namespace="http://services.webhooke.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="guardarSede">
-    <part name="parameters" element="tns:guardarSede" />
-  </message>
-  <message name="guardarSedeResponse">
-    <part name="parameters" element="tns:guardarSedeResponse" />
-  </message>
   <message name="eliminarSede">
     <part name="parameters" element="tns:eliminarSede" />
   </message>
   <message name="eliminarSedeResponse">
     <part name="parameters" element="tns:eliminarSedeResponse" />
-  </message>
-  <message name="obtenerSede">
-    <part name="parameters" element="tns:obtenerSede" />
-  </message>
-  <message name="obtenerSedeResponse">
-    <part name="parameters" element="tns:obtenerSedeResponse" />
   </message>
   <message name="listarSedes">
     <part name="parameters" element="tns:listarSedes" />
@@ -29,27 +17,39 @@
   <message name="listarSedesResponse">
     <part name="parameters" element="tns:listarSedesResponse" />
   </message>
+  <message name="obtenerSede">
+    <part name="parameters" element="tns:obtenerSede" />
+  </message>
+  <message name="obtenerSedeResponse">
+    <part name="parameters" element="tns:obtenerSedeResponse" />
+  </message>
+  <message name="guardarSede">
+    <part name="parameters" element="tns:guardarSede" />
+  </message>
+  <message name="guardarSedeResponse">
+    <part name="parameters" element="tns:guardarSedeResponse" />
+  </message>
   <portType name="SedeWS">
-    <operation name="guardarSede">
-      <input wsam:Action="http://services.webhooke.pucp.edu.pe/SedeWS/guardarSedeRequest" message="tns:guardarSede" />
-      <output wsam:Action="http://services.webhooke.pucp.edu.pe/SedeWS/guardarSedeResponse" message="tns:guardarSedeResponse" />
-    </operation>
     <operation name="eliminarSede">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/SedeWS/eliminarSedeRequest" message="tns:eliminarSede" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/SedeWS/eliminarSedeResponse" message="tns:eliminarSedeResponse" />
-    </operation>
-    <operation name="obtenerSede">
-      <input wsam:Action="http://services.webhooke.pucp.edu.pe/SedeWS/obtenerSedeRequest" message="tns:obtenerSede" />
-      <output wsam:Action="http://services.webhooke.pucp.edu.pe/SedeWS/obtenerSedeResponse" message="tns:obtenerSedeResponse" />
     </operation>
     <operation name="listarSedes">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/SedeWS/listarSedesRequest" message="tns:listarSedes" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/SedeWS/listarSedesResponse" message="tns:listarSedesResponse" />
     </operation>
+    <operation name="obtenerSede">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/SedeWS/obtenerSedeRequest" message="tns:obtenerSede" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/SedeWS/obtenerSedeResponse" message="tns:obtenerSedeResponse" />
+    </operation>
+    <operation name="guardarSede">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/SedeWS/guardarSedeRequest" message="tns:guardarSede" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/SedeWS/guardarSedeResponse" message="tns:guardarSedeResponse" />
+    </operation>
   </portType>
   <binding name="SedeWSPortBinding" type="tns:SedeWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="guardarSede">
+    <operation name="eliminarSede">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -58,7 +58,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="eliminarSede">
+    <operation name="listarSedes">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -76,7 +76,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarSedes">
+    <operation name="guardarSede">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
