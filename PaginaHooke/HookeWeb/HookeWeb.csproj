@@ -111,6 +111,8 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\HookeWS\CursoWS.wsdl" />
+    <Content Include="Administrador.aspx" />
+    <Content Include="Alumno.aspx" />
     <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.academia.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -247,12 +249,19 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\estilo.css" />
+    <Content Include="CursosIntencionAlumno.aspx" />
     <Content Include="favicon.ico" />
-    <Content Include="GestionarCurso.aspx" />
-    <Content Include="GestionarProfesores.aspx" />
-    <Content Include="Home.aspx" />
-    <Content Include="ListarProfesores.aspx" />
-    <Content Include="Matricula.aspx" />
+    <Content Include="Intenciones.aspx" />
+    <Content Include="ListarCursos.aspx" />
+    <Content Include="ListarProfesor.aspx" />
+    <Content Include="ListarTipoSesiones.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Profesor.aspx" />
+    <Content Include="Registrar.aspx" />
+    <Content Include="RegistrarCurso.aspx" />
+    <Content Include="RegistrarMatricula.aspx" />
+    <Content Include="RegistrarProfesor.aspx" />
+    <Content Include="RegistrarTipoSesion.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -331,12 +340,27 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
-    <Content Include="Site.Master" />
+    <Content Include="SiteAlumno.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Voucher.aspx" />
     <Content Include="Web.config" />
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrador.aspx.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador.aspx.designer.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alumno.aspx.cs">
+      <DependentUpon>Alumno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alumno.aspx.designer.cs">
+      <DependentUpon>Alumno.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Connected Services\HookeWS\Reference.cs">
@@ -344,48 +368,104 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="GestionarCurso.aspx.cs">
-      <DependentUpon>GestionarCurso.aspx</DependentUpon>
+    <Compile Include="CursosIntencionAlumno.aspx.cs">
+      <DependentUpon>CursosIntencionAlumno.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GestionarCurso.aspx.designer.cs">
-      <DependentUpon>GestionarCurso.aspx</DependentUpon>
+    <Compile Include="CursosIntencionAlumno.aspx.designer.cs">
+      <DependentUpon>CursosIntencionAlumno.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GestionarProfesores.aspx.cs">
-      <DependentUpon>GestionarProfesores.aspx</DependentUpon>
+    <Compile Include="Intenciones.aspx.cs">
+      <DependentUpon>Intenciones.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GestionarProfesores.aspx.designer.cs">
-      <DependentUpon>GestionarProfesores.aspx</DependentUpon>
+    <Compile Include="Intenciones.aspx.designer.cs">
+      <DependentUpon>Intenciones.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="ListarCursos.aspx.cs">
+      <DependentUpon>ListarCursos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="ListarCursos.aspx.designer.cs">
+      <DependentUpon>ListarCursos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ListarProfesores.aspx.cs">
-      <DependentUpon>ListarProfesores.aspx</DependentUpon>
+    <Compile Include="ListarProfesor.aspx.cs">
+      <DependentUpon>ListarProfesor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ListarProfesores.aspx.designer.cs">
-      <DependentUpon>ListarProfesores.aspx</DependentUpon>
+    <Compile Include="ListarProfesor.aspx.designer.cs">
+      <DependentUpon>ListarProfesor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Matricula.aspx.cs">
-      <DependentUpon>Matricula.aspx</DependentUpon>
+    <Compile Include="ListarTipoSesiones.aspx.cs">
+      <DependentUpon>ListarTipoSesiones.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Matricula.aspx.designer.cs">
-      <DependentUpon>Matricula.aspx</DependentUpon>
+    <Compile Include="ListarTipoSesiones.aspx.designer.cs">
+      <DependentUpon>ListarTipoSesiones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profesor.aspx.cs">
+      <DependentUpon>Profesor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profesor.aspx.designer.cs">
+      <DependentUpon>Profesor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Site.Master.cs">
-      <DependentUpon>Site.Master</DependentUpon>
+    <Compile Include="Registrar.aspx.cs">
+      <DependentUpon>Registrar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Site.Master.designer.cs">
-      <DependentUpon>Site.Master</DependentUpon>
+    <Compile Include="Registrar.aspx.designer.cs">
+      <DependentUpon>Registrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarCurso.aspx.cs">
+      <DependentUpon>RegistrarCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarCurso.aspx.designer.cs">
+      <DependentUpon>RegistrarCurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarMatricula.aspx.cs">
+      <DependentUpon>RegistrarMatricula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarMatricula.aspx.designer.cs">
+      <DependentUpon>RegistrarMatricula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarProfesor.aspx.cs">
+      <DependentUpon>RegistrarProfesor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarProfesor.aspx.designer.cs">
+      <DependentUpon>RegistrarProfesor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarTipoSesion.aspx.cs">
+      <DependentUpon>RegistrarTipoSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarTipoSesion.aspx.designer.cs">
+      <DependentUpon>RegistrarTipoSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteAdministrador.Master.cs">
+      <DependentUpon>SiteAdministrador.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteAdministrador.Master.designer.cs">
+      <DependentUpon>SiteAdministrador.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteAlumno.Master.cs">
+      <DependentUpon>SiteAlumno.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteAlumno.Master.designer.cs">
+      <DependentUpon>SiteAlumno.Master</DependentUpon>
     </Compile>
     <Compile Include="Site.Mobile.Master.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
@@ -394,12 +474,26 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="SiteProfesor.Master.cs">
+      <DependentUpon>SiteProfesor.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteProfesor.Master.designer.cs">
+      <DependentUpon>SiteProfesor.Master</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Voucher.aspx.cs">
+      <DependentUpon>Voucher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Voucher.aspx.designer.cs">
+      <DependentUpon>Voucher.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -410,6 +504,8 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.0.min.map" />
+    <Content Include="SiteProfesor.Master" />
+    <Content Include="SiteAdministrador.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
