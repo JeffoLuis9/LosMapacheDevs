@@ -155,8 +155,8 @@
             <div class="sidebar">
                 <ul>
                     <li><a href="Alumno.aspx"><i class="fa-solid fa-house me-2"></i> Inicio</a></li>
-                    <li><a href="Login.aspx">Volver Alumno</a></li>
-                                </ul>
+                    <li><a href="CursosIntencionAlumno.aspx">Ver Intenciones</a></li>
+               </ul>
             </div>
             <div class="page-content">
                 <asp:ContentPlaceHolder ID="MainContent" runat="server">

@@ -249,7 +249,9 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\estilo.css" />
+    <Content Include="CursosIntencionAlumno.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="Intenciones.aspx" />
     <Content Include="ListarCursos.aspx" />
     <Content Include="ListarProfesor.aspx" />
     <Content Include="ListarTipoSesiones.aspx" />
@@ -363,6 +365,20 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="CursosIntencionAlumno.aspx.cs">
+      <DependentUpon>CursosIntencionAlumno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CursosIntencionAlumno.aspx.designer.cs">
+      <DependentUpon>CursosIntencionAlumno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Intenciones.aspx.cs">
+      <DependentUpon>Intenciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intenciones.aspx.designer.cs">
+      <DependentUpon>Intenciones.aspx</DependentUpon>
     </Compile>
     <Compile Include="ListarCursos.aspx.cs">
       <DependentUpon>ListarCursos.aspx</DependentUpon>

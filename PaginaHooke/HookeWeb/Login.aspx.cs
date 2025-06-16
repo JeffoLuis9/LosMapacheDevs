@@ -16,20 +16,23 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
             // Aquí debes implementar tu lógica de redirección basada en el tipo de usuario o rol
             if (txtEmail.Text == "administrador@gmail.com" && txtPassword.Text == "prueba1") // Ejemplo de lógica
             {
-                Session["UserId"] = 1;
-                Session["UserName"] = "David Cutisaca";
+                Session["id"] = 1;
+                Session["usuario"] = "David Cutisaca";
+                Session["Rol"] = "Administrador";
                 Response.Redirect("Administrador.aspx");
             }
             else if (txtEmail.Text == "profesor@gmail.com" && txtPassword.Text == "prueba1")
             {
-                Session["UserId"] = 2;
-                Session["UserName"] = "Andres Huaman";
+                Session["id"] = 2;
+                Session["usuario"] = "Andres Huaman";
+                Session["Rol"] = "Profesor";
                 Response.Redirect("Profesor.aspx");
             }
             else if (txtEmail.Text == "alumno@gmail.com" && txtPassword.Text == "prueba1")
             {
-                Session["UserId"] = 3;
-                Session["UserName"] = "Jefferson Robles";
+                Session["id"] = 3;
+                Session["usuario"] = "Jefferson Robles";
+                Session["Rol"] = "Alumno";
                 Response.Redirect("Alumno.aspx");
             }
             else
