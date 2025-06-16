@@ -11,70 +11,79 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
 {
 
 
-    public partial class Voucher
+    public partial class GestionarSede
     {
 
         /// <summary>
-        /// Control txtCodigoVoucher.
+        /// Control lblTitulo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCodigoVoucher;
+        protected global::System.Web.UI.WebControls.Label lblTitulo;
 
         /// <summary>
-        /// Control rfvCodigoVoucher.
+        /// Control ddlDistrito.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCodigoVoucher;
+        protected global::System.Web.UI.WebControls.DropDownList ddlDistrito;
 
         /// <summary>
-        /// Control txtMonto.
+        /// Control rfrDistrito.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMonto;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfrDistrito;
 
         /// <summary>
-        /// Control rfvMonto.
+        /// Control txtDireccion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvMonto;
+        protected global::System.Web.UI.WebControls.TextBox txtDireccion;
 
         /// <summary>
-        /// Control cvMonto.
+        /// Control rfvDireccion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator cvMonto;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDireccion;
 
         /// <summary>
-        /// Control btnAccion.
+        /// Control ddlAcademia.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAccion;
+        protected global::System.Web.UI.WebControls.DropDownList ddlAcademia;
 
         /// <summary>
-        /// Control btnCancelar.
+        /// Control rfvAcademia.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCancelar;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAcademia;
+
+        /// <summary>
+        /// Control btnRegistrar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRegistrar;
     }
 }

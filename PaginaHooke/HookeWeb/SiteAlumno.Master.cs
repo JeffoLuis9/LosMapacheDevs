@@ -11,7 +11,7 @@ namespace HookeWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            lblUserName.Text = Session["usuario"].ToString();
+            lblUserName.Text = Session["UserName"].ToString();
         }
 
         protected void lnkLogout_Click(object sender, EventArgs e)

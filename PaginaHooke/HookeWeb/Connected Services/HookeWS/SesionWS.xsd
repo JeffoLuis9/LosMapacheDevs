@@ -22,14 +22,12 @@
     <xs:sequence>
       <xs:element minOccurs="0" name="alumno" type="tns:alumno" />
       <xs:element minOccurs="0" name="curso" type="tns:curso" />
-      <xs:element name="estado" type="xs:boolean" />
       <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
       <xs:element name="idHorario" type="xs:int" />
       <xs:element minOccurs="0" name="modalidad" type="xs:string" />
       <xs:element minOccurs="0" name="profesor" type="tns:profesor" />
       <xs:element minOccurs="0" name="sede" type="tns:sede" />
       <xs:element minOccurs="0" name="tipoSesion" type="tns:tipoSesion" />
-      <xs:element minOccurs="0" name="voucher" type="tns:voucher" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="alumno">
@@ -49,8 +47,6 @@
       <xs:element minOccurs="0" name="fechaNacimiento" type="xs:dateTime" />
       <xs:element name="id" type="xs:int" />
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
-      <xs:element minOccurs="0" name="password" type="xs:string" />
-      <xs:element name="tipoUsuario" type="xs:unsignedShort" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="curso">
@@ -92,14 +88,6 @@
       <xs:element name="idModalidad" type="xs:int" />
       <xs:element name="precio" type="xs:double" />
       <xs:element minOccurs="0" name="tipo" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="voucher">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="codigoOperacion" type="xs:string" />
-      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
-      <xs:element name="id" type="xs:int" />
-      <xs:element name="monto" type="xs:double" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listarSesiones">

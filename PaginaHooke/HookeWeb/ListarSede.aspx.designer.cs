@@ -11,25 +11,25 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
 {
 
 
-    public partial class ListarProfesores
+    public partial class ListarSede
     {
 
         /// <summary>
-        /// Control lbRegistrar.
+        /// Control btnRegistrarNuevo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbRegistrar;
+        protected global::System.Web.UI.WebControls.LinkButton btnRegistrarNuevo;
 
         /// <summary>
-        /// Control gvProfesores.
+        /// Control gvSedes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvProfesores;
+        protected global::System.Web.UI.WebControls.GridView gvSedes;
     }
 }

@@ -1,54 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\",
+  "WorkspaceRootPath": "C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\hookeweb\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|c:\\users\\andre\\onedrive\\documentos\\importante\\trabajogitparte2larealvamoboquita\\losmapachedevs\\paginahooke\\hookeweb\\listartiposesiones.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\listartiposesiones.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\hookeweb\\gestionarsede.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\gestionarsede.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\hookeweb\\listarsede.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\listarsede.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\hookeweb\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\hookeweb\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\hookeweb\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|d:\\trabajoacademicoprog3\\losmapachedevs\\paginahooke\\hookeweb\\registrarmatricula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\registrarmatricula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\hookeweb\\listarsede.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\listarsede.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\hookeweb\\registrarmatricula.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\registrarmatricula.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\hookeweb\\siteadministrador.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\siteadministrador.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\hookeweb\\registrar.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\registrar.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\hookeweb\\cursosintencionalumno.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\cursosintencionalumno.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\hookeweb\\sitealumno.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\sitealumno.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\hookeweb\\cursosintencionalumno.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\cursosintencionalumno.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\hookeweb\\voucher.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\voucher.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\hookeweb\\voucher.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\voucher.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\hookeweb\\intenciones.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\intenciones.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\hookeweb\\intenciones.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\intenciones.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\hookeweb\\listartiposesiones.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\listartiposesiones.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,167 +46,108 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Registrar.aspx",
-              "DocumentMoniker": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Registrar.aspx",
-              "RelativeDocumentMoniker": "HookeWeb\\Registrar.aspx",
-              "ToolTip": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Registrar.aspx",
-              "RelativeToolTip": "HookeWeb\\Registrar.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-16T03:51:03.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegistrarMatricula.aspx.cs",
-              "DocumentMoniker": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\RegistrarMatricula.aspx.cs",
-              "RelativeDocumentMoniker": "HookeWeb\\RegistrarMatricula.aspx.cs",
-              "ToolTip": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\RegistrarMatricula.aspx.cs",
-              "RelativeToolTip": "HookeWeb\\RegistrarMatricula.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T03:45:57.686Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RegistrarMatricula.aspx",
-              "DocumentMoniker": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\RegistrarMatricula.aspx",
-              "RelativeDocumentMoniker": "HookeWeb\\RegistrarMatricula.aspx",
-              "ToolTip": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\RegistrarMatricula.aspx",
-              "RelativeToolTip": "HookeWeb\\RegistrarMatricula.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-16T03:29:04.593Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Voucher.aspx",
-              "DocumentMoniker": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Voucher.aspx",
-              "RelativeDocumentMoniker": "HookeWeb\\Voucher.aspx",
-              "ToolTip": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Voucher.aspx",
-              "RelativeToolTip": "HookeWeb\\Voucher.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-16T03:14:18.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.aspx.cs",
-              "DocumentMoniker": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Login.aspx.cs",
-              "RelativeDocumentMoniker": "HookeWeb\\Login.aspx.cs",
-              "ToolTip": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Login.aspx.cs*",
-              "RelativeToolTip": "HookeWeb\\Login.aspx.cs*",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAwA4AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T00:48:14.866Z",
-              "EditorCaption": ""
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Login.aspx",
-              "DocumentMoniker": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Login.aspx",
-              "RelativeDocumentMoniker": "HookeWeb\\Login.aspx",
-              "ToolTip": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Login.aspx",
-              "RelativeToolTip": "HookeWeb\\Login.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-16T00:48:09.626Z",
-              "EditorCaption": ""
+              "Title": "GestionarSede.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\GestionarSede.aspx.cs",
+              "RelativeDocumentMoniker": "HookeWeb\\GestionarSede.aspx.cs",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\GestionarSede.aspx.cs",
+              "RelativeToolTip": "HookeWeb\\GestionarSede.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T20:30:47.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListarSede.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\ListarSede.aspx.cs",
+              "RelativeDocumentMoniker": "HookeWeb\\ListarSede.aspx.cs",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\ListarSede.aspx.cs",
+              "RelativeToolTip": "HookeWeb\\ListarSede.aspx.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T19:23:53.958Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CursosIntencionAlumno.aspx.cs",
-              "DocumentMoniker": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\CursosIntencionAlumno.aspx.cs",
-              "RelativeDocumentMoniker": "HookeWeb\\CursosIntencionAlumno.aspx.cs",
-              "ToolTip": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\CursosIntencionAlumno.aspx.cs",
-              "RelativeToolTip": "HookeWeb\\CursosIntencionAlumno.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T00:43:58.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CursosIntencionAlumno.aspx",
-              "DocumentMoniker": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\CursosIntencionAlumno.aspx",
-              "RelativeDocumentMoniker": "HookeWeb\\CursosIntencionAlumno.aspx",
-              "ToolTip": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\CursosIntencionAlumno.aspx",
-              "RelativeToolTip": "HookeWeb\\CursosIntencionAlumno.aspx",
+              "Title": "ListarSede.aspx",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\ListarSede.aspx",
+              "RelativeDocumentMoniker": "HookeWeb\\ListarSede.aspx",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\ListarSede.aspx",
+              "RelativeToolTip": "HookeWeb\\ListarSede.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-16T00:43:34.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T19:12:32.85Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Intenciones.aspx.cs",
-              "DocumentMoniker": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Intenciones.aspx.cs",
-              "RelativeDocumentMoniker": "HookeWeb\\Intenciones.aspx.cs",
-              "ToolTip": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Intenciones.aspx.cs",
-              "RelativeToolTip": "HookeWeb\\Intenciones.aspx.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACoAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Login.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Login.aspx.cs",
+              "RelativeDocumentMoniker": "HookeWeb\\Login.aspx.cs",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Login.aspx.cs",
+              "RelativeToolTip": "HookeWeb\\Login.aspx.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T00:23:04.865Z",
+              "WhenOpened": "2025-06-16T16:02:05.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ListarTipoSesiones.aspx",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\ListarTipoSesiones.aspx",
+              "RelativeDocumentMoniker": "HookeWeb\\ListarTipoSesiones.aspx",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\ListarTipoSesiones.aspx",
+              "RelativeToolTip": "HookeWeb\\ListarTipoSesiones.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-15T20:05:50.029Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "SiteAlumno.Master",
-              "DocumentMoniker": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\SiteAlumno.Master",
-              "RelativeDocumentMoniker": "HookeWeb\\SiteAlumno.Master",
-              "ToolTip": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\SiteAlumno.Master",
-              "RelativeToolTip": "HookeWeb\\SiteAlumno.Master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Title": "SiteAdministrador.Master",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\SiteAdministrador.Master",
+              "RelativeDocumentMoniker": "HookeWeb\\SiteAdministrador.Master",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\SiteAdministrador.Master",
+              "RelativeToolTip": "HookeWeb\\SiteAdministrador.Master",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-16T00:20:22.117Z",
+              "WhenOpened": "2025-06-16T19:42:35.687Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Voucher.aspx.cs",
-              "DocumentMoniker": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Voucher.aspx.cs",
-              "RelativeDocumentMoniker": "HookeWeb\\Voucher.aspx.cs",
-              "ToolTip": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Voucher.aspx.cs",
-              "RelativeToolTip": "HookeWeb\\Voucher.aspx.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAADwvyQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Login.aspx",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Login.aspx",
+              "RelativeDocumentMoniker": "HookeWeb\\Login.aspx",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Login.aspx",
+              "RelativeToolTip": "HookeWeb\\Login.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-16T20:19:42.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ListarTipoSesiones.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\ListarTipoSesiones.aspx.cs",
+              "RelativeDocumentMoniker": "HookeWeb\\ListarTipoSesiones.aspx.cs",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Documentos\\importante\\TRABAJOGITPARTE2LAREALVAMOBOQUITA\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\ListarTipoSesiones.aspx.cs",
+              "RelativeToolTip": "HookeWeb\\ListarTipoSesiones.aspx.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T03:19:46.501Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Intenciones.aspx",
-              "DocumentMoniker": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Intenciones.aspx",
-              "RelativeDocumentMoniker": "HookeWeb\\Intenciones.aspx",
-              "ToolTip": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Intenciones.aspx",
-              "RelativeToolTip": "HookeWeb\\Intenciones.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-06-16T00:22:59.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-15T20:39:46.831Z"
             }
           ]
         }
