@@ -11,18 +11,6 @@
   <message name="listarCursosPorNivelResponse">
     <part name="parameters" element="tns:listarCursosPorNivelResponse" />
   </message>
-  <message name="obtenerCurso">
-    <part name="parameters" element="tns:obtenerCurso" />
-  </message>
-  <message name="obtenerCursoResponse">
-    <part name="parameters" element="tns:obtenerCursoResponse" />
-  </message>
-  <message name="eliminarCurso">
-    <part name="parameters" element="tns:eliminarCurso" />
-  </message>
-  <message name="eliminarCursoResponse">
-    <part name="parameters" element="tns:eliminarCursoResponse" />
-  </message>
   <message name="guardarCurso">
     <part name="parameters" element="tns:guardarCurso" />
   </message>
@@ -35,18 +23,22 @@
   <message name="listarCursosResponse">
     <part name="parameters" element="tns:listarCursosResponse" />
   </message>
+  <message name="obtenerCurso">
+    <part name="parameters" element="tns:obtenerCurso" />
+  </message>
+  <message name="obtenerCursoResponse">
+    <part name="parameters" element="tns:obtenerCursoResponse" />
+  </message>
+  <message name="eliminarCurso">
+    <part name="parameters" element="tns:eliminarCurso" />
+  </message>
+  <message name="eliminarCursoResponse">
+    <part name="parameters" element="tns:eliminarCursoResponse" />
+  </message>
   <portType name="CursoWS">
     <operation name="listarCursosPorNivel">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosPorNivelRequest" message="tns:listarCursosPorNivel" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosPorNivelResponse" message="tns:listarCursosPorNivelResponse" />
-    </operation>
-    <operation name="obtenerCurso">
-      <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/obtenerCursoRequest" message="tns:obtenerCurso" />
-      <output wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/obtenerCursoResponse" message="tns:obtenerCursoResponse" />
-    </operation>
-    <operation name="eliminarCurso">
-      <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/eliminarCursoRequest" message="tns:eliminarCurso" />
-      <output wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/eliminarCursoResponse" message="tns:eliminarCursoResponse" />
     </operation>
     <operation name="guardarCurso">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/guardarCursoRequest" message="tns:guardarCurso" />
@@ -55,6 +47,14 @@
     <operation name="listarCursos">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosRequest" message="tns:listarCursos" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosResponse" message="tns:listarCursosResponse" />
+    </operation>
+    <operation name="obtenerCurso">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/obtenerCursoRequest" message="tns:obtenerCurso" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/obtenerCursoResponse" message="tns:obtenerCursoResponse" />
+    </operation>
+    <operation name="eliminarCurso">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/eliminarCursoRequest" message="tns:eliminarCurso" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/CursoWS/eliminarCursoResponse" message="tns:eliminarCursoResponse" />
     </operation>
   </portType>
   <binding name="CursoWSPortBinding" type="tns:CursoWS">
@@ -68,24 +68,6 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="obtenerCurso">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="eliminarCurso">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="guardarCurso">
       <soap:operation soapAction="" />
       <input>
@@ -96,6 +78,24 @@
       </output>
     </operation>
     <operation name="listarCursos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerCurso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarCurso">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

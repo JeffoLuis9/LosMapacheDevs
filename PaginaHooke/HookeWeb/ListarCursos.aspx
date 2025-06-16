@@ -131,19 +131,20 @@
         </div>
      
         <asp:GridView ID="gvCursos" runat="server" AutoGenerateColumns="False" 
-            DataKeyNames="idCurso" CssClass="gvStyle"
+            DataKeyNames="id" CssClass="gvStyle"
+      
             OnRowDeleting="gvCursos_RowDeleting" OnRowCommand="gvCursos_RowCommand"
             EmptyDataText="No hay cursos registrados aún.">
             <Columns>
-                <asp:BoundField DataField="Codigo" HeaderText="Código" ItemStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center" />
-                <asp:BoundField DataField="Nombre" HeaderText="Nombre del Curso" ItemStyle-HorizontalAlign="Left" HeaderStyle-HorizontalAlign="Left" />
+                <asp:BoundField DataField="codigo" HeaderText="Código" ItemStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center" />
+                <asp:BoundField DataField="nombre" HeaderText="Nombre del Curso" ItemStyle-HorizontalAlign="Left" HeaderStyle-HorizontalAlign="Left" />
 
                 <asp:TemplateField HeaderText="Acciones" ItemStyle-CssClass="gv-action-buttons">
                     <ItemTemplate>
                         <asp:LinkButton ID="lnkModificar" runat="server" CommandName="ModificarCurso" 
-                            CommandArgument='<%# Eval("idCurso") %>' CssClass="btn-modificar">Modificar</asp:LinkButton>
+                            CommandArgument='<%# Eval("id") %>' CssClass="btn-modificar">Modificar</asp:LinkButton>
                         <asp:LinkButton ID="lnkEliminar" runat="server" CommandName="EliminarCurso" 
-                            CommandArgument='<%# Eval("idCurso") %>' CssClass="btn-eliminar"
+                            CommandArgument='<%# Eval("id") %>' CssClass="btn-eliminar"
                             OnClientClick='return confirm("¿Estás seguro de que quieres eliminar este curso?");'>Eliminar</asp:LinkButton>
                     </ItemTemplate>
                 </asp:TemplateField>

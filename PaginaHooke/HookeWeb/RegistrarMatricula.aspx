@@ -140,7 +140,7 @@
 
         <div class="form-group">
             <label for="txtNivel">Nivel:</label>
-            <asp:TextBox ID="txtNivel" runat="server" CssClass="form-control" Placeholder="Ingresa tu nombre"></asp:TextBox>
+            <asp:TextBox ID="txtNivel" runat="server" CssClass="form-control" Placeholder="Ingresa el nivel"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvNivel" runat="server" ControlToValidate="txtNivel"
                 ErrorMessage="El nivel es obligatorio." ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
         </div>
