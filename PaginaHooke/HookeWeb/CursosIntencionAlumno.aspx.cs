@@ -55,7 +55,7 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
 
         protected void gvCursosAlumno_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            Response.Redirect("VerVoucher.aspx");
+            Response.Redirect("Voucher.aspx");
         }
     }
 }

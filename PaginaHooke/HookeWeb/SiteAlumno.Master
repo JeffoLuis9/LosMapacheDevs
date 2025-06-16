@@ -156,6 +156,7 @@
                 <ul>
                     <li><a href="Alumno.aspx"><i class="fa-solid fa-house me-2"></i> Inicio</a></li>
                     <li><a href="CursosIntencionAlumno.aspx">Ver Intenciones</a></li>
+                    <li><a href="RegistrarMatricula.aspx">Matricula</a></li>
                </ul>
             </div>
             <div class="page-content">

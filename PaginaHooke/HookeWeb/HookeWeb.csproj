@@ -259,6 +259,7 @@
     <Content Include="Profesor.aspx" />
     <Content Include="Registrar.aspx" />
     <Content Include="RegistrarCurso.aspx" />
+    <Content Include="RegistrarMatricula.aspx" />
     <Content Include="RegistrarProfesor.aspx" />
     <Content Include="RegistrarTipoSesion.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -341,6 +342,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="SiteAlumno.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Voucher.aspx" />
     <Content Include="Web.config" />
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
@@ -430,6 +432,13 @@
     <Compile Include="RegistrarCurso.aspx.designer.cs">
       <DependentUpon>RegistrarCurso.aspx</DependentUpon>
     </Compile>
+    <Compile Include="RegistrarMatricula.aspx.cs">
+      <DependentUpon>RegistrarMatricula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarMatricula.aspx.designer.cs">
+      <DependentUpon>RegistrarMatricula.aspx</DependentUpon>
+    </Compile>
     <Compile Include="RegistrarProfesor.aspx.cs">
       <DependentUpon>RegistrarProfesor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -478,6 +487,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Voucher.aspx.cs">
+      <DependentUpon>Voucher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Voucher.aspx.designer.cs">
+      <DependentUpon>Voucher.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

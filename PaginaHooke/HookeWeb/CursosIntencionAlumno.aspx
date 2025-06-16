@@ -116,7 +116,6 @@
     <div class="list-container">
         <div class="header-section">
             <h2>Cursos del Alumno: <asp:Literal ID="litNombreAlumno" runat="server"></asp:Literal></h2>
-            <asp:HyperLink ID="lnkVolver" runat="server" NavigateUrl="~/ListarAlumnos.aspx" CssClass="btn-volver">Volver a Alumnos</asp:HyperLink>
         </div>
         
         <asp:GridView ID="gvCursosAlumno" runat="server" AutoGenerateColumns="False" 
