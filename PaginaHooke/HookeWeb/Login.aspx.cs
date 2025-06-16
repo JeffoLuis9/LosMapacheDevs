@@ -11,7 +11,8 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
     {
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-
+            txtEmail.Text = "alumno@gmail.com";
+            txtPassword.Text = "prueba1";
             // Redirigir a la página correspondiente (Pagina1.aspx, Pagina2.aspx, etc.)
             // Aquí debes implementar tu lógica de redirección basada en el tipo de usuario o rol
             if (txtEmail.Text == "administrador@gmail.com" && txtPassword.Text == "prueba1") // Ejemplo de lógica
