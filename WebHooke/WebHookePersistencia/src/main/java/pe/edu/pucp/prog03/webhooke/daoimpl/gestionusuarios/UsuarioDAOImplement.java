@@ -10,9 +10,11 @@ package pe.edu.pucp.prog03.webhooke.daoimpl.gestionusuarios;
  */
 import java.sql.CallableStatement;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Types;
+import pe.edu.pucp.prog03.webhooke.config.DBManager;
 import pe.edu.pucp.prog03.webhooke.dao.gestionusuarios.UsuarioDAO;
 import pe.edu.pucp.prog03.webhooke.daoimpl.BaseDAOImplement;
 
@@ -89,6 +91,36 @@ public class UsuarioDAOImplement extends BaseDAOImplement<Usuario> implements Us
         usu.setTipoUsuario(rs.getString("tipoUsuario").charAt(0));
         usu.setPassword(rs.getString("password"));
         return usu;
+    }
+
+    @Override
+    public int buscarUsuarioPorCorreo(String correo) {
+        try (
+                Connection conn = DBManager.getInstance().getConnection(); PreparedStatement ps = this.comandoBuscarUsuarioPorCorreo(conn, correo);) {
+            ResultSet rs = ps.executeQuery();
+
+            if (!rs.next()) {
+                System.err.println("No se encontro el registro con correo: " + correo);
+                return 0;
+            }
+            
+            return rs.getInt("idUsuario");
+            
+        } catch (SQLException e) {
+            System.err.println("Error SQL durante la busqueda: " + e.getMessage());
+            throw new RuntimeException("No se pudo buscar el registro.", e);
+        } catch (Exception e) {
+            System.err.println("Error inpesperado: " + e.getMessage());
+            throw new RuntimeException("Error inesperado al buscar el registro.", e);
+        }
+    }
+    
+    protected CallableStatement comandoBuscarUsuarioPorCorreo(Connection conn, String correo) throws SQLException {
+        String sql = "{CALL buscarUsuarioPorCorreo(?)}";
+        CallableStatement cmd = conn.prepareCall(sql);
+        cmd.setString("p_email",correo);
+        
+        return cmd;
     }
 
 }

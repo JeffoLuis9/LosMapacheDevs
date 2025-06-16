@@ -55,7 +55,7 @@ CREATE DEFINER=`admin`@`%` PROCEDURE `buscarProfesorPorId`(
 )
 BEGIN
     SELECT * FROM Usuario
-    WHERE idUsuario= p_id;
+    WHERE idUsuario= p_id and TipoUsuario = 'P';
 END//
 
 DELIMITER //
