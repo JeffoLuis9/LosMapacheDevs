@@ -5,7 +5,7 @@
 package pe.edu.pucp.prog03.webhooke.modelo.programacioncursos;
 
 import java.util.Date;
-
+import jakarta.json.bind.annotation.JsonbDateFormat;
 /**
  *
  * @author ASUS
@@ -14,6 +14,7 @@ public class Voucher {
     private int id;
     private String codigoOperacion;
     private double monto;
+    @JsonbDateFormat("yyyy-MM-dd'T'HH:mm:ss")
     private Date fecha;
 
     /**

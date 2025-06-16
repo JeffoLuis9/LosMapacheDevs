@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.webhooke.pucp.edu.pe/" targetNamespace="http://services.webhooke.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarVoucher" type="tns:eliminarVoucher" />
+  <xs:element name="eliminarVoucherResponse" type="tns:eliminarVoucherResponse" />
+  <xs:element name="guardarVoucher" type="tns:guardarVoucher" />
+  <xs:element name="guardarVoucherResponse" type="tns:guardarVoucherResponse" />
+  <xs:element name="listarVouchers" type="tns:listarVouchers" />
+  <xs:element name="listarVouchersResponse" type="tns:listarVouchersResponse" />
+  <xs:element name="obtenerVoucher" type="tns:obtenerVoucher" />
+  <xs:element name="obtenerVoucherResponse" type="tns:obtenerVoucherResponse" />
+  <xs:complexType name="guardarVoucher">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="voucher" type="tns:voucher" />
+      <xs:element minOccurs="0" name="estado" type="tns:estado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="voucher">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigoOperacion" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element name="monto" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="guardarVoucherResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="obtenerVoucher">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerVoucherResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:voucher" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarVoucher">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarVoucherResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarVouchers">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarVouchersResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:voucher" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="estado">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Nuevo" />
+      <xs:enumeration value="Modificar" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
