@@ -56,6 +56,7 @@
 //            Logger.getLogger(AlumnoDaoTest.class.getName()).log(Level.SEVERE, null, ex);
 //        }
 //        alumno.setCarrera("Carrera 1");
+//        alumno.setPassword("pass1234");
 //        
 //        this.testId = alumnoDao.insertar(alumno);
 //        assertTrue(this.testId>0);
@@ -80,7 +81,7 @@
 //            Logger.getLogger(AlumnoDaoTest.class.getName()).log(Level.SEVERE, null, ex);
 //        }
 //        alumno.setCarrera("Carrera 2");
-//        
+//        alumno.setPassword("pass123456789");
 //        boolean modifico = alumnoDao.modificar(alumno);
 //        assertTrue(modifico);
 //        
@@ -90,6 +91,7 @@
 //        assertEquals(alumnoModificado.getNombre(),"Alumno nombre 2" );
 //        assertEquals(alumnoModificado.getApellido(),"Alumno apellido 2" );
 //        assertEquals(alumnoModificado.getEmail(),"Alumnno2@prueba.test" );
+//        assertEquals(alumnoModificado.getPassword(),"pass123456789" );
 //    }
 //
 //    @Test
@@ -110,7 +112,7 @@
 //            Logger.getLogger(AlumnoDaoTest.class.getName()).log(Level.SEVERE, null, ex);
 //        }
 //        alumno.setCarrera("Carrera 2");
-//        
+//        alumno.setPassword("pass1111");
 //        boolean modifico = alumnoDao.modificar(alumno);
 //        assertFalse(modifico);
 //    }

@@ -11,6 +11,7 @@ import java.util.List;
 import pe.edu.pucp.prog03.webhooke.bo.Estado;
 import pe.edu.pucp.prog03.webhooke.bo.ISesionBO;
 import pe.edu.pucp.prog03.webhooke.boimpl.SesionBOImpl;
+import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Alumno;
 import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Sesion;
 
 /**
@@ -52,4 +53,10 @@ public class SesionWS {
     public List<Sesion> listarSesiones () {
         return this.sesionBO.listar();
     }
+    
+    @WebMethod(operationName = "listarAlumnosporSesiones")
+    public List<Alumno> listarAlumnosporSesiones () {
+        return this.sesionBO.buscaralumnoporsesion();
+    }
+    
 }

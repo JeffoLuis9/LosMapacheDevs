@@ -10,5 +10,5 @@ import pe.edu.pucp.prog03.webhooke.dao.ICrud;
  * @author ASUS
  */
 public interface UsuarioDAO extends ICrud<Usuario>{
-    
+    int buscarUsuarioPorCorreo(String correo);
 }

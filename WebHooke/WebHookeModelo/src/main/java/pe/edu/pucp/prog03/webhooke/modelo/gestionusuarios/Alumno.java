@@ -13,6 +13,10 @@ package pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios;
 public class Alumno extends Usuario{
     private String carrera;
 
+    
+    public Alumno (){
+        this.setTipoUsuario('E');
+    }
     public String getCarrera() {
         return carrera;
     }

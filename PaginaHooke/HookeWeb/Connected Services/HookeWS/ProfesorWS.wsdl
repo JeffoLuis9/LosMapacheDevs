@@ -17,6 +17,12 @@
   <message name="guardarProfesorResponse">
     <part name="parameters" element="tns:guardarProfesorResponse" />
   </message>
+  <message name="eliminarProfesor">
+    <part name="parameters" element="tns:eliminarProfesor" />
+  </message>
+  <message name="eliminarProfesorResponse">
+    <part name="parameters" element="tns:eliminarProfesorResponse" />
+  </message>
   <message name="obtenerProfesor">
     <part name="parameters" element="tns:obtenerProfesor" />
   </message>
@@ -29,12 +35,6 @@
   <message name="listarProfesoresResponse">
     <part name="parameters" element="tns:listarProfesoresResponse" />
   </message>
-  <message name="eliminarProfesor">
-    <part name="parameters" element="tns:eliminarProfesor" />
-  </message>
-  <message name="eliminarProfesorResponse">
-    <part name="parameters" element="tns:eliminarProfesorResponse" />
-  </message>
   <portType name="ProfesorWS">
     <operation name="listarProfesoresPorCurso">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresPorCursoRequest" message="tns:listarProfesoresPorCurso" />
@@ -44,6 +44,10 @@
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/guardarProfesorRequest" message="tns:guardarProfesor" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/guardarProfesorResponse" message="tns:guardarProfesorResponse" />
     </operation>
+    <operation name="eliminarProfesor">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/eliminarProfesorRequest" message="tns:eliminarProfesor" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/eliminarProfesorResponse" message="tns:eliminarProfesorResponse" />
+    </operation>
     <operation name="obtenerProfesor">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/obtenerProfesorRequest" message="tns:obtenerProfesor" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/obtenerProfesorResponse" message="tns:obtenerProfesorResponse" />
@@ -51,10 +55,6 @@
     <operation name="listarProfesores">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresRequest" message="tns:listarProfesores" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresResponse" message="tns:listarProfesoresResponse" />
-    </operation>
-    <operation name="eliminarProfesor">
-      <input wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/eliminarProfesorRequest" message="tns:eliminarProfesor" />
-      <output wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/eliminarProfesorResponse" message="tns:eliminarProfesorResponse" />
     </operation>
   </portType>
   <binding name="ProfesorWSPortBinding" type="tns:ProfesorWS">
@@ -77,6 +77,15 @@
         <soap:body use="literal" />
       </output>
     </operation>
+    <operation name="eliminarProfesor">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="obtenerProfesor">
       <soap:operation soapAction="" />
       <input>
@@ -87,15 +96,6 @@
       </output>
     </operation>
     <operation name="listarProfesores">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="eliminarProfesor">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

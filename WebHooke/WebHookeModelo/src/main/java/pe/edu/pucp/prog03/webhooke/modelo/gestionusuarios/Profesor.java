@@ -13,7 +13,13 @@ public class Profesor extends Usuario {
     /**
      * @return the curso
      */
+    
+    public Profesor(){
+        this.setTipoUsuario('P');
+    }
+    
     public Curso getCurso() {
+        
         return curso;
     }
 

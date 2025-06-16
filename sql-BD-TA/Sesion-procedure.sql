@@ -13,11 +13,12 @@ CREATE DEFINER=`admin`@`%` PROCEDURE `insertarSesion`(
     IN p_idTipoSesion INT,
     IN p_idProfesor INT,
     IN p_idSede INT,
+    IN p_idVoucher INT,
     OUT p_id INT
 )
 BEGIN
-    INSERT INTO Sesion(fecha, modalidad, idCurso, idAlumno, idTipoSesion,idProfesor, idSede)
-    VALUES (p_fecha, p_modalidad, p_idCurso, p_idAlumno, p_idTipoSesion, p_idProfesor,p_idSede);
+    INSERT INTO Sesion(fecha, modalidad, idCurso, idAlumno, idTipoSesion,idProfesor, idSede, idVoucher)
+    VALUES (p_fecha, p_modalidad, p_idCurso, p_idAlumno, p_idTipoSesion, p_idProfesor,p_idSede,p_idvoucher);
     
     SET p_id = LAST_INSERT_ID();
 END//
@@ -31,7 +32,8 @@ CREATE DEFINER=`admin`@`%` PROCEDURE `modificarSesion`(
     IN p_idAlumno INT,
     IN p_idTipoSesion INT,
     IN p_idProfesor INT,
-    IN p_idSede INT
+    IN p_idSede INT,
+    IN p_idVoucher INT
 )
 BEGIN
     UPDATE Sesion
@@ -41,7 +43,8 @@ BEGIN
         idAlumno = p_idAlumno,
         idTipoSesion = p_idTipoSesion,
         idProfesor = p_idProfesor,
-        idSede = p_idSede
+        idSede = p_idSede,
+        idVoucher= p_idVoucher
     WHERE idSesion = p_id;
 END//
 

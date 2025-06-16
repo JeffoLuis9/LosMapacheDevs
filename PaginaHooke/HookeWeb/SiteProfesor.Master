@@ -1,0 +1,169 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteProfesor.master.cs" Inherits="PUCP.Edu.Pe.Prog03HookeWeb.Web.SiteProfesor" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial Black', sans-serif;
+            background-color: #000;
+            color: white;
+            display: flex;
+            flex-direction: column; /* El diseño principal es de columna */
+            min-height: 100vh;
+        }
+        .header {
+            background-color: #1a1a1a; /* Fondo más oscuro para el encabezado */
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between; /* Espacio entre el logo/título y el nombre de usuario */
+            align-items: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .header .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 24px; /* Ajustar según sea necesario para una sola línea */
+            font-weight: bold;
+            white-space: nowrap; /* Mantener el texto en una sola línea */
+        }
+        .header .header-owl-logo {
+            width: 60px; /* Ajustar tamaño */
+            height: auto;
+        }
+
+        /* Estilos del Dropdown de Información de Usuario */
+        .user-dropdown {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .user-info-trigger {
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .user-info-trigger:hover {
+            background-color: #333;
+        }
+        .user-dropdown-content {
+            display: none; /* Oculto por defecto */
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            right: 0; /* Alinear a la derecha del disparador */
+            border-radius: 5px;
+            overflow: hidden; /* Para esquinas redondeadas en los elementos hijos */
+        }
+        .user-dropdown-content a {
+            color: black; /* Color del texto para los elementos del dropdown */
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            font-size: 16px;
+        }
+        .user-dropdown-content.show {
+            display:block;
+        }
+        .user-dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        /* Mostrar el menú desplegable al pasar el ratón por encima */
+        /*.user-dropdown:hover .user-dropdown-content {
+            display: block;
+        }*/
+
+        .main-content-area {
+            display: flex;
+            flex-grow: 1; /* Permite que ocupe el espacio vertical disponible */
+            width: 100%;
+        }
+        .sidebar {
+            background-color: #000; /* Color de fondo de la barra lateral es ahora negro */
+            width: 250px; /* Ancho fijo para la barra lateral */
+            padding: 20px;
+            box-sizing: border-box;
+            flex-shrink: 0; /* Prevenir que se encoja */
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar ul li a {
+            color: white; /* Color de enlace predeterminado para la barra lateral */
+            text-decoration: none;
+            padding: 10px 0;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .sidebar ul li a:hover {
+            background-color: #333; /* Efecto hover para los enlaces de la barra lateral */
+        }
+        .page-content {
+            flex-grow: 1; /* Ocupa el espacio horizontal restante */
+            padding: 20px;
+            background-color: #000; /* Fondo del contenido principal */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <div class="logo-section">
+                <img src="Images/LogoFinal_edited.png" alt="Academia Hooke Logo" class="header-owl-logo" />
+                ACADEMIA HOOKE
+            </div>
+            <div class="user-dropdown">
+                <div class="user-info-trigger" onclick="toggleUserDropdown()">
+                    <i class="fa-solid fa-user"></i>
+                    <asp:Label ID="lblUserName" runat="server" Text="Nombre de Usuario"></asp:Label>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div id="userDropdownContent" class="user-dropdown-content">
+                    <a href="#">Perfil</a>
+                    <a href="#">Cambiar Contraseña</a>
+                    <asp:LinkButton ID="lnkLogout" runat="server" Text="Cerrar Sesión" OnClick="lnkLogout_Click" CssClass="logout-linkbutton"></asp:LinkButton>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function toggleUserDropdown() {
+                var dropdown = document.getElementById("userDropdownContent");
+                dropdown.classList.toggle("show");
+            }
+            // NOTA: Con este código simplificado, el dropdown solo se cerrará
+            // cuando hagas clic de nuevo en el nombre de usuario.
+            // No se cerrará automáticamente al hacer clic en otra parte de la página.
+        </script>
+          <div class="main-content-area">
+              <div class="sidebar">
+                  <ul>
+                            <li><a href="Profesor.aspx"><i class="fa-solid fa-house me-2"></i> Inicio</a></li>
+                      <li><a href="Login.aspx">Volver Profesor</a></li>
+                        </ul>
+              </div>
+              <div class="page-content">
+                  <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                      </asp:ContentPlaceHolder>
+                    </div>
+          </div>
+    </form>
+</body>
+</html>
+

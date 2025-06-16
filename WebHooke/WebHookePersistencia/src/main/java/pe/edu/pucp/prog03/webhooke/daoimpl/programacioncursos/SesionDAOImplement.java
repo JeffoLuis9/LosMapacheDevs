@@ -7,9 +7,13 @@ package pe.edu.pucp.prog03.webhooke.daoimpl.programacioncursos;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.Date;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Types;
+import java.util.ArrayList;
+import java.util.List;
+import pe.edu.pucp.prog03.webhooke.config.DBManager;
 import pe.edu.pucp.prog03.webhooke.dao.programacioncursos.SesionDAO;
 import pe.edu.pucp.prog03.webhooke.daoimpl.BaseDAOImplement;
 import pe.edu.pucp.prog03.webhooke.daoimpl.gestionusuarios.AlumnoDAOImplement;
@@ -17,7 +21,7 @@ import pe.edu.pucp.prog03.webhooke.daoimpl.modalidades.TipoSesionDAOImplement;
 import pe.edu.pucp.prog03.webhooke.daoimpl.gestionacademia.SedeDAOImplement;
 import pe.edu.pucp.prog03.webhooke.daoimpl.gestionusuarios.ProfesorDAOImplement;
 import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Sesion;
-
+import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Alumno;
 
 /**
  *
@@ -26,7 +30,7 @@ import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Sesion;
 public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements SesionDAO{
     @Override
     protected CallableStatement comandoInsertar(Connection conn, Sesion sesion) throws SQLException {
-        String sql = "{CALL insertarSesion(?,?,?,?,?,?,?,?)}";
+        String sql = "{CALL insertarSesion(?,?,?,?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         
         //cmd.setDate("p_fechanacimiento", java.sql.Date.valueOf(usu.getFechaNacimiento()));
@@ -37,6 +41,13 @@ public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements Sesi
         cmd.setInt("p_idTipoSesion", sesion.getTipoSesion().getIdModalidad());
         cmd.setInt("p_idProfesor", sesion.getProfesor().getId());
         cmd.setInt("p_idSede", sesion.getSede().getId());
+        
+        if (sesion.getVoucher() != null && sesion.getVoucher().getId()>0) {
+            cmd.setInt("p_idVoucher", sesion.getVoucher().getId()); // p_idVoucher
+        } else {
+            cmd.setNull("p_idVoucher", java.sql.Types.INTEGER);     // p_idVoucher = NULL
+        }
+        
         cmd.registerOutParameter("p_id", Types.INTEGER);
         return cmd;
     }
@@ -44,7 +55,7 @@ public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements Sesi
 
     @Override
     protected CallableStatement comandoModificar(Connection conn, Sesion sesion) throws SQLException {
-        String sql = "{CALL modificarSesion(?,?,?,?,?,?,?,?)}";
+        String sql = "{CALL modificarSesion(?,?,?,?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         
         cmd.setDate("p_fecha",new java.sql.Date(sesion.getFecha().getTime()));
@@ -54,6 +65,11 @@ public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements Sesi
         cmd.setInt("p_idTipoSesion", sesion.getTipoSesion().getIdModalidad());
         cmd.setInt("p_idProfesor", sesion.getProfesor().getId());
         cmd.setInt("p_idSede", sesion.getSede().getId());
+        if (sesion.getVoucher() != null && sesion.getVoucher().getId()>0) {
+            cmd.setInt("p_idVoucher", sesion.getVoucher().getId()); // p_idVoucher
+        } else {
+            cmd.setNull("p_idVoucher", java.sql.Types.INTEGER);     // p_idVoucher = NULL
+        }
         cmd.setInt("p_id", sesion.getIdHorario());
         return cmd;
     }
@@ -83,6 +99,8 @@ public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements Sesi
         return cmd;
     }
 
+    
+    
     @Override
     protected Sesion mapearModelo(ResultSet rs) throws SQLException {
         Sesion sesion = new Sesion();
@@ -97,7 +115,41 @@ public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements Sesi
         
         sesion.setSede(new SedeDAOImplement().buscar(rs.getInt("idSede")));
         
+        
+        int idVoucher = rs.getInt("idVoucher");
+        if(idVoucher >0)
+            sesion.setVoucher(new VoucherDAOImplement().buscar(rs.getInt("idVoucher")));
+        else
+            sesion.setVoucher(null);
+        
         return sesion;
     }    
+    
+    protected CallableStatement comandoBuscarAlumno(Connection conn) throws SQLException {
+        String sql = "{CALL buscarAlumnoEnSesion( )}";
+        CallableStatement cmd = conn.prepareCall(sql);
+        return cmd;
+    }
+    @Override
+    public List<Integer> buscaralumnosede(){
+        try (
+            Connection conn = DBManager.getInstance().getConnection(); PreparedStatement ps = this.comandoBuscarAlumno(conn);) {
+            ResultSet rs = ps.executeQuery();
+            List<Integer> modelos;
+            modelos = new ArrayList<>();
+            while (rs.next()) {
+                modelos.add(Integer.valueOf(rs.getInt("idAlumno")));
+            }   
+            return modelos;    
+        } catch (SQLException e) {
+            System.err.println("Error SQL durante el listado: " + e.getMessage());
+            throw new RuntimeException("No se pudo listar el registro.", e);
+        } catch (Exception e) {
+            System.err.println("Error inpesperado: " + e.getMessage());
+            throw new RuntimeException("Error inesperado al listar los registros.", e);
+        }
+    }
+    
+    
     
 }
