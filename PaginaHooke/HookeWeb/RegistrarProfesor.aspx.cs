@@ -1,5 +1,7 @@
-﻿using System;
+﻿using PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,43 +11,71 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
 {
     public partial class RegistrarProfesor : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        private ProfesorWSClient profesorWS;
+        private profesor profesor;
+        private estado estado;
+        private CursoWSClient cursoWS;
+        private curso curso;
+        protected void Page_Init(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            cursoWS = new CursoWSClient();
+            ddlCurso.DataSource = new BindingList<curso>(cursoWS.listarCursos());
+            ddlCurso.DataTextField = "nombre";
+            ddlCurso.DataValueField = "id";
+            ddlCurso.DataBind();
+            ddlCurso.Items.Insert(0, new ListItem("-- Seleccione Curso --", ""));
+
+            if (Request.QueryString["id"] != null)
             {
-
-                if (Request.QueryString["id"] != null)
+                int profesorId;
+                if (int.TryParse(Request.QueryString["id"], out profesorId))
                 {
-                    int profesorId;
-                    if (int.TryParse(Request.QueryString["id"], out profesorId))
-                    {
-                        hdnProfesorId.Value = profesorId.ToString(); 
-
-                        formTitle.InnerText = "Modificar Profesor"; 
-                        litPageTitle.Text = "Modificar Profesor";
-                        btnRegistrar.Text = "Guardar Cambios";
-
-                        
-                    }
-                    else
-                    {
-                        Response.Redirect("ListarProfesor.aspx");
-                    }
-                }
-                else
-                {
-                    hdnProfesorId.Value = "0"; 
-
-                    formTitle.InnerText = "Registrar Profesor";
-                    litPageTitle.Text = "Registrar Profesor";
-                    btnRegistrar.Text = "Registrar Profesor";
+                    profesorWS = new ProfesorWSClient();
+                    profesor = profesorWS.obtenerProfesor(profesorId);
+                    txtNombre.Text = profesor.nombre;
+                    txtApellido.Text = profesor.apellido;
+                    txtDNI.Text = profesor.DNI;
+                    txtEmail.Text = profesor.email;
+                    txtFechaNacimiento.Text = (profesor.fechaNacimiento).ToString();
+                    ddlCurso.SelectedValue = profesor.curso.id.ToString();
+                    txtPassword.Text = profesor.password;
+                    txtConfirmPassword.Text = profesor.password;
+                    estado = estado.Modificar;
+                    formTitle.InnerText = "Modificar Profesor"; 
+                    litPageTitle.Text = "Modificar Profesor";
+                    btnRegistrar.Text = "Guardar Cambios";
+     
                 }
             }
+            else
+            {
+                estado = estado.Nuevo;
+                formTitle.InnerText = "Registrar Profesor";
+                litPageTitle.Text = "Registrar Profesor";
+                btnRegistrar.Text = "Registrar Profesor";
+                profesor = new profesor();
+                profesor.tipoUsuario = 'P';
+            }
         }
+       
 
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
-            Response.Write("<script>alert('¡Registro exitoso! Ya puedes iniciar sesión.'); window.location='Administrador.aspx';</script>");
+            profesorWS = new ProfesorWSClient();
+            cursoWS = new CursoWSClient();
+            profesor.nombre = txtNombre.Text;
+            profesor.apellido = txtApellido.Text;
+            profesor.DNI = txtDNI.Text;
+            profesor.email = txtEmail.Text;
+            profesor.fechaNacimiento = DateTime.Parse(txtFechaNacimiento.Text);
+            profesor.fechaNacimientoSpecified = true;
+            curso = new curso();
+            curso = cursoWS.obtenerCurso(Int32.Parse(ddlCurso.SelectedValue));
+            profesor.curso = curso;
+            profesor.password = txtPassword.Text;
+            
+            profesorWS.guardarProfesor(profesor, estado);
+            Response.Redirect("ListarProfesor.aspx");
         }
     }
 }

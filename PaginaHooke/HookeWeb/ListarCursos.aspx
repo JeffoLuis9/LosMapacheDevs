@@ -133,7 +133,7 @@
         <asp:GridView ID="gvCursos" runat="server" AutoGenerateColumns="False" 
             DataKeyNames="id" CssClass="gvStyle"
       
-            OnRowDeleting="gvCursos_RowDeleting" OnRowCommand="gvCursos_RowCommand"
+            OnRowCommand="gvCursos_RowCommand"
             EmptyDataText="No hay cursos registrados aún.">
             <Columns>
                 <asp:BoundField DataField="codigo" HeaderText="Código" ItemStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center" />

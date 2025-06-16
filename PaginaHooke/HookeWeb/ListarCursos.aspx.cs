@@ -29,17 +29,20 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
 
         protected void gvCursos_RowCommand(object sender, GridViewCommandEventArgs e)
         {
+            int idCurso = Convert.ToInt32(e.CommandArgument);
             if (e.CommandName == "ModificarCurso")
             {
-                int idCurso = Convert.ToInt32(e.CommandArgument);
+                
                 Response.Redirect($"RegistrarCurso.aspx?id={idCurso}");
+            }
+            if (e.CommandName == "EliminarCurso")
+            {
+                
+                cursoWS.eliminarCurso(idCurso);
+                Response.Redirect("ListarCursos.aspx");
             }
         }
 
-        protected void gvCursos_RowDeleting(object sender, GridViewDeleteEventArgs e)
-        {
-
-        }
 
        
     }

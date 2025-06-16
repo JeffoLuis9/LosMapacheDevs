@@ -108,11 +108,11 @@
         
         <asp:GridView ID="gvTipoSesion" runat="server" AutoGenerateColumns="False" 
             DataKeyNames="idModalidad" CssClass="gvStyle"
-            OnRowDeleting="gvTipoSesion_RowDeleting" OnRowCommand="gvTipoSesion_RowCommand"
+            OnRowCommand="gvTipoSesion_RowCommand"
             EmptyDataText="No hay tipos de sesión registrados aún.">
             <Columns>
-                <asp:BoundField DataField="Tipo" HeaderText="Tipo de Sesión" ItemStyle-HorizontalAlign="Left" HeaderStyle-HorizontalAlign="Left" />
-                <asp:BoundField DataField="Precio" HeaderText="Precio" DataFormatString="{0:C}" ItemStyle-HorizontalAlign="Right" HeaderStyle-HorizontalAlign="Right" />
+                <asp:BoundField DataField="tipo" HeaderText="Tipo de Sesión" ItemStyle-HorizontalAlign="Left" HeaderStyle-HorizontalAlign="Left" />
+                <asp:BoundField DataField="precio" HeaderText="Precio" DataFormatString="{0:C}" ItemStyle-HorizontalAlign="Right" HeaderStyle-HorizontalAlign="Right" />
 
                 <asp:TemplateField HeaderText="Acciones" ItemStyle-CssClass="gv-action-buttons">
                     <ItemTemplate>
