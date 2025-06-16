@@ -1,11 +1,10 @@
 DROP TABLE IF EXISTS Sesion;
 DROP TABLE IF EXISTS TipoSesion;
-DROP TABLE IF EXISTS Alumno;
-DROP TABLE IF EXISTS Profesor;
+DROP TABLE IF EXISTS Usuario;
 DROP TABLE IF EXISTS Curso;
-DROP TABLE IF EXISTS Administrador;
 DROP TABLE IF EXISTS Sede;
 DROP TABLE IF EXISTS Academia;
+DROP TABLE IF EXISTS Voucher;
 
 CREATE TABLE Academia (
     idAcademia INT AUTO_INCREMENT PRIMARY KEY,
@@ -21,27 +20,6 @@ CREATE TABLE Sede (
     FOREIGN KEY (idAcademia) REFERENCES Academia(idAcademia)
 );
 
-CREATE TABLE Administrador (
-    idUsuario INT AUTO_INCREMENT PRIMARY KEY,
-    TipoUsuario CHAR(1),
-    Nombre VARCHAR(50),
-    Apellido VARCHAR(50),
-    DNI VARCHAR(50),
-    Email VARCHAR(100),
-    fechaNacimiento DATE
-);
-
-CREATE TABLE Alumno (
-    idUsuario INT AUTO_INCREMENT PRIMARY KEY,
-    TipoUsuario CHAR(1),
-    Nombre VARCHAR(50),
-    Apellido VARCHAR(50),
-    DNI VARCHAR(50),
-    Email VARCHAR(100),
-    fechaNacimiento DATE,
-    carrera VARCHAR(50)
-);
-
 CREATE TABLE Curso (
     idCurso INT AUTO_INCREMENT PRIMARY KEY,
     Codigo VARCHAR(50),
@@ -51,13 +29,17 @@ CREATE TABLE Curso (
     horaFin INT
 );
 
-CREATE TABLE Profesor (
-    idUsuario INT AUTO_INCREMENT PRIMARY KEY,
+
+
+CREATE TABLE Usuario(
+	idUsuario INT AUTO_INCREMENT PRIMARY KEY,
     TipoUsuario CHAR(1),
     Nombre VARCHAR(50),
     Apellido VARCHAR(50),
     DNI VARCHAR(50),
     Email VARCHAR(100),
+    password VARCHAR(100),
+    carrera VARCHAR (50),
     fechaNacimiento DATE,
     idCurso INT,
     FOREIGN KEY (idCurso) REFERENCES Curso(idCurso)
@@ -69,20 +51,28 @@ CREATE TABLE TipoSesion (
     Tipo VARCHAR(50)
 );
 
+CREATE TABLE Voucher (
+	idVoucher INT AUTO_INCREMENT PRIMARY KEY,
+    codigoOperacion VARCHAR (50),
+    monto DOUBLE,
+    fecha DATE
+);
+
 CREATE TABLE Sesion (
     idSesion INT AUTO_INCREMENT PRIMARY KEY,
     fecha DATE,
     Modalidad VARCHAR(30),
+    estado boolean default false,
     idCurso INT,
     idAlumno INT,
     idTipoSesion INT,
     idProfesor INT,
     idSede INT,
+    idVoucher INT,
     FOREIGN KEY (idCurso) REFERENCES Curso(idCurso),
-    FOREIGN KEY (idAlumno) REFERENCES Alumno(idUsuario),
+    FOREIGN KEY (idAlumno) REFERENCES Usuario(idUsuario),
     FOREIGN KEY (idTipoSesion) REFERENCES TipoSesion(idModalidad),
     FOREIGN KEY (idSede) REFERENCES Sede(idSede),
-    FOREIGN KEY (idProfesor) REFERENCES Profesor(idUsuario)
+    FOREIGN KEY (idProfesor) REFERENCES Usuario(idUsuario),
+    FOREIGN KEY (idVoucher) REFERENCES Voucher(idVoucher)
 );
-
-select * from Alumno;

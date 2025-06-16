@@ -29,7 +29,7 @@ public class AlumnoDAOImplement extends BaseDAOImplement<Alumno> implements Alum
     
     @Override
     protected CallableStatement comandoInsertar(Connection conn, Alumno usu) throws SQLException {
-        String sql = "{CALL insertarAlumno(?,?,?,?,?,?,?)}";
+        String sql = "{CALL insertarAlumno(?,?,?,?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
@@ -38,6 +38,8 @@ public class AlumnoDAOImplement extends BaseDAOImplement<Alumno> implements Alum
 //        cmd.setDate("p_fechanacimiento", usu.getFechaNacimiento());
         cmd.setDate("p_fechanacimiento",  new java.sql.Date(usu.getFechaNacimiento().getTime()));
         cmd.setString("p_carrera", usu.getCarrera());
+        cmd.setString("p_tipoUsuario", String.valueOf(usu.getTipoUsuario()));
+        cmd.setString("p_password", usu.getPassword());
         cmd.registerOutParameter("p_id", Types.INTEGER);
         return cmd;
     }
@@ -45,7 +47,7 @@ public class AlumnoDAOImplement extends BaseDAOImplement<Alumno> implements Alum
     
     @Override
     protected CallableStatement comandoModificar(Connection conn, Alumno usu) throws SQLException {
-        String sql = "{CALL modificarAlumno(?,?,?,?,?,?,?)}";
+        String sql = "{CALL modificarAlumno(?,?,?,?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         cmd.setString("p_nombre", usu.getNombre());
         cmd.setString("p_apellido", usu.getApellido());
@@ -54,6 +56,8 @@ public class AlumnoDAOImplement extends BaseDAOImplement<Alumno> implements Alum
         cmd.setDate("p_fechanacimiento",  new java.sql.Date(usu.getFechaNacimiento().getTime()));
         cmd.setString("p_carrera", usu.getCarrera());
         cmd.setInt("p_id", usu.getId());
+        cmd.setString("p_password", usu.getPassword());
+        cmd.setString("p_tipoUsuario", String.valueOf(usu.getTipoUsuario()));
         return cmd;
     }
     
@@ -90,6 +94,8 @@ public class AlumnoDAOImplement extends BaseDAOImplement<Alumno> implements Alum
         usu.setEmail(rs.getString("email"));
         usu.setFechaNacimiento(rs.getDate("fechaNacimiento"));
         usu.setCarrera(rs.getString("carrera"));
+        usu.setTipoUsuario(rs.getString("tipoUsuario").charAt(0));
+        usu.setPassword(rs.getString("password"));
         return usu;
     }
     

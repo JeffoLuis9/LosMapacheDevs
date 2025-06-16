@@ -8,10 +8,12 @@
   <xs:element name="listarTipoSesionesResponse" type="tns:listarTipoSesionesResponse" />
   <xs:element name="obtenerTipoSesion" type="tns:obtenerTipoSesion" />
   <xs:element name="obtenerTipoSesionResponse" type="tns:obtenerTipoSesionResponse" />
-  <xs:complexType name="guardarTipoSesion">
+  <xs:complexType name="listarTipoSesiones">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTipoSesionesResponse">
     <xs:sequence>
-      <xs:element minOccurs="0" name="tipoSesion" type="tns:tipoSesion" />
-      <xs:element minOccurs="0" name="estado" type="tns:estado" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:tipoSesion" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="tipoSesion">
@@ -21,16 +23,14 @@
       <xs:element minOccurs="0" name="tipo" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="guardarTipoSesion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="tipoSesion" type="tns:tipoSesion" />
+      <xs:element minOccurs="0" name="estado" type="tns:estado" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="guardarTipoSesionResponse">
     <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="listarTipoSesiones">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="listarTipoSesionesResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:tipoSesion" />
-    </xs:sequence>
   </xs:complexType>
   <xs:complexType name="obtenerTipoSesion">
     <xs:sequence>

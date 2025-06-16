@@ -11,14 +11,13 @@ CREATE DEFINER=`admin`@`%` PROCEDURE `insertarAlumno`(
     IN p_apellido VARCHAR(100),
     IN p_dni CHAR(8),
     IN p_email VARCHAR(150),
-    IN p_password VARCHAR (100),
     IN p_fechanacimiento DATE,
     IN p_carrera VARCHAR(100),
     OUT p_id INT
 )
 BEGIN
-    INSERT INTO Usuario (TipoUsuario,Nombre, Apellido, DNI, Email,Password, fechanacimiento, carrera)
-    VALUES (p_tipoUsuario,p_nombre, p_apellido, p_dni, p_email, p_password,p_fechanacimiento, p_carrera);
+    INSERT INTO Alumno (TipoUsuario,Nombre, Apellido, DNI, Email, fechanacimiento, carrera)
+    VALUES (p_tipoUsuario,p_nombre, p_apellido, p_dni, p_email, p_fechanacimiento, p_carrera);
 
     SET p_id = LAST_INSERT_ID();
 END//
@@ -30,19 +29,17 @@ CREATE DEFINER=`admin`@`%` PROCEDURE `modificarAlumno`(
     IN p_apellido VARCHAR(100),
     IN p_dni CHAR(8),
     IN p_email VARCHAR(150),
-    IN p_password VARCHAR (100),
     IN p_fechanacimiento DATE,
     IN p_carrera VARCHAR(100),
     IN p_id INT
 )
 BEGIN
-    UPDATE Usuario
+    UPDATE Alumno
     SET TipoUsuario=p_tipoUsuario,
 		nombre = p_nombre,
         apellido = p_apellido,
         dni = p_dni,
         email = p_email,
-        password = p_password,
         fechaNacimiento = p_fechanacimiento,
         carrera = p_carrera
     WHERE idUsuario = p_id;
@@ -53,7 +50,7 @@ CREATE DEFINER=`admin`@`%` PROCEDURE `buscarAlumnoPorId`(
     IN p_id INT
 )
 BEGIN
-    SELECT * FROM Usuario
+    SELECT * FROM Alumno
     WHERE idUsuario = p_id;
 END//
 
@@ -62,12 +59,12 @@ CREATE DEFINER=`admin`@`%` PROCEDURE `eliminarAlumno`(
     IN p_id INT
 )
 BEGIN
-    DELETE FROM Usuario
+    DELETE FROM Alumno
     WHERE idUsuario = p_id;
 END//
 
 DELIMITER //
 CREATE DEFINER=`admin`@`%` PROCEDURE `listarAlumno`()
 BEGIN
-    SELECT * FROM Usuario where TipoUsuario = "E";
+    SELECT * FROM Alumno;
 END//
