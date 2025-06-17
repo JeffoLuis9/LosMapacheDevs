@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <SavedWcfConfigurationInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="9.1" CheckSum="6BynFsesxCH9iGInJG2UzPzOD4shxiaDW3kC1E5CL14=">
+=======
+<SavedWcfConfigurationInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="9.1" CheckSum="PXZskDI9Ph3kBeRGQ4iNhS2o8DcpK0NXbwbzt6aZQRI=">
+>>>>>>> origin/BranchAndres
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="TipoSesionWSPortBinding">
       <properties>
@@ -873,10 +877,17 @@
         </property>
       </properties>
     </bindingConfiguration>
+<<<<<<< HEAD
     <bindingConfiguration bindingType="basicHttpBinding" name="UsuarioWSPortBinding">
       <properties>
         <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>UsuarioWSPortBinding</serializedValue>
+=======
+    <bindingConfiguration bindingType="basicHttpBinding" name="VoucherWSPortBinding">
+      <properties>
+        <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <serializedValue>VoucherWSPortBinding</serializedValue>
+>>>>>>> origin/BranchAndres
         </property>
         <property path="/closeTimeout" isComplexType="false" isExplicitlyDefined="true" clrType="System.TimeSpan, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

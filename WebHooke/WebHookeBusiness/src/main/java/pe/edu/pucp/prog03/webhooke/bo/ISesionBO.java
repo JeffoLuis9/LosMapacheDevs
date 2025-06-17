@@ -4,6 +4,8 @@
  */
 package pe.edu.pucp.prog03.webhooke.bo;
 
+import java.util.List;
+import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Alumno;
 import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Sesion;
 
 /**
@@ -11,5 +13,6 @@ import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Sesion;
  * @author ASUS
  */
 public interface ISesionBO  extends IBaseBO<Sesion>{
-    
+    List<Alumno>buscaralumnoporsesion();
+    List<Sesion>buscarSesionesxalumno(int id);
 }

@@ -5,12 +5,36 @@
       <xsd:import schemaLocation="http://localhost:8080/WebHookeWS/SesionWS?xsd=1" namespace="http://services.webhooke.pucp.edu.pe/" />
     </xsd:schema>
   </types>
+<<<<<<< HEAD
+=======
+  <message name="listarAlumnosporSesiones">
+    <part name="parameters" element="tns:listarAlumnosporSesiones" />
+  </message>
+  <message name="listarAlumnosporSesionesResponse">
+    <part name="parameters" element="tns:listarAlumnosporSesionesResponse" />
+  </message>
+  <message name="guardarSesion">
+    <part name="parameters" element="tns:guardarSesion" />
+  </message>
+  <message name="guardarSesionResponse">
+    <part name="parameters" element="tns:guardarSesionResponse" />
+  </message>
+>>>>>>> origin/BranchAndres
   <message name="listarSesiones">
     <part name="parameters" element="tns:listarSesiones" />
   </message>
   <message name="listarSesionesResponse">
     <part name="parameters" element="tns:listarSesionesResponse" />
   </message>
+<<<<<<< HEAD
+=======
+  <message name="obtenerSesion">
+    <part name="parameters" element="tns:obtenerSesion" />
+  </message>
+  <message name="obtenerSesionResponse">
+    <part name="parameters" element="tns:obtenerSesionResponse" />
+  </message>
+>>>>>>> origin/BranchAndres
   <message name="eliminarSesion">
     <part name="parameters" element="tns:eliminarSesion" />
   </message>
@@ -30,10 +54,28 @@
     <part name="parameters" element="tns:obtenerSesionResponse" />
   </message>
   <portType name="SesionWS">
+<<<<<<< HEAD
+=======
+    <operation name="listarAlumnosporSesiones">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/listarAlumnosporSesionesRequest" message="tns:listarAlumnosporSesiones" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/listarAlumnosporSesionesResponse" message="tns:listarAlumnosporSesionesResponse" />
+    </operation>
+    <operation name="guardarSesion">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/guardarSesionRequest" message="tns:guardarSesion" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/guardarSesionResponse" message="tns:guardarSesionResponse" />
+    </operation>
+>>>>>>> origin/BranchAndres
     <operation name="listarSesiones">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/listarSesionesRequest" message="tns:listarSesiones" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/listarSesionesResponse" message="tns:listarSesionesResponse" />
     </operation>
+<<<<<<< HEAD
+=======
+    <operation name="obtenerSesion">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/obtenerSesionRequest" message="tns:obtenerSesion" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/obtenerSesionResponse" message="tns:obtenerSesionResponse" />
+    </operation>
+>>>>>>> origin/BranchAndres
     <operation name="eliminarSesion">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/eliminarSesionRequest" message="tns:eliminarSesion" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/eliminarSesionResponse" message="tns:eliminarSesionResponse" />
@@ -49,7 +91,20 @@
   </portType>
   <binding name="SesionWSPortBinding" type="tns:SesionWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+<<<<<<< HEAD
     <operation name="listarSesiones">
+=======
+    <operation name="listarAlumnosporSesiones">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="guardarSesion">
+>>>>>>> origin/BranchAndres
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -67,7 +122,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="guardarSesion">
+    <operation name="obtenerSesion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

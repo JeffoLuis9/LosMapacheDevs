@@ -113,6 +113,8 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\HookeWS\CursoWS.wsdl" />
+    <Content Include="Administrador.aspx" />
+    <Content Include="Alumno.aspx" />
     <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.academia.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -242,6 +244,24 @@
     <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.verificarCorreoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarVoucherResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosporSesionesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarVouchersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.voucher.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\HookeWS\SedeWS.wsdl" />
     <None Include="Connected Services\HookeWS\servicios.disco" />
     <None Include="Connected Services\HookeWS\configuration91.svcinfo" />
@@ -269,15 +289,25 @@
     <Content Include="Content\estilo.css" />
     <Content Include="CursosIntencionAlumno.aspx" />
     <Content Include="favicon.ico" />
+<<<<<<< HEAD
     <Content Include="Intenciones.aspx" />
     <Content Include="ListarCursos.aspx" />
     <Content Include="ListarProfesor.aspx" />
+=======
+    <Content Include="GestionarSede.aspx" />
+    <Content Include="ListarCursos.aspx" />
+    <Content Include="ListarProfesor.aspx" />
+    <Content Include="ListarSede.aspx" />
+>>>>>>> origin/BranchAndres
     <Content Include="ListarTipoSesiones.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Profesor.aspx" />
     <Content Include="Registrar.aspx" />
     <Content Include="RegistrarCurso.aspx" />
+<<<<<<< HEAD
     <Content Include="RegistrarMatricula.aspx" />
+=======
+>>>>>>> origin/BranchAndres
     <Content Include="RegistrarProfesor.aspx" />
     <Content Include="RegistrarTipoSesion.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -331,10 +361,13 @@
     <None Include="Connected Services\HookeWS\TipoSesionWS.xsd">
       <SubType>Designer</SubType>
     </None>
+<<<<<<< HEAD
     <None Include="Connected Services\HookeWS\UsuarioWS.wsdl" />
     <None Include="Connected Services\HookeWS\UsuarioWS.xsd">
       <SubType>Designer</SubType>
     </None>
+=======
+>>>>>>> origin/BranchAndres
     <None Include="Connected Services\HookeWS\VoucherWS.wsdl" />
     <None Include="Connected Services\HookeWS\VoucherWS.xsd">
       <SubType>Designer</SubType>
@@ -394,6 +427,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="CursosIntencionAlumno.aspx.cs">
       <DependentUpon>CursosIntencionAlumno.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -421,6 +455,35 @@
     </Compile>
     <Compile Include="ListarProfesor.aspx.designer.cs">
       <DependentUpon>ListarProfesor.aspx</DependentUpon>
+=======
+    <Compile Include="GestionarSede.aspx.cs">
+      <DependentUpon>GestionarSede.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionarSede.aspx.designer.cs">
+      <DependentUpon>GestionarSede.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListarCursos.aspx.cs">
+      <DependentUpon>ListarCursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListarCursos.aspx.designer.cs">
+      <DependentUpon>ListarCursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListarProfesor.aspx.cs">
+      <DependentUpon>ListarProfesor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListarProfesor.aspx.designer.cs">
+      <DependentUpon>ListarProfesor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListarSede.aspx.cs">
+      <DependentUpon>ListarSede.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListarSede.aspx.designer.cs">
+      <DependentUpon>ListarSede.aspx</DependentUpon>
+>>>>>>> origin/BranchAndres
     </Compile>
     <Compile Include="ListarTipoSesiones.aspx.cs">
       <DependentUpon>ListarTipoSesiones.aspx</DependentUpon>
@@ -458,6 +521,7 @@
     <Compile Include="RegistrarCurso.aspx.designer.cs">
       <DependentUpon>RegistrarCurso.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="RegistrarMatricula.aspx.cs">
       <DependentUpon>RegistrarMatricula.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -465,6 +529,8 @@
     <Compile Include="RegistrarMatricula.aspx.designer.cs">
       <DependentUpon>RegistrarMatricula.aspx</DependentUpon>
     </Compile>
+=======
+>>>>>>> origin/BranchAndres
     <Compile Include="RegistrarProfesor.aspx.cs">
       <DependentUpon>RegistrarProfesor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

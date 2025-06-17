@@ -7,9 +7,13 @@ package pe.edu.pucp.prog03.webhooke.daoimpl.programacioncursos;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.Date;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Types;
+import java.util.ArrayList;
+import java.util.List;
+import pe.edu.pucp.prog03.webhooke.config.DBManager;
 import pe.edu.pucp.prog03.webhooke.dao.programacioncursos.SesionDAO;
 import pe.edu.pucp.prog03.webhooke.daoimpl.BaseDAOImplement;
 import pe.edu.pucp.prog03.webhooke.daoimpl.gestionusuarios.AlumnoDAOImplement;
@@ -17,7 +21,7 @@ import pe.edu.pucp.prog03.webhooke.daoimpl.modalidades.TipoSesionDAOImplement;
 import pe.edu.pucp.prog03.webhooke.daoimpl.gestionacademia.SedeDAOImplement;
 import pe.edu.pucp.prog03.webhooke.daoimpl.gestionusuarios.ProfesorDAOImplement;
 import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Sesion;
-
+import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Alumno;
 
 /**
  *
@@ -95,6 +99,8 @@ public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements Sesi
         return cmd;
     }
 
+    
+    
     @Override
     protected Sesion mapearModelo(ResultSet rs) throws SQLException {
         Sesion sesion = new Sesion();
@@ -118,5 +124,59 @@ public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements Sesi
         
         return sesion;
     }    
+    
+    protected CallableStatement comandoBuscarAlumno(Connection conn) throws SQLException {
+        String sql = "{CALL buscarAlumnoEnSesion( )}";
+        CallableStatement cmd = conn.prepareCall(sql);
+        return cmd;
+    }
+    @Override
+    public List<Integer> buscaralumnosede(){
+        try (
+            Connection conn = DBManager.getInstance().getConnection(); PreparedStatement ps = this.comandoBuscarAlumno(conn);) {
+            ResultSet rs = ps.executeQuery();
+            List<Integer> modelos;
+            modelos = new ArrayList<>();
+            while (rs.next()) {
+                modelos.add(Integer.valueOf(rs.getInt("idAlumno")));
+            }   
+            return modelos;    
+        } catch (SQLException e) {
+            System.err.println("Error SQL durante el listado: " + e.getMessage());
+            throw new RuntimeException("No se pudo listar el registro.", e);
+        } catch (Exception e) {
+            System.err.println("Error inpesperado: " + e.getMessage());
+            throw new RuntimeException("Error inesperado al listar los registros.", e);
+        }
+    }
+    
+    @Override
+    public List<Integer>buscarsesionesxalumno(int idAlumno){
+        try (
+            Connection conn = DBManager.getInstance().getConnection(); PreparedStatement ps = this.comandoBuscarSesionesxalumno(conn,idAlumno);) {
+            ResultSet rs = ps.executeQuery();
+            List<Integer> modelos;
+            modelos = new ArrayList<>();
+            while (rs.next()) {
+                modelos.add(Integer.valueOf(rs.getInt("idSesion")));
+            }   
+            return modelos;    
+        } catch (SQLException e) {
+            System.err.println("Error SQL durante el listado: " + e.getMessage());
+            throw new RuntimeException("No se pudo listar el registro.", e);
+        } catch (Exception e) {
+            System.err.println("Error inpesperado: " + e.getMessage());
+            throw new RuntimeException("Error inesperado al listar los registros de sesionesxalumnos.", e);
+        }
+    }
+    
+    protected CallableStatement comandoBuscarSesionesxalumno(Connection conn,int id) throws SQLException {
+        String sql = "{CALL listarSesionesporAlumnos(?)}";
+        CallableStatement cmd = conn.prepareCall(sql);
+        cmd.setInt("p_id", id);
+        return cmd;
+    }
+    
+    
     
 }

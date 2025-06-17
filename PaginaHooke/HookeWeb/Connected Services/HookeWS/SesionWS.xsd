@@ -4,6 +4,8 @@
   <xs:element name="eliminarSesionResponse" type="tns:eliminarSesionResponse" />
   <xs:element name="guardarSesion" type="tns:guardarSesion" />
   <xs:element name="guardarSesionResponse" type="tns:guardarSesionResponse" />
+  <xs:element name="listarAlumnosporSesiones" type="tns:listarAlumnosporSesiones" />
+  <xs:element name="listarAlumnosporSesionesResponse" type="tns:listarAlumnosporSesionesResponse" />
   <xs:element name="listarSesiones" type="tns:listarSesiones" />
   <xs:element name="listarSesionesResponse" type="tns:listarSesionesResponse" />
   <xs:element name="obtenerSesion" type="tns:obtenerSesion" />
@@ -126,6 +128,14 @@
   </xs:complexType>
   <xs:complexType name="guardarSesionResponse">
     <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarAlumnosporSesiones">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarAlumnosporSesionesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:alumno" />
+    </xs:sequence>
   </xs:complexType>
   <xs:simpleType name="estado">
     <xs:restriction base="xs:string">

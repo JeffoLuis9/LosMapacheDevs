@@ -1,8 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteAdministrador.Master" AutoEventWireup="true" CodeBehind="ListarCursos.aspx.cs" Inherits="PUCP.Edu.Pe.Prog03HookeWeb.Web.ListarCursos" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteAdministrador.Master" AutoEventWireup="true" CodeBehind="ListarSede.aspx.cs" Inherits="PUCP.Edu.Pe.Prog03HookeWeb.Web.ListarSede" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-    Mostrar curso
+    Mostrar Sedes
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+
     <style>
         /* Estilos generales para el contenedor */
         .list-container { /* Un nombre más genérico que 'list-profesor-container' */
@@ -124,47 +125,33 @@
     </style>
 
     <div class="list-container">
-        <div class="header-section">
-            <h2>Lista de Cursos</h2>
-            <asp:LinkButton ID="btnRegistrarNuevo" runat="server" Text="Registrar" 
-                CssClass="btn-add-new" OnClick="btnRegistrarNuevo_Click" />
-        </div>
-     
-        <asp:GridView ID="gvCursos" runat="server" AutoGenerateColumns="False" 
-<<<<<<< HEAD
-            DataKeyNames="id" CssClass="gvStyle"
-      
-            OnRowCommand="gvCursos_RowCommand"
-            EmptyDataText="No hay cursos registrados aún.">
-            <Columns>
-                <asp:BoundField DataField="codigo" HeaderText="Código" ItemStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center" />
-                <asp:BoundField DataField="nombre" HeaderText="Nombre del Curso" ItemStyle-HorizontalAlign="Left" HeaderStyle-HorizontalAlign="Left" />
-=======
-            DataKeyNames="idCurso" CssClass="gvStyle"
-            OnRowDeleting="gvCursos_RowDeleting" OnRowCommand="gvCursos_RowCommand"
-            EmptyDataText="No hay cursos registrados aún.">
-            <Columns>
-                <asp:BoundField DataField="Codigo" HeaderText="Código" ItemStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center" />
-                <asp:BoundField DataField="Nombre" HeaderText="Nombre del Curso" ItemStyle-HorizontalAlign="Left" HeaderStyle-HorizontalAlign="Left" />
->>>>>>> origin/BranchAndres
-
-                <asp:TemplateField HeaderText="Acciones" ItemStyle-CssClass="gv-action-buttons">
-                    <ItemTemplate>
-                        <asp:LinkButton ID="lnkModificar" runat="server" CommandName="ModificarCurso" 
-<<<<<<< HEAD
-                            CommandArgument='<%# Eval("id") %>' CssClass="btn-modificar">Modificar</asp:LinkButton>
-                        <asp:LinkButton ID="lnkEliminar" runat="server" CommandName="EliminarCurso" 
-                            CommandArgument='<%# Eval("id") %>' CssClass="btn-eliminar"
-=======
-                            CommandArgument='<%# Eval("idCurso") %>' CssClass="btn-modificar">Modificar</asp:LinkButton>
-                        <asp:LinkButton ID="lnkEliminar" runat="server" CommandName="EliminarCurso" 
-                            CommandArgument='<%# Eval("idCurso") %>' CssClass="btn-eliminar"
->>>>>>> origin/BranchAndres
-                            OnClientClick='return confirm("¿Estás seguro de que quieres eliminar este curso?");'>Eliminar</asp:LinkButton>
-                    </ItemTemplate>
-                </asp:TemplateField>
-            </Columns>
-            <EmptyDataRowStyle CssClass="empty-grid-message" />
-        </asp:GridView>
+    <div class="header-section">
+        <h2>Lista de Sedes</h2>
+        <asp:LinkButton ID="btnRegistrarNuevo" runat="server" Text="Registrar" 
+            CssClass="btn-add-new" OnClick="btnRegistrarNuevo_Click" />
     </div>
+ 
+    <asp:GridView ID="gvSedes" runat="server" AutoGenerateColumns="False" 
+        DataKeyNames="id" CssClass="gvStyle"
+        OnRowCommand="gvSedes_RowCommand"
+        EmptyDataText="No hay Sedes registradas aún.">
+        <Columns>
+            <asp:BoundField DataField="direccion" HeaderText="Direccion" ItemStyle-HorizontalAlign="Left" HeaderStyle-HorizontalAlign="Left" />
+            <asp:BoundField DataField="distrito" HeaderText="Distrito" ItemStyle-HorizontalAlign="Left" HeaderStyle-HorizontalAlign="Left" />
+
+            <asp:TemplateField HeaderText="Acciones" ItemStyle-CssClass="gv-action-buttons">
+                <ItemTemplate>
+                    <asp:LinkButton ID="lnkModificar" runat="server" CommandName="ModificarSede" 
+                        CommandArgument='<%# Eval("id") %>' CssClass="btn-modificar">Modificar</asp:LinkButton>
+                    <asp:LinkButton ID="lnkEliminar" runat="server" CommandName="EliminarSede" 
+                        CommandArgument='<%# Eval("id") %>' CssClass="btn-eliminar"
+                        OnClientClick='return confirm("¿Estás seguro de que quieres eliminar esta sede?");'>Eliminar</asp:LinkButton>
+                </ItemTemplate>
+            </asp:TemplateField>
+        </Columns>
+        <EmptyDataRowStyle CssClass="empty-grid-message" />
+    </asp:GridView>
+</div>
+
+
 </asp:Content>

@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿using PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS;
 using System;
+=======
+﻿using System;
+>>>>>>> origin/BranchAndres
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +14,7 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
 {
     public partial class Login : System.Web.UI.Page
     {
+<<<<<<< HEAD
         private UsuarioWSClient usuarioWS;
         private AlumnoWSClient alumnoWS;
         private ProfesorWSClient profesorWS;
@@ -57,6 +62,35 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
             }
 
             lblErrorMessage.Text = "Correo o contraseña incorrecto";
+=======
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+
+            // Redirigir a la página correspondiente (Pagina1.aspx, Pagina2.aspx, etc.)
+            // Aquí debes implementar tu lógica de redirección basada en el tipo de usuario o rol
+            if (txtEmail.Text == "administrador@gmail.com" && txtPassword.Text == "prueba1") // Ejemplo de lógica
+            {
+                Session["UserId"] = 1;
+                Session["UserName"] = "David Cutisaca";
+                Response.Redirect("Administrador.aspx");
+            }
+            else if (txtEmail.Text == "profesor@gmail.com" && txtPassword.Text == "prueba1")
+            {
+                Session["UserId"] = 2;
+                Session["UserName"] = "Andres Huaman";
+                Response.Redirect("Profesor.aspx");
+            }
+            else if (txtEmail.Text == "alumno@gmail.com" && txtPassword.Text == "prueba1")
+            {
+                Session["UserId"] = 3;
+                Session["UserName"] = "Jefferson Robles";
+                Response.Redirect("Alumno.aspx");
+            }
+            else
+            {
+                lblErrorMessage.Text = "Correo o contraseña incorrecto";
+            }
+>>>>>>> origin/BranchAndres
 
         }
 
