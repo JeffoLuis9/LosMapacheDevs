@@ -136,8 +136,6 @@
                     <i class="fa-solid fa-caret-down"></i>
                 </div>
                 <div id="userDropdownContent" class="user-dropdown-content">
-                    <a href="#">Perfil</a>
-                    <a href="#">Cambiar Contraseña</a>
                     <asp:LinkButton ID="lnkLogout" runat="server" Text="Cerrar Sesión" OnClick="lnkLogout_Click" CssClass="logout-linkbutton"></asp:LinkButton>
                 </div>
             </div>

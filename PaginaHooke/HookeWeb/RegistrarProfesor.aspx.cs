@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -73,7 +75,6 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
             curso = cursoWS.obtenerCurso(Int32.Parse(ddlCurso.SelectedValue));
             profesor.curso = curso;
             profesor.password = txtPassword.Text;
-            
             profesorWS.guardarProfesor(profesor, estado);
             Response.Redirect("ListarProfesor.aspx");
         }
