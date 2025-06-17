@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\hookeweb\\registrarprofesor.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\registrarprofesor.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|d:\\trabajoacademicoprog3\\losmapachedevs\\paginahooke\\hookeweb\\registrarprofesor.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\registrarprofesor.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|d:\\trabajoacademicoprog3\\losmapachedevs\\paginahooke\\hookeweb\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\hookeweb\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\hookeweb\\registrarprofesor.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D4081-2475-4CC7-999F-81AE188631BD}|HookeWeb\\HookeWeb.csproj|solutionrelative:hookeweb\\registrarprofesor.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegistrarProfesor.aspx",
+              "DocumentMoniker": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\RegistrarProfesor.aspx",
+              "RelativeDocumentMoniker": "HookeWeb\\RegistrarProfesor.aspx",
+              "ToolTip": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\RegistrarProfesor.aspx",
+              "RelativeToolTip": "HookeWeb\\RegistrarProfesor.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-17T22:09:08.886Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -46,12 +63,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Login.aspx.cs",
               "DocumentMoniker": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Login.aspx.cs",
               "RelativeDocumentMoniker": "HookeWeb\\Login.aspx.cs",
-              "ToolTip": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Login.aspx.cs*",
-              "RelativeToolTip": "HookeWeb\\Login.aspx.cs*",
+              "ToolTip": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Login.aspx.cs",
+              "RelativeToolTip": "HookeWeb\\Login.aspx.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAWwBMAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-17T03:15:41.151Z",
@@ -59,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Login.aspx",
               "DocumentMoniker": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Login.aspx",
               "RelativeDocumentMoniker": "HookeWeb\\Login.aspx",
@@ -71,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Registrar.aspx",
               "DocumentMoniker": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Registrar.aspx",
               "RelativeDocumentMoniker": "HookeWeb\\Registrar.aspx",
@@ -83,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Registrar.aspx.cs",
               "DocumentMoniker": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\Registrar.aspx.cs",
               "RelativeDocumentMoniker": "HookeWeb\\Registrar.aspx.cs",
@@ -95,15 +112,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "RegistrarProfesor.aspx.cs",
               "DocumentMoniker": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\RegistrarProfesor.aspx.cs",
               "RelativeDocumentMoniker": "HookeWeb\\RegistrarProfesor.aspx.cs",
-              "ToolTip": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\RegistrarProfesor.aspx.cs",
-              "RelativeToolTip": "HookeWeb\\RegistrarProfesor.aspx.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAQwDgAAAArAAAAAAAAAA==",
+              "ToolTip": "D:\\TrabajoAcademicoProg3\\LosMapacheDevs\\PaginaHooke\\HookeWeb\\RegistrarProfesor.aspx.cs*",
+              "RelativeToolTip": "HookeWeb\\RegistrarProfesor.aspx.cs*",
+              "ViewState": "AgIAABoAAAAAAAAAAAAuwCgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T03:05:07.594Z"
+              "WhenOpened": "2025-06-17T03:05:07.594Z",
+              "EditorCaption": ""
             }
           ]
         }
