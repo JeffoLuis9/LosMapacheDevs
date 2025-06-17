@@ -1,9 +1,9 @@
-drop procedure insertarUsuario;
-drop procedure modificarUsuario;
-drop procedure eliminarUsuario;
-drop procedure buscarUsuarioPorId;
-drop procedure listarUsuario;
-
+drop procedure if exists insertarUsuario;
+drop procedure if exists modificarUsuario;
+drop procedure if exists eliminarUsuario;
+drop procedure if exists buscarUsuarioPorId;
+drop procedure if exists listarUsuario;
+drop procedure if exists buscarUsuarioPorCorreo;
 DELIMITER //
 CREATE DEFINER=`admin`@`%` PROCEDURE `insertarUsuario`(
     IN p_nombre VARCHAR(100),
@@ -46,6 +46,15 @@ CREATE DEFINER=`admin`@`%` PROCEDURE `buscarUsuarioPorId`(
 BEGIN
     SELECT * FROM Usuario
     WHERE id = p_id;
+END//
+
+DELIMITER //
+CREATE DEFINER=`admin`@`%` PROCEDURE `buscarUsuarioPorCorreo`(
+    IN p_email VARCHAR(150)
+)
+BEGIN
+    SELECT * FROM Usuario
+    WHERE email = p_email;
 END//
 
 DELIMITER //

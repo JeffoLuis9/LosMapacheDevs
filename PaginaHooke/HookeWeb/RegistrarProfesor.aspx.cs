@@ -38,8 +38,8 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
                     txtEmail.Text = profesor.email;
                     txtFechaNacimiento.Text = (profesor.fechaNacimiento).ToString();
                     ddlCurso.SelectedValue = profesor.curso.id.ToString();
-                    txtPassword.Text = profesor.password;
-                    txtConfirmPassword.Text = profesor.password;
+                    
+                    
                     estado = estado.Modificar;
                     formTitle.InnerText = "Modificar Profesor"; 
                     litPageTitle.Text = "Modificar Profesor";
