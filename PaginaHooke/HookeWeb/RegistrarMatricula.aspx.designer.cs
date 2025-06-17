@@ -33,6 +33,15 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNivel;
 
         /// <summary>
+        /// Control btnBuscarCursos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnBuscarCursos;
+
+        /// <summary>
         /// Control ddlModalidad.
         /// </summary>
         /// <remarks>

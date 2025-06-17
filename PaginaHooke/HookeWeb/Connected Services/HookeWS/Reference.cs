@@ -25,15 +25,14 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/obtenerTipoSesionRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/TipoSesionWS/obtenerTipoSesionResponse")]
         System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerTipoSesionResponse> obtenerTipoSesionAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerTipoSesionRequest request);
         
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/listarTipoSesionesRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/TipoSesionWS/listarTipoSesionesResponse")]
+        // CODEGEN: El parámetro 'id' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/eliminarTipoSesionRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/TipoSesionWS/eliminarTipoSesionResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesResponse listarTipoSesiones(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesRequest request);
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionResponse eliminarTipoSesion(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/listarTipoSesionesRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/TipoSesionWS/listarTipoSesionesResponse")]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesResponse> listarTipoSesionesAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/eliminarTipoSesionRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/TipoSesionWS/eliminarTipoSesionResponse")]
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionResponse> eliminarTipoSesionAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionRequest request);
         
         // CODEGEN: El parámetro 'tipoSesion' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/guardarTipoSesionRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/TipoSesionWS/guardarTipoSesionResponse")]
@@ -44,14 +43,15 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/guardarTipoSesionRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/TipoSesionWS/guardarTipoSesionResponse")]
         System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarTipoSesionResponse> guardarTipoSesionAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarTipoSesionRequest request);
         
-        // CODEGEN: El parámetro 'id' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/eliminarTipoSesionRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/TipoSesionWS/eliminarTipoSesionResponse")]
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/listarTipoSesionesRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/TipoSesionWS/listarTipoSesionesResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionResponse eliminarTipoSesion(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesResponse listarTipoSesiones(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/eliminarTipoSesionRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/TipoSesionWS/eliminarTipoSesionResponse")]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionResponse> eliminarTipoSesionAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/TipoSesionWS/listarTipoSesionesRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/TipoSesionWS/listarTipoSesionesResponse")]
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesResponse> listarTipoSesionesAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesRequest request);
     }
     
     /// <remarks/>
@@ -841,28 +841,28 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTipoSesiones", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTipoSesionesRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarTipoSesion", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarTipoSesionRequest {
         
-        public listarTipoSesionesRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public eliminarTipoSesionRequest() {
+        }
+        
+        public eliminarTipoSesionRequest(int id) {
+            this.id = id;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTipoSesionesResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTipoSesionesResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarTipoSesionResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarTipoSesionResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.tipoSesion[] @return;
-        
-        public listarTipoSesionesResponse() {
-        }
-        
-        public listarTipoSesionesResponse(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.tipoSesion[] @return) {
-            this.@return = @return;
+        public eliminarTipoSesionResponse() {
         }
     }
     
@@ -915,28 +915,28 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarTipoSesion", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarTipoSesionRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTipoSesiones", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTipoSesionesRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public eliminarTipoSesionRequest() {
-        }
-        
-        public eliminarTipoSesionRequest(int id) {
-            this.id = id;
+        public listarTipoSesionesRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarTipoSesionResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarTipoSesionResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTipoSesionesResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTipoSesionesResponse {
         
-        public eliminarTipoSesionResponse() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.tipoSesion[] @return;
+        
+        public listarTipoSesionesResponse() {
+        }
+        
+        public listarTipoSesionesResponse(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.tipoSesion[] @return) {
+            this.@return = @return;
         }
     }
     
@@ -991,24 +991,25 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.TipoSesionWS.listarTipoSesiones(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesRequest request) {
-            return base.Channel.listarTipoSesiones(request);
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.TipoSesionWS.eliminarTipoSesion(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionRequest request) {
+            return base.Channel.eliminarTipoSesion(request);
         }
         
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.tipoSesion[] listarTipoSesiones() {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesRequest();
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.TipoSesionWS)(this)).listarTipoSesiones(inValue);
-            return retVal.@return;
+        public void eliminarTipoSesion(int id) {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionRequest();
+            inValue.id = id;
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.TipoSesionWS)(this)).eliminarTipoSesion(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.TipoSesionWS.listarTipoSesionesAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesRequest request) {
-            return base.Channel.listarTipoSesionesAsync(request);
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.TipoSesionWS.eliminarTipoSesionAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionRequest request) {
+            return base.Channel.eliminarTipoSesionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesResponse> listarTipoSesionesAsync() {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesRequest();
-            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.TipoSesionWS)(this)).listarTipoSesionesAsync(inValue);
+        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionResponse> eliminarTipoSesionAsync(int id) {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionRequest();
+            inValue.id = id;
+            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.TipoSesionWS)(this)).eliminarTipoSesionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1036,25 +1037,24 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.TipoSesionWS.eliminarTipoSesion(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionRequest request) {
-            return base.Channel.eliminarTipoSesion(request);
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.TipoSesionWS.listarTipoSesiones(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesRequest request) {
+            return base.Channel.listarTipoSesiones(request);
         }
         
-        public void eliminarTipoSesion(int id) {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionRequest();
-            inValue.id = id;
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.TipoSesionWS)(this)).eliminarTipoSesion(inValue);
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.tipoSesion[] listarTipoSesiones() {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesRequest();
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.TipoSesionWS)(this)).listarTipoSesiones(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.TipoSesionWS.eliminarTipoSesionAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionRequest request) {
-            return base.Channel.eliminarTipoSesionAsync(request);
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.TipoSesionWS.listarTipoSesionesAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesRequest request) {
+            return base.Channel.listarTipoSesionesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionResponse> eliminarTipoSesionAsync(int id) {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarTipoSesionRequest();
-            inValue.id = id;
-            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.TipoSesionWS)(this)).eliminarTipoSesionAsync(inValue);
+        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesResponse> listarTipoSesionesAsync() {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarTipoSesionesRequest();
+            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.TipoSesionWS)(this)).listarTipoSesionesAsync(inValue);
         }
     }
     
@@ -1071,15 +1071,6 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/guardarAlumnoRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/AlumnoWS/guardarAlumnoResponse")]
         System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarAlumnoResponse> guardarAlumnoAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarAlumnoRequest request);
         
-        // CODEGEN: El parámetro 'id' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/eliminarAlumnoRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/AlumnoWS/eliminarAlumnoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarAlumnoResponse eliminarAlumno(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarAlumnoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/eliminarAlumnoRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/AlumnoWS/eliminarAlumnoResponse")]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarAlumnoResponse> eliminarAlumnoAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarAlumnoRequest request);
-        
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/listarAlumnosRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/AlumnoWS/listarAlumnosResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -1089,6 +1080,15 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/listarAlumnosRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/AlumnoWS/listarAlumnosResponse")]
         System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosResponse> listarAlumnosAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosRequest request);
+        
+        // CODEGEN: El parámetro 'id' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/eliminarAlumnoRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/AlumnoWS/eliminarAlumnoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarAlumnoResponse eliminarAlumno(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarAlumnoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/eliminarAlumnoRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/AlumnoWS/eliminarAlumnoResponse")]
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarAlumnoResponse> eliminarAlumnoAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarAlumnoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/obtenerAlumnoRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/AlumnoWS/obtenerAlumnoResponse")]
@@ -1137,34 +1137,6 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAlumno", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarAlumnoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public eliminarAlumnoRequest() {
-        }
-        
-        public eliminarAlumnoRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAlumnoResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarAlumnoResponse {
-        
-        public eliminarAlumnoResponse() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="listarAlumnos", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
     public partial class listarAlumnosRequest {
         
@@ -1187,6 +1159,34 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         
         public listarAlumnosResponse(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.alumno[] @return) {
             this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAlumno", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarAlumnoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public eliminarAlumnoRequest() {
+        }
+        
+        public eliminarAlumnoRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAlumnoResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarAlumnoResponse {
+        
+        public eliminarAlumnoResponse() {
         }
     }
     
@@ -1278,6 +1278,27 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AlumnoWS.listarAlumnos(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosRequest request) {
+            return base.Channel.listarAlumnos(request);
+        }
+        
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.alumno[] listarAlumnos() {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosRequest();
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AlumnoWS)(this)).listarAlumnos(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AlumnoWS.listarAlumnosAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosRequest request) {
+            return base.Channel.listarAlumnosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosResponse> listarAlumnosAsync() {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosRequest();
+            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AlumnoWS)(this)).listarAlumnosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarAlumnoResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AlumnoWS.eliminarAlumno(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarAlumnoRequest request) {
             return base.Channel.eliminarAlumno(request);
         }
@@ -1297,27 +1318,6 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
             PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarAlumnoRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarAlumnoRequest();
             inValue.id = id;
             return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AlumnoWS)(this)).eliminarAlumnoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AlumnoWS.listarAlumnos(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosRequest request) {
-            return base.Channel.listarAlumnos(request);
-        }
-        
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.alumno[] listarAlumnos() {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosRequest();
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AlumnoWS)(this)).listarAlumnos(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AlumnoWS.listarAlumnosAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosRequest request) {
-            return base.Channel.listarAlumnosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosResponse> listarAlumnosAsync() {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosRequest();
-            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AlumnoWS)(this)).listarAlumnosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1348,26 +1348,6 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", ConfigurationName="HookeWS.AcademiaWS")]
     public interface AcademiaWS {
         
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/obtenerAcademiaRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/AcademiaWS/obtenerAcademiaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaResponse obtenerAcademia(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/obtenerAcademiaRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/AcademiaWS/obtenerAcademiaResponse")]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaResponse> obtenerAcademiaAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/listarAcademiasRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/AcademiaWS/listarAcademiasResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasResponse listarAcademias(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/listarAcademiasRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/AcademiaWS/listarAcademiasResponse")]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasResponse> listarAcademiasAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasRequest request);
-        
         // CODEGEN: El parámetro 'academia' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/guardarAcademiaRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/AcademiaWS/guardarAcademiaResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -1385,70 +1365,26 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/eliminarAcademiaRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/AcademiaWS/eliminarAcademiaResponse")]
         System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarAcademiaResponse> eliminarAcademiaAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarAcademiaRequest request);
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerAcademia", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerAcademiaRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/listarAcademiasRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/AcademiaWS/listarAcademiasResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasResponse listarAcademias(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasRequest request);
         
-        public obtenerAcademiaRequest() {
-        }
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/listarAcademiasRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/AcademiaWS/listarAcademiasResponse")]
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasResponse> listarAcademiasAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasRequest request);
         
-        public obtenerAcademiaRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerAcademiaResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerAcademiaResponse {
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/obtenerAcademiaRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/AcademiaWS/obtenerAcademiaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaResponse obtenerAcademia(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaRequest request);
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.academia @return;
-        
-        public obtenerAcademiaResponse() {
-        }
-        
-        public obtenerAcademiaResponse(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.academia @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAcademias", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarAcademiasRequest {
-        
-        public listarAcademiasRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAcademiasResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarAcademiasResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.academia[] @return;
-        
-        public listarAcademiasResponse() {
-        }
-        
-        public listarAcademiasResponse(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.academia[] @return) {
-            this.@return = @return;
-        }
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/AcademiaWS/obtenerAcademiaRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/AcademiaWS/obtenerAcademiaResponse")]
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaResponse> obtenerAcademiaAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1512,6 +1448,70 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAcademias", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarAcademiasRequest {
+        
+        public listarAcademiasRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarAcademiasResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarAcademiasResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.academia[] @return;
+        
+        public listarAcademiasResponse() {
+        }
+        
+        public listarAcademiasResponse(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.academia[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerAcademia", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerAcademiaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public obtenerAcademiaRequest() {
+        }
+        
+        public obtenerAcademiaRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerAcademiaResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerAcademiaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.academia @return;
+        
+        public obtenerAcademiaResponse() {
+        }
+        
+        public obtenerAcademiaResponse(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.academia @return) {
+            this.@return = @return;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface AcademiaWSChannel : PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AcademiaWS, System.ServiceModel.IClientChannel {
     }
@@ -1537,50 +1537,6 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         
         public AcademiaWSClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AcademiaWS.obtenerAcademia(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaRequest request) {
-            return base.Channel.obtenerAcademia(request);
-        }
-        
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.academia obtenerAcademia(int id) {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaRequest();
-            inValue.id = id;
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AcademiaWS)(this)).obtenerAcademia(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AcademiaWS.obtenerAcademiaAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaRequest request) {
-            return base.Channel.obtenerAcademiaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaResponse> obtenerAcademiaAsync(int id) {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaRequest();
-            inValue.id = id;
-            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AcademiaWS)(this)).obtenerAcademiaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AcademiaWS.listarAcademias(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasRequest request) {
-            return base.Channel.listarAcademias(request);
-        }
-        
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.academia[] listarAcademias() {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasRequest();
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AcademiaWS)(this)).listarAcademias(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AcademiaWS.listarAcademiasAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasRequest request) {
-            return base.Channel.listarAcademiasAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasResponse> listarAcademiasAsync() {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasRequest();
-            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AcademiaWS)(this)).listarAcademiasAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1628,20 +1584,65 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
             inValue.id = id;
             return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AcademiaWS)(this)).eliminarAcademiaAsync(inValue);
         }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AcademiaWS.listarAcademias(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasRequest request) {
+            return base.Channel.listarAcademias(request);
+        }
+        
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.academia[] listarAcademias() {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasRequest();
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AcademiaWS)(this)).listarAcademias(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AcademiaWS.listarAcademiasAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasRequest request) {
+            return base.Channel.listarAcademiasAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasResponse> listarAcademiasAsync() {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAcademiasRequest();
+            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AcademiaWS)(this)).listarAcademiasAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AcademiaWS.obtenerAcademia(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaRequest request) {
+            return base.Channel.obtenerAcademia(request);
+        }
+        
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.academia obtenerAcademia(int id) {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaRequest();
+            inValue.id = id;
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AcademiaWS)(this)).obtenerAcademia(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AcademiaWS.obtenerAcademiaAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaRequest request) {
+            return base.Channel.obtenerAcademiaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaResponse> obtenerAcademiaAsync(int id) {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerAcademiaRequest();
+            inValue.id = id;
+            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.AcademiaWS)(this)).obtenerAcademiaAsync(inValue);
+        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", ConfigurationName="HookeWS.VoucherWS")]
     public interface VoucherWS {
         
-        // CODEGEN: El parámetro 'id' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/VoucherWS/eliminarVoucherRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/VoucherWS/eliminarVoucherResponse")]
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/VoucherWS/obtenerVoucherRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/VoucherWS/obtenerVoucherResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherResponse eliminarVoucher(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherResponse obtenerVoucher(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/VoucherWS/eliminarVoucherRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/VoucherWS/eliminarVoucherResponse")]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherResponse> eliminarVoucherAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/VoucherWS/obtenerVoucherRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/VoucherWS/obtenerVoucherResponse")]
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherResponse> obtenerVoucherAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/VoucherWS/listarVouchersRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/VoucherWS/listarVouchersResponse")]
@@ -1653,6 +1654,15 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/VoucherWS/listarVouchersRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/VoucherWS/listarVouchersResponse")]
         System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarVouchersResponse> listarVouchersAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarVouchersRequest request);
         
+        // CODEGEN: El parámetro 'id' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/VoucherWS/eliminarVoucherRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/VoucherWS/eliminarVoucherResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherResponse eliminarVoucher(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/VoucherWS/eliminarVoucherRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/VoucherWS/eliminarVoucherResponse")]
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherResponse> eliminarVoucherAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherRequest request);
+        
         // CODEGEN: El parámetro 'voucher' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/VoucherWS/guardarVoucherRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/VoucherWS/guardarVoucherResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -1661,105 +1671,6 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/VoucherWS/guardarVoucherRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/VoucherWS/guardarVoucherResponse")]
         System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarVoucherResponse> guardarVoucherAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarVoucherRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/VoucherWS/obtenerVoucherRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/VoucherWS/obtenerVoucherResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherResponse obtenerVoucher(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/VoucherWS/obtenerVoucherRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/VoucherWS/obtenerVoucherResponse")]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherResponse> obtenerVoucherAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherRequest request);
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarVoucher", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarVoucherRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public eliminarVoucherRequest() {
-        }
-        
-        public eliminarVoucherRequest(int id) {
-            this.id = id;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarVoucherResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarVoucherResponse {
-        
-        public eliminarVoucherResponse() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarVouchers", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarVouchersRequest {
-        
-        public listarVouchersRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarVouchersResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarVouchersResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.voucher[] @return;
-        
-        public listarVouchersResponse() {
-        }
-        
-        public listarVouchersResponse(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.voucher[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="guardarVoucher", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class guardarVoucherRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.voucher voucher;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado;
-        
-        public guardarVoucherRequest() {
-        }
-        
-        public guardarVoucherRequest(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.voucher voucher, PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado) {
-            this.voucher = voucher;
-            this.estado = estado;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="guardarVoucherResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class guardarVoucherResponse {
-        
-        public guardarVoucherResponse() {
-        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1798,6 +1709,95 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarVouchers", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarVouchersRequest {
+        
+        public listarVouchersRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarVouchersResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarVouchersResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.voucher[] @return;
+        
+        public listarVouchersResponse() {
+        }
+        
+        public listarVouchersResponse(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.voucher[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarVoucher", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarVoucherRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public eliminarVoucherRequest() {
+        }
+        
+        public eliminarVoucherRequest(int id) {
+            this.id = id;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarVoucherResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarVoucherResponse {
+        
+        public eliminarVoucherResponse() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="guardarVoucher", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class guardarVoucherRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.voucher voucher;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado;
+        
+        public guardarVoucherRequest() {
+        }
+        
+        public guardarVoucherRequest(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.voucher voucher, PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado) {
+            this.voucher = voucher;
+            this.estado = estado;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="guardarVoucherResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class guardarVoucherResponse {
+        
+        public guardarVoucherResponse() {
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface VoucherWSChannel : PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.VoucherWS, System.ServiceModel.IClientChannel {
     }
@@ -1826,25 +1826,26 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.VoucherWS.eliminarVoucher(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherRequest request) {
-            return base.Channel.eliminarVoucher(request);
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.VoucherWS.obtenerVoucher(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherRequest request) {
+            return base.Channel.obtenerVoucher(request);
         }
         
-        public void eliminarVoucher(int id) {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherRequest();
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.voucher obtenerVoucher(int id) {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherRequest();
             inValue.id = id;
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.VoucherWS)(this)).eliminarVoucher(inValue);
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.VoucherWS)(this)).obtenerVoucher(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.VoucherWS.eliminarVoucherAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherRequest request) {
-            return base.Channel.eliminarVoucherAsync(request);
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.VoucherWS.obtenerVoucherAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherRequest request) {
+            return base.Channel.obtenerVoucherAsync(request);
         }
         
-        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherResponse> eliminarVoucherAsync(int id) {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherRequest();
+        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherResponse> obtenerVoucherAsync(int id) {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherRequest();
             inValue.id = id;
-            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.VoucherWS)(this)).eliminarVoucherAsync(inValue);
+            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.VoucherWS)(this)).obtenerVoucherAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1869,6 +1870,28 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.VoucherWS.eliminarVoucher(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherRequest request) {
+            return base.Channel.eliminarVoucher(request);
+        }
+        
+        public void eliminarVoucher(int id) {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherRequest();
+            inValue.id = id;
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.VoucherWS)(this)).eliminarVoucher(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.VoucherWS.eliminarVoucherAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherRequest request) {
+            return base.Channel.eliminarVoucherAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherResponse> eliminarVoucherAsync(int id) {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherRequest();
+            inValue.id = id;
+            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.VoucherWS)(this)).eliminarVoucherAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarVoucherResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.VoucherWS.guardarVoucher(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarVoucherRequest request) {
             return base.Channel.guardarVoucher(request);
         }
@@ -1890,29 +1913,6 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
             inValue.voucher = voucher;
             inValue.estado = estado;
             return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.VoucherWS)(this)).guardarVoucherAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.VoucherWS.obtenerVoucher(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherRequest request) {
-            return base.Channel.obtenerVoucher(request);
-        }
-        
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.voucher obtenerVoucher(int id) {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherRequest();
-            inValue.id = id;
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.VoucherWS)(this)).obtenerVoucher(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.VoucherWS.obtenerVoucherAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherRequest request) {
-            return base.Channel.obtenerVoucherAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherResponse> obtenerVoucherAsync(int id) {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherRequest();
-            inValue.id = id;
-            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.VoucherWS)(this)).obtenerVoucherAsync(inValue);
         }
     }
     
@@ -1939,14 +1939,15 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/guardarProfesorRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/ProfesorWS/guardarProfesorResponse")]
         System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarProfesorResponse> guardarProfesorAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarProfesorRequest request);
         
-        // CODEGEN: El parámetro 'id' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/eliminarProfesorRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/ProfesorWS/eliminarProfesorResponse")]
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorResponse eliminarProfesor(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresResponse listarProfesores(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/eliminarProfesorRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/ProfesorWS/eliminarProfesorResponse")]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorResponse> eliminarProfesorAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresResponse")]
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresResponse> listarProfesoresAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/obtenerProfesorRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/ProfesorWS/obtenerProfesorResponse")]
@@ -1958,15 +1959,14 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/obtenerProfesorRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/ProfesorWS/obtenerProfesorResponse")]
         System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerProfesorResponse> obtenerProfesorAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerProfesorRequest request);
         
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresResponse")]
+        // CODEGEN: El parámetro 'id' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/eliminarProfesorRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/ProfesorWS/eliminarProfesorResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresResponse listarProfesores(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresRequest request);
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorResponse eliminarProfesor(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresResponse")]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresResponse> listarProfesoresAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/eliminarProfesorRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/ProfesorWS/eliminarProfesorResponse")]
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorResponse> eliminarProfesorAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2041,28 +2041,28 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarProfesor", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarProfesorRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProfesores", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarProfesoresRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
-        
-        public eliminarProfesorRequest() {
-        }
-        
-        public eliminarProfesorRequest(int id) {
-            this.id = id;
+        public listarProfesoresRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarProfesorResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarProfesorResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProfesoresResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarProfesoresResponse {
         
-        public eliminarProfesorResponse() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.profesor[] @return;
+        
+        public listarProfesoresResponse() {
+        }
+        
+        public listarProfesoresResponse(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.profesor[] @return) {
+            this.@return = @return;
         }
     }
     
@@ -2105,28 +2105,28 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProfesores", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarProfesoresRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarProfesor", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarProfesorRequest {
         
-        public listarProfesoresRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int id;
+        
+        public eliminarProfesorRequest() {
+        }
+        
+        public eliminarProfesorRequest(int id) {
+            this.id = id;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProfesoresResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarProfesoresResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarProfesorResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarProfesorResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.profesor[] @return;
-        
-        public listarProfesoresResponse() {
-        }
-        
-        public listarProfesoresResponse(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.profesor[] @return) {
-            this.@return = @return;
+        public eliminarProfesorResponse() {
         }
     }
     
@@ -2205,25 +2205,24 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.ProfesorWS.eliminarProfesor(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorRequest request) {
-            return base.Channel.eliminarProfesor(request);
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.ProfesorWS.listarProfesores(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresRequest request) {
+            return base.Channel.listarProfesores(request);
         }
         
-        public void eliminarProfesor(int id) {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorRequest();
-            inValue.id = id;
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.ProfesorWS)(this)).eliminarProfesor(inValue);
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.profesor[] listarProfesores() {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresRequest();
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.ProfesorWS)(this)).listarProfesores(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.ProfesorWS.eliminarProfesorAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorRequest request) {
-            return base.Channel.eliminarProfesorAsync(request);
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.ProfesorWS.listarProfesoresAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresRequest request) {
+            return base.Channel.listarProfesoresAsync(request);
         }
         
-        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorResponse> eliminarProfesorAsync(int id) {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorRequest();
-            inValue.id = id;
-            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.ProfesorWS)(this)).eliminarProfesorAsync(inValue);
+        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresResponse> listarProfesoresAsync() {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresRequest();
+            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.ProfesorWS)(this)).listarProfesoresAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -2250,24 +2249,25 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.ProfesorWS.listarProfesores(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresRequest request) {
-            return base.Channel.listarProfesores(request);
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.ProfesorWS.eliminarProfesor(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorRequest request) {
+            return base.Channel.eliminarProfesor(request);
         }
         
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.profesor[] listarProfesores() {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresRequest();
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.ProfesorWS)(this)).listarProfesores(inValue);
-            return retVal.@return;
+        public void eliminarProfesor(int id) {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorRequest();
+            inValue.id = id;
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.ProfesorWS)(this)).eliminarProfesor(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.ProfesorWS.listarProfesoresAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresRequest request) {
-            return base.Channel.listarProfesoresAsync(request);
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.ProfesorWS.eliminarProfesorAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorRequest request) {
+            return base.Channel.eliminarProfesorAsync(request);
         }
         
-        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresResponse> listarProfesoresAsync() {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarProfesoresRequest();
-            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.ProfesorWS)(this)).listarProfesoresAsync(inValue);
+        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorResponse> eliminarProfesorAsync(int id) {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarProfesorRequest();
+            inValue.id = id;
+            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.ProfesorWS)(this)).eliminarProfesorAsync(inValue);
         }
     }
     
@@ -2275,15 +2275,14 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", ConfigurationName="HookeWS.SesionWS")]
     public interface SesionWS {
         
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/SesionWS/obtenerSesionRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/SesionWS/obtenerSesionResponse")]
+        // CODEGEN: El parámetro 'sesion' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/SesionWS/guardarSesionRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/SesionWS/guardarSesionResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionResponse obtenerSesion(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionRequest request);
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionResponse guardarSesion(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/SesionWS/obtenerSesionRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/SesionWS/obtenerSesionResponse")]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionResponse> obtenerSesionAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/SesionWS/guardarSesionRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/SesionWS/guardarSesionResponse")]
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionResponse> guardarSesionAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/SesionWS/listarSesionesRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/SesionWS/listarSesionesResponse")]
@@ -2295,14 +2294,15 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/SesionWS/listarSesionesRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/SesionWS/listarSesionesResponse")]
         System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSesionesResponse> listarSesionesAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSesionesRequest request);
         
-        // CODEGEN: El parámetro 'sesion' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/SesionWS/guardarSesionRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/SesionWS/guardarSesionResponse")]
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/SesionWS/obtenerSesionRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/SesionWS/obtenerSesionResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionResponse guardarSesion(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionResponse obtenerSesion(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/SesionWS/guardarSesionRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/SesionWS/guardarSesionResponse")]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionResponse> guardarSesionAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/SesionWS/obtenerSesionRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/SesionWS/obtenerSesionResponse")]
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionResponse> obtenerSesionAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionRequest request);
         
         // CODEGEN: El parámetro 'id' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/SesionWS/eliminarSesionRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/SesionWS/eliminarSesionResponse")]
@@ -2312,6 +2312,67 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/SesionWS/eliminarSesionRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/SesionWS/eliminarSesionResponse")]
         System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarSesionResponse> eliminarSesionAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarSesionRequest request);
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="guardarSesion", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class guardarSesionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sesion sesion;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado;
+        
+        public guardarSesionRequest() {
+        }
+        
+        public guardarSesionRequest(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sesion sesion, PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado) {
+            this.sesion = sesion;
+            this.estado = estado;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="guardarSesionResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class guardarSesionResponse {
+        
+        public guardarSesionResponse() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSesiones", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarSesionesRequest {
+        
+        public listarSesionesRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSesionesResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarSesionesResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sesion[] @return;
+        
+        public listarSesionesResponse() {
+        }
+        
+        public listarSesionesResponse(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sesion[] @return) {
+            this.@return = @return;
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2347,67 +2408,6 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         
         public obtenerSesionResponse(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sesion @return) {
             this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSesiones", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarSesionesRequest {
-        
-        public listarSesionesRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSesionesResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarSesionesResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sesion[] @return;
-        
-        public listarSesionesResponse() {
-        }
-        
-        public listarSesionesResponse(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sesion[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="guardarSesion", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class guardarSesionRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sesion sesion;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado;
-        
-        public guardarSesionRequest() {
-        }
-        
-        public guardarSesionRequest(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sesion sesion, PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado) {
-            this.sesion = sesion;
-            this.estado = estado;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="guardarSesionResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class guardarSesionResponse {
-        
-        public guardarSesionResponse() {
         }
     }
     
@@ -2467,26 +2467,27 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SesionWS.obtenerSesion(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionRequest request) {
-            return base.Channel.obtenerSesion(request);
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SesionWS.guardarSesion(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionRequest request) {
+            return base.Channel.guardarSesion(request);
         }
         
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sesion obtenerSesion(int id) {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionRequest();
-            inValue.id = id;
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SesionWS)(this)).obtenerSesion(inValue);
-            return retVal.@return;
+        public void guardarSesion(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sesion sesion, PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado) {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionRequest();
+            inValue.sesion = sesion;
+            inValue.estado = estado;
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SesionWS)(this)).guardarSesion(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SesionWS.obtenerSesionAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionRequest request) {
-            return base.Channel.obtenerSesionAsync(request);
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SesionWS.guardarSesionAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionRequest request) {
+            return base.Channel.guardarSesionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionResponse> obtenerSesionAsync(int id) {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionRequest();
-            inValue.id = id;
-            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SesionWS)(this)).obtenerSesionAsync(inValue);
+        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionResponse> guardarSesionAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sesion sesion, PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado) {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionRequest();
+            inValue.sesion = sesion;
+            inValue.estado = estado;
+            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SesionWS)(this)).guardarSesionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -2511,27 +2512,26 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SesionWS.guardarSesion(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionRequest request) {
-            return base.Channel.guardarSesion(request);
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SesionWS.obtenerSesion(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionRequest request) {
+            return base.Channel.obtenerSesion(request);
         }
         
-        public void guardarSesion(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sesion sesion, PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado) {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionRequest();
-            inValue.sesion = sesion;
-            inValue.estado = estado;
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SesionWS)(this)).guardarSesion(inValue);
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sesion obtenerSesion(int id) {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionRequest();
+            inValue.id = id;
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SesionWS)(this)).obtenerSesion(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SesionWS.guardarSesionAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionRequest request) {
-            return base.Channel.guardarSesionAsync(request);
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SesionWS.obtenerSesionAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionRequest request) {
+            return base.Channel.obtenerSesionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionResponse> guardarSesionAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sesion sesion, PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado) {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionRequest();
-            inValue.sesion = sesion;
-            inValue.estado = estado;
-            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SesionWS)(this)).guardarSesionAsync(inValue);
+        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionResponse> obtenerSesionAsync(int id) {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSesionRequest();
+            inValue.id = id;
+            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SesionWS)(this)).obtenerSesionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -2571,16 +2571,6 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarSedeResponse> eliminarSedeAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarSedeRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/SedeWS/listarSedesRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/SedeWS/listarSedesResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesResponse listarSedes(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/SedeWS/listarSedesRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/SedeWS/listarSedesResponse")]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesResponse> listarSedesAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/SedeWS/obtenerSedeRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/SedeWS/obtenerSedeResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
@@ -2589,6 +2579,16 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/SedeWS/obtenerSedeRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/SedeWS/obtenerSedeResponse")]
         System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSedeResponse> obtenerSedeAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSedeRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/SedeWS/listarSedesRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/SedeWS/listarSedesResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesResponse listarSedes(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/SedeWS/listarSedesRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/SedeWS/listarSedesResponse")]
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesResponse> listarSedesAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesRequest request);
         
         // CODEGEN: El parámetro 'sede' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/SedeWS/guardarSedeRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/SedeWS/guardarSedeResponse")]
@@ -2631,34 +2631,6 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSedes", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarSedesRequest {
-        
-        public listarSedesRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSedesResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarSedesResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sede[] @return;
-        
-        public listarSedesResponse() {
-        }
-        
-        public listarSedesResponse(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sede[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerSede", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
     public partial class obtenerSedeRequest {
         
@@ -2688,6 +2660,34 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         }
         
         public obtenerSedeResponse(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sede @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSedes", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarSedesRequest {
+        
+        public listarSedesRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarSedesResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarSedesResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sede[] @return;
+        
+        public listarSedesResponse() {
+        }
+        
+        public listarSedesResponse(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sede[] @return) {
             this.@return = @return;
         }
     }
@@ -2775,27 +2775,6 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SedeWS.listarSedes(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesRequest request) {
-            return base.Channel.listarSedes(request);
-        }
-        
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sede[] listarSedes() {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesRequest();
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SedeWS)(this)).listarSedes(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SedeWS.listarSedesAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesRequest request) {
-            return base.Channel.listarSedesAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesResponse> listarSedesAsync() {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesRequest();
-            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SedeWS)(this)).listarSedesAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSedeResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SedeWS.obtenerSede(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSedeRequest request) {
             return base.Channel.obtenerSede(request);
         }
@@ -2816,6 +2795,27 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
             PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSedeRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerSedeRequest();
             inValue.id = id;
             return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SedeWS)(this)).obtenerSedeAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SedeWS.listarSedes(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesRequest request) {
+            return base.Channel.listarSedes(request);
+        }
+        
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.sede[] listarSedes() {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesRequest();
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SedeWS)(this)).listarSedes(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SedeWS.listarSedesAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesRequest request) {
+            return base.Channel.listarSedesAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesResponse> listarSedesAsync() {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarSedesRequest();
+            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.SedeWS)(this)).listarSedesAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -2857,15 +2857,14 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosPorNivelRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosPorNivelResponse")]
         System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarCursosPorNivelResponse> listarCursosPorNivelAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarCursosPorNivelRequest request);
         
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/CursoWS/obtenerCursoRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/CursoWS/obtenerCursoResponse")]
+        // CODEGEN: El parámetro 'curso' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/CursoWS/guardarCursoRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/CursoWS/guardarCursoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoResponse obtenerCurso(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoRequest request);
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoResponse guardarCurso(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/CursoWS/obtenerCursoRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/CursoWS/obtenerCursoResponse")]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoResponse> obtenerCursoAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/CursoWS/guardarCursoRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/CursoWS/guardarCursoResponse")]
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoResponse> guardarCursoAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoRequest request);
         
         // CODEGEN: El parámetro 'id' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/CursoWS/eliminarCursoRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/CursoWS/eliminarCursoResponse")]
@@ -2876,14 +2875,15 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/CursoWS/eliminarCursoRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/CursoWS/eliminarCursoResponse")]
         System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarCursoResponse> eliminarCursoAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarCursoRequest request);
         
-        // CODEGEN: El parámetro 'curso' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/CursoWS/guardarCursoRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/CursoWS/guardarCursoResponse")]
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/CursoWS/obtenerCursoRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/CursoWS/obtenerCursoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(usuario))]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoResponse guardarCurso(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoRequest request);
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoResponse obtenerCurso(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/CursoWS/guardarCursoRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/CursoWS/guardarCursoResponse")]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoResponse> guardarCursoAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/CursoWS/obtenerCursoRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/CursoWS/obtenerCursoResponse")]
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoResponse> obtenerCursoAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosRequest", ReplyAction="http://services.webhooke.pucp.edu.pe/CursoWS/listarCursosResponse")]
@@ -2935,36 +2935,33 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerCurso", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerCursoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="guardarCurso", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class guardarCursoRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int id;
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.curso curso;
         
-        public obtenerCursoRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado;
+        
+        public guardarCursoRequest() {
         }
         
-        public obtenerCursoRequest(int id) {
-            this.id = id;
+        public guardarCursoRequest(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.curso curso, PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado) {
+            this.curso = curso;
+            this.estado = estado;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerCursoResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerCursoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="guardarCursoResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class guardarCursoResponse {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.curso @return;
-        
-        public obtenerCursoResponse() {
-        }
-        
-        public obtenerCursoResponse(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.curso @return) {
-            this.@return = @return;
+        public guardarCursoResponse() {
         }
     }
     
@@ -2999,33 +2996,36 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="guardarCurso", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class guardarCursoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerCurso", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerCursoRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.curso curso;
+        public int id;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado;
-        
-        public guardarCursoRequest() {
+        public obtenerCursoRequest() {
         }
         
-        public guardarCursoRequest(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.curso curso, PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado) {
-            this.curso = curso;
-            this.estado = estado;
+        public obtenerCursoRequest(int id) {
+            this.id = id;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="guardarCursoResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
-    public partial class guardarCursoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerCursoResponse", WrapperNamespace="http://services.webhooke.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerCursoResponse {
         
-        public guardarCursoResponse() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://services.webhooke.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.curso @return;
+        
+        public obtenerCursoResponse() {
+        }
+        
+        public obtenerCursoResponse(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.curso @return) {
+            this.@return = @return;
         }
     }
     
@@ -3108,26 +3108,27 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.CursoWS.obtenerCurso(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoRequest request) {
-            return base.Channel.obtenerCurso(request);
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.CursoWS.guardarCurso(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoRequest request) {
+            return base.Channel.guardarCurso(request);
         }
         
-        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.curso obtenerCurso(int id) {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoRequest();
-            inValue.id = id;
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.CursoWS)(this)).obtenerCurso(inValue);
-            return retVal.@return;
+        public void guardarCurso(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.curso curso, PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado) {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoRequest();
+            inValue.curso = curso;
+            inValue.estado = estado;
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.CursoWS)(this)).guardarCurso(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.CursoWS.obtenerCursoAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoRequest request) {
-            return base.Channel.obtenerCursoAsync(request);
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.CursoWS.guardarCursoAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoRequest request) {
+            return base.Channel.guardarCursoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoResponse> obtenerCursoAsync(int id) {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoRequest();
-            inValue.id = id;
-            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.CursoWS)(this)).obtenerCursoAsync(inValue);
+        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoResponse> guardarCursoAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.curso curso, PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado) {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoRequest();
+            inValue.curso = curso;
+            inValue.estado = estado;
+            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.CursoWS)(this)).guardarCursoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -3153,27 +3154,26 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.CursoWS.guardarCurso(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoRequest request) {
-            return base.Channel.guardarCurso(request);
+        PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoResponse PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.CursoWS.obtenerCurso(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoRequest request) {
+            return base.Channel.obtenerCurso(request);
         }
         
-        public void guardarCurso(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.curso curso, PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado) {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoRequest();
-            inValue.curso = curso;
-            inValue.estado = estado;
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.CursoWS)(this)).guardarCurso(inValue);
+        public PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.curso obtenerCurso(int id) {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoRequest();
+            inValue.id = id;
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoResponse retVal = ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.CursoWS)(this)).obtenerCurso(inValue);
+            return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.CursoWS.guardarCursoAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoRequest request) {
-            return base.Channel.guardarCursoAsync(request);
+        System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoResponse> PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.CursoWS.obtenerCursoAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoRequest request) {
+            return base.Channel.obtenerCursoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoResponse> guardarCursoAsync(PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.curso curso, PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.estado estado) {
-            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarCursoRequest();
-            inValue.curso = curso;
-            inValue.estado = estado;
-            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.CursoWS)(this)).guardarCursoAsync(inValue);
+        public System.Threading.Tasks.Task<PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoResponse> obtenerCursoAsync(int id) {
+            PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoRequest inValue = new PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerCursoRequest();
+            inValue.id = id;
+            return ((PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.CursoWS)(this)).obtenerCursoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]

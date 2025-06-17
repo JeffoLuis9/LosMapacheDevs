@@ -11,17 +11,17 @@
   <message name="guardarAlumnoResponse">
     <part name="parameters" element="tns:guardarAlumnoResponse" />
   </message>
-  <message name="eliminarAlumno">
-    <part name="parameters" element="tns:eliminarAlumno" />
-  </message>
-  <message name="eliminarAlumnoResponse">
-    <part name="parameters" element="tns:eliminarAlumnoResponse" />
-  </message>
   <message name="listarAlumnos">
     <part name="parameters" element="tns:listarAlumnos" />
   </message>
   <message name="listarAlumnosResponse">
     <part name="parameters" element="tns:listarAlumnosResponse" />
+  </message>
+  <message name="eliminarAlumno">
+    <part name="parameters" element="tns:eliminarAlumno" />
+  </message>
+  <message name="eliminarAlumnoResponse">
+    <part name="parameters" element="tns:eliminarAlumnoResponse" />
   </message>
   <message name="obtenerAlumno">
     <part name="parameters" element="tns:obtenerAlumno" />
@@ -34,13 +34,13 @@
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/guardarAlumnoRequest" message="tns:guardarAlumno" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/guardarAlumnoResponse" message="tns:guardarAlumnoResponse" />
     </operation>
-    <operation name="eliminarAlumno">
-      <input wsam:Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/eliminarAlumnoRequest" message="tns:eliminarAlumno" />
-      <output wsam:Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/eliminarAlumnoResponse" message="tns:eliminarAlumnoResponse" />
-    </operation>
     <operation name="listarAlumnos">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/listarAlumnosRequest" message="tns:listarAlumnos" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/listarAlumnosResponse" message="tns:listarAlumnosResponse" />
+    </operation>
+    <operation name="eliminarAlumno">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/eliminarAlumnoRequest" message="tns:eliminarAlumno" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/eliminarAlumnoResponse" message="tns:eliminarAlumnoResponse" />
     </operation>
     <operation name="obtenerAlumno">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/AlumnoWS/obtenerAlumnoRequest" message="tns:obtenerAlumno" />
@@ -58,7 +58,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="eliminarAlumno">
+    <operation name="listarAlumnos">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -67,7 +67,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarAlumnos">
+    <operation name="eliminarAlumno">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

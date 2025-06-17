@@ -1,8 +1,10 @@
-drop procedure insertarSesion;
-drop procedure modificarSesion;
-drop procedure eliminarSesion;
-drop procedure buscarSesionPorId;
-drop procedure listarSesiones;
+drop procedure if exists insertarSesion;
+drop procedure if exists modificarSesion;
+drop procedure if exists eliminarSesion;
+drop procedure if exists buscarSesionPorId;
+drop procedure if exists buscarAlumnoEnSesion;
+drop procedure if exists listarSesiones;
+
 
 DELIMITER //
 CREATE DEFINER=`admin`@`%` PROCEDURE `insertarSesion`(
@@ -56,6 +58,13 @@ CREATE DEFINER=`admin`@`%` PROCEDURE `buscarSesionPorId`(
 BEGIN
     SELECT * FROM Sesion
     WHERE idSesion = p_id;
+END//
+
+DELIMITER //
+CREATE DEFINER=`admin`@`%` PROCEDURE `buscarAlumnoEnSesion`()
+BEGIN
+    SELECT DISTINCT idAlumno
+	FROM Sesion;
 END//
 
 DELIMITER //

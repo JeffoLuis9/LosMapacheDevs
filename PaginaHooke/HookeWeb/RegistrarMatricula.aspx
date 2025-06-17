@@ -36,7 +36,7 @@
         }
 
         .form-control{
-            width: calc(100% - 20px);
+            width: calc(70% - 20px);
             padding: 10px;
             border: 1px solid #444;
             border-radius: 5px;
@@ -135,26 +135,33 @@
         }
     </style>
 
-    <div class="form-container">
+    <div class="form-container" runat="server">
         <h2>Registro de Matrícula</h2>
 
         <div class="form-group">
             <label for="txtNivel">Nivel:</label>
-            <asp:TextBox ID="txtNivel" runat="server" CssClass="form-control" Placeholder="Ingresa tu nombre"></asp:TextBox>
+            <asp:TextBox ID="txtNivel" runat="server" CssClass="form-control" Placeholder="Ingresa el nivel"></asp:TextBox>
             <asp:RequiredFieldValidator ID="rfvNivel" runat="server" ControlToValidate="txtNivel"
                 ErrorMessage="El nivel es obligatorio." ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+            <asp:Button class="button-group" ID="btnBuscarCursos" runat="server" Text="Buscar Cursos" CssClass="btn btn-info mt-2" OnClick="btnBuscarCursos_Click" />
+
         </div>
 
         <div class="form-group">
             <label for="<%= ddlModalidad.ClientID %>">Modalidad:</label>
-            <asp:DropDownList ID="ddlModalidad" runat="server" CssClass="form-select"></asp:DropDownList>
+            <asp:DropDownList ID="ddlModalidad" runat="server" CssClass="form-select">
+                <asp:ListItem Text="-- Seleccione una modalidad --" Value="" />
+                <asp:ListItem Text="Presencial" Value="Presencial" />
+                <asp:ListItem Text="Virtual" Value="Virtual" />
+                <asp:ListItem Text="Semipresencial" Value="Semipresencial" />
+            </asp:DropDownList>
             <asp:RequiredFieldValidator ID="rfvModalidad" runat="server" ControlToValidate="ddlModalidad"
                 InitialValue="0" ErrorMessage="Debe seleccionar una modalidad." ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
         </div>
 
         <div class="form-group">
             <label for="<%= ddlCurso.ClientID %>">Curso:</label>
-            <asp:DropDownList ID="ddlCurso" runat="server" CssClass="form-select"></asp:DropDownList>
+            <asp:DropDownList ID="ddlCurso" runat="server" AutoPostBack="true" CssClass="form-select" OnSelectedIndexChanged="ddlCurso_SelectedIndexChanged"></asp:DropDownList>
             <asp:RequiredFieldValidator ID="rfvCurso" runat="server" ControlToValidate="ddlCurso"
                 InitialValue="0" ErrorMessage="Debe seleccionar un curso." ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
         </div>
