@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,14 +10,24 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
 {
     public partial class Registrar : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-          
-        }
+        private AlumnoWSClient alumnoWS;
+        private alumno alumno;
+        private estado estado;
 
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
-            Response.Write("<script>alert('¡Registro exitoso! Ya puedes iniciar sesión.'); window.location='Login.aspx';</script>");
+            alumnoWS = new AlumnoWSClient();
+            alumno = new alumno();
+            alumno.nombre = txtNombre.Text;
+            alumno.apellido = txtApellido.Text;
+            alumno.DNI = txtDNI.Text;
+            alumno.email = txtEmail.Text;
+            alumno.fechaNacimiento = DateTime.Parse(txtFechaNacimiento.Text);
+            alumno.fechaNacimientoSpecified = true;
+            alumno.password = txtPassword.Text;
+            alumno.tipoUsuario = 'E';
+            alumnoWS.guardarAlumno(alumno, estado.Nuevo);
+            Response.Redirect("Login.aspx");
         }
     }
 }

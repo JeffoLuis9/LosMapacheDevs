@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.webhooke.pucp.edu.pe/" targetNamespace="http://services.webhooke.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="verificarCorreo" type="tns:verificarCorreo" />
+  <xs:element name="verificarCorreoResponse" type="tns:verificarCorreoResponse" />
+  <xs:complexType name="verificarCorreo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="verificarCorreoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

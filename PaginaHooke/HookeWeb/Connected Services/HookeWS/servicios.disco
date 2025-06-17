@@ -7,5 +7,6 @@
   <contractRef ref="http://localhost:8080/WebHookeWS/SedeWS?wsdl" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
   <contractRef ref="http://localhost:8080/WebHookeWS/TipoSesionWS?wsdl" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
   <contractRef ref="http://localhost:8080/WebHookeWS/AcademiaWS?wsdl" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <contractRef ref="http://localhost:8080/WebHookeWS/UsuarioWS?wsdl" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
   <contractRef ref="http://localhost:8080/WebHookeWS/VoucherWS?wsdl" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
 </discovery>

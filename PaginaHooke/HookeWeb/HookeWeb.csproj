@@ -239,6 +239,9 @@
     <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.voucher.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.verificarCorreoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\HookeWS\SedeWS.wsdl" />
     <None Include="Connected Services\HookeWS\servicios.disco" />
     <None Include="Connected Services\HookeWS\configuration91.svcinfo" />
@@ -326,6 +329,10 @@
     </None>
     <None Include="Connected Services\HookeWS\TipoSesionWS.wsdl" />
     <None Include="Connected Services\HookeWS\TipoSesionWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\HookeWS\UsuarioWS.wsdl" />
+    <None Include="Connected Services\HookeWS\UsuarioWS.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\HookeWS\VoucherWS.wsdl" />
