@@ -1,9 +1,8 @@
-<<<<<<< HEAD
+
 ﻿using PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS;
 using System;
-=======
-﻿using System;
->>>>>>> origin/BranchAndres
+
+﻿
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -14,7 +13,7 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
 {
     public partial class Login : System.Web.UI.Page
     {
-<<<<<<< HEAD
+
         private UsuarioWSClient usuarioWS;
         private AlumnoWSClient alumnoWS;
         private ProfesorWSClient profesorWS;
@@ -62,7 +61,7 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
             }
 
             lblErrorMessage.Text = "Correo o contraseña incorrecto";
-=======
+
         protected void btnLogin_Click(object sender, EventArgs e)
         {
 

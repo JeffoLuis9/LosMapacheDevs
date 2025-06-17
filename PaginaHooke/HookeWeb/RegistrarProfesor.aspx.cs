@@ -1,12 +1,8 @@
-<<<<<<< HEAD
+
 ﻿using PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-=======
-﻿using System;
-using System.Collections.Generic;
->>>>>>> origin/BranchAndres
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -16,7 +12,7 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
 {
     public partial class RegistrarProfesor : System.Web.UI.Page
     {
-<<<<<<< HEAD
+
         private ProfesorWSClient profesorWS;
         private profesor profesor;
         private estado estado;
@@ -82,7 +78,7 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
             
             profesorWS.guardarProfesor(profesor, estado);
             Response.Redirect("ListarProfesor.aspx");
-=======
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -120,7 +116,7 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
             Response.Write("<script>alert('¡Registro exitoso! Ya puedes iniciar sesión.'); window.location='Administrador.aspx';</script>");
->>>>>>> origin/BranchAndres
+
         }
     }
 }
