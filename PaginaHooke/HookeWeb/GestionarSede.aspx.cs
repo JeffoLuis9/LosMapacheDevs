@@ -15,10 +15,7 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
 
         
         private estado estado;
-        private readonly SedeWSClient sedeWS;
-
-
-        
+        private SedeWSClient sedeWS;
         private AcademiaWSClient academiaWS;
         private BindingList<academia> academias;
 
@@ -29,47 +26,58 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
 
         protected void Page_Init(object sender, EventArgs e)
         {
-            string accion = Request.QueryString["accion"];
-            if (accion == null)
+
+            academiaWS = new AcademiaWSClient();
+            academias = new BindingList<academia>(academiaWS.listarAcademias());
+
+            ddlAcademia.DataSource = academias;
+            ddlAcademia.DataValueField = "id";
+            ddlAcademia.DataTextField = "nombre";
+            ddlAcademia.DataBind();
+            ddlAcademia.Items.Insert(0, new ListItem("-- Seleccione Academia --", ""));
+
+            if (Request.QueryString["id"] != null)
             {
-                lblTitulo.Text = "Registrar Sedes";
-                sede = new sede();
-                estado = estado.Nuevo;
-                if (!IsPostBack)
+                //modificar TODO ESTO
+                int sedeId;
+                if (int.TryParse(Request.QueryString["id"], out sedeId))
                 {
-                    Session["sede"] = null;
+                    sedeWS = new SedeWSClient();
+                    sede = sedeWS.obtenerSede(sedeId);
+                    estado = estado.Modificar;
+                    formTitle.InnerText = "Modificar Sede";
+                    litPageTitle.Text = "Modificar Curso";
+                    btnRegistrar.Text = "Guardar Sede";
+                    ddlDistrito.Text = sede.distrito;
+                    txtDireccion.Text = sede.direccion;
+                    //revisar
+                    ddlAcademia.SelectedValue = sede.academia.id.ToString();
+                    
                 }
             }
-            else if (accion == "modificar" && Session["sede"] != null)
+            else
             {
-                lblTitulo.Text = "Modificar sede";
-                estado = estado.Modificar;
-                sede = (sede)Session["sede"];
-
-                ddlDistrito.Text = sede.distrito;
-                txtDireccion.Text = sede.direccion;
-                ddlAcademia.SelectedValue = sede.academia.id.ToString();
+                estado = estado.Nuevo;
+                hdnSedeId.Value = "0";
+                formTitle.InnerText = "Registrar Sede";
+                litPageTitle.Text = "Registrar Sede";
+                btnRegistrar.Text = "Registrar Sede";
+                sede = new sede();
             }
+
+
+
         }
 
-        protected void DdlAcademia_SelectedIndexChanged(object sender, EventArgs e)
-        {    
-                academiaWS = new AcademiaWSClient();
-                academias = new BindingList<academia>(academiaWS.listarAcademias());
-
-                ddlAcademia.DataSource = academias;
-                ddlAcademia.DataValueField = "id";
-                ddlAcademia.DataTextField = "nombre";
-                ddlAcademia.DataBind();
-            
-        }
+       
 
 
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
-
+            /*
             academia academia = academiaWS.obtenerAcademia(1);
             // Asignamos los valores
+            
             sede sedeguardar = new sede();
             if (estado == estado.Nuevo)
             {
@@ -85,12 +93,24 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
                 sedeguardar.distrito = ddlDistrito.Text;
                 sedeguardar.academia = academia;
             }
+            */
 
+            academia academia = new academia();
+            academiaWS=new AcademiaWSClient();
+            sedeWS = new SedeWSClient();
+            sede.direccion= txtDireccion.Text;
+            sede.distrito= ddlDistrito.Text;
+            //revisar
+            academia = academiaWS.obtenerAcademia(Int32.Parse(ddlAcademia.SelectedValue));
+            sede.academia = academia;
             // Llamada al servicio para guardar
-            sedeWS.guardarSede(sedeguardar, estado);
+            sedeWS.guardarSede(sede, estado);
 
             // Redireccionamos a listar
              Response.Redirect("ListarSede.aspx");
+
+
+
         }
 
 

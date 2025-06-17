@@ -14,4 +14,5 @@ import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Sesion;
  */
 public interface ISesionBO  extends IBaseBO<Sesion>{
     List<Alumno>buscaralumnoporsesion();
+    List<Sesion>buscarSesionesxalumno(int id);
 }

@@ -133,11 +133,11 @@
  
     <asp:GridView ID="gvSedes" runat="server" AutoGenerateColumns="False" 
         DataKeyNames="id" CssClass="gvStyle"
-        OnRowDeleting="gvSedes_RowDeleting" OnRowCommand="gvSedes_RowCommand"
+        OnRowCommand="gvSedes_RowCommand"
         EmptyDataText="No hay Sedes registradas aún.">
         <Columns>
-            <asp:BoundField DataField="direccion" HeaderText="direccion" ItemStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center" />
-            <asp:BoundField DataField="distrito" HeaderText="Direccion" ItemStyle-HorizontalAlign="Left" HeaderStyle-HorizontalAlign="Left" />
+            <asp:BoundField DataField="direccion" HeaderText="Direccion" ItemStyle-HorizontalAlign="Left" HeaderStyle-HorizontalAlign="Left" />
+            <asp:BoundField DataField="distrito" HeaderText="Distrito" ItemStyle-HorizontalAlign="Left" HeaderStyle-HorizontalAlign="Left" />
 
             <asp:TemplateField HeaderText="Acciones" ItemStyle-CssClass="gv-action-buttons">
                 <ItemTemplate>

@@ -59,4 +59,14 @@ public class SesionWS {
         return this.sesionBO.buscaralumnoporsesion();
     }
     
+    //prueba
+    //boca
+    @WebMethod(operationName = "listarSesionesporAlumnos")
+    public List<Sesion> listarSesionesporAlumnos (@WebParam(name = "id") int id) {
+        
+        return this.sesionBO.buscarSesionesxalumno(id);
+    }
+    
+    
+    
 }

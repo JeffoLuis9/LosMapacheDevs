@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteAdministrador.Master" AutoEventWireup="true" CodeBehind="GestionarSede.aspx.cs" Inherits="PUCP.Edu.Pe.Prog03HookeWeb.Web.GestionarSede" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-    Registrar Sede
+    <asp:Literal ID="litPageTitle" runat="server">Registrar Sede</asp:Literal>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <style>
@@ -88,14 +88,10 @@
     </style>
 
      <div class="register-sede-container">
-         <h2>
-             Registrar Nueva Sede
-             <asp:Label ID="lblTitulo" runat="server" Text="Label"></asp:Label>
-         </h2>
-
-     
-
-
+         <h2 id="formTitle" runat="server">Registrar Nueva Sede </h2>
+             <!--Registrar Nueva Sede
+             <asp:Label ID="lblTitulo" runat="server" Text="Label"></asp:Label>-->
+        
          <!--distrito-->
          <div class="form-group">
              <label for="ddlDistrito">Distrito:</label>
@@ -124,8 +120,7 @@
          <div class="form-group">
              <label for="ddlAcademia">Academia:</label>
              <asp:DropDownList ID="ddlAcademia" runat="server" CssClass="form-control"    
-                 AutoPostBack="true" 
-                OnSelectedIndexChanged="DdlAcademia_SelectedIndexChanged">
+                 AutoPostBack="true">
                  </asp:DropDownList>
              <asp:RequiredFieldValidator ID="rfvAcademia" runat="server" ControlToValidate="ddlAcademia" InitialValue=""
                  ErrorMessage="La sede es obligatoria." CssClass="validation-message"></asp:RequiredFieldValidator>
@@ -133,6 +128,8 @@
      
 
          <asp:Button ID="btnRegistrar" runat="server" Text="Registrar Sede" CssClass="btn-register" OnClick="btnRegistrar_Click" />
+
+          <asp:HiddenField ID="hdnSedeId" runat="server" Value="0" /> 
 
      </div>
 

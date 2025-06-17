@@ -224,6 +224,24 @@
     <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarSesionResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.eliminarVoucherResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.guardarVoucherResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarAlumnosporSesionesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.listarVouchersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.obtenerVoucherResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\HookeWS\PUCP.Edu.Pe.Prog03HookeWeb.Web.HookeWS.voucher.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\HookeWS\SedeWS.wsdl" />
     <None Include="Connected Services\HookeWS\servicios.disco" />
     <None Include="Connected Services\HookeWS\configuration91.svcinfo" />
@@ -310,6 +328,10 @@
     </None>
     <None Include="Connected Services\HookeWS\TipoSesionWS.wsdl" />
     <None Include="Connected Services\HookeWS\TipoSesionWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\HookeWS\VoucherWS.wsdl" />
+    <None Include="Connected Services\HookeWS\VoucherWS.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />

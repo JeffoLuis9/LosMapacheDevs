@@ -150,6 +150,33 @@ public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements Sesi
         }
     }
     
+    @Override
+    public List<Integer>buscarsesionesxalumno(int idAlumno){
+        try (
+            Connection conn = DBManager.getInstance().getConnection(); PreparedStatement ps = this.comandoBuscarSesionesxalumno(conn,idAlumno);) {
+            ResultSet rs = ps.executeQuery();
+            List<Integer> modelos;
+            modelos = new ArrayList<>();
+            while (rs.next()) {
+                modelos.add(Integer.valueOf(rs.getInt("idSesion")));
+            }   
+            return modelos;    
+        } catch (SQLException e) {
+            System.err.println("Error SQL durante el listado: " + e.getMessage());
+            throw new RuntimeException("No se pudo listar el registro.", e);
+        } catch (Exception e) {
+            System.err.println("Error inpesperado: " + e.getMessage());
+            throw new RuntimeException("Error inesperado al listar los registros de sesionesxalumnos.", e);
+        }
+    }
+    
+    protected CallableStatement comandoBuscarSesionesxalumno(Connection conn,int id) throws SQLException {
+        String sql = "{CALL listarSesionesporAlumnos(?)}";
+        CallableStatement cmd = conn.prepareCall(sql);
+        cmd.setInt("p_id", id);
+        return cmd;
+    }
+    
     
     
 }

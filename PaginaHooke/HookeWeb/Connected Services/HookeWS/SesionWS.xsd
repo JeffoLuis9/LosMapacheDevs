@@ -4,6 +4,8 @@
   <xs:element name="eliminarSesionResponse" type="tns:eliminarSesionResponse" />
   <xs:element name="guardarSesion" type="tns:guardarSesion" />
   <xs:element name="guardarSesionResponse" type="tns:guardarSesionResponse" />
+  <xs:element name="listarAlumnosporSesiones" type="tns:listarAlumnosporSesiones" />
+  <xs:element name="listarAlumnosporSesionesResponse" type="tns:listarAlumnosporSesionesResponse" />
   <xs:element name="listarSesiones" type="tns:listarSesiones" />
   <xs:element name="listarSesionesResponse" type="tns:listarSesionesResponse" />
   <xs:element name="obtenerSesion" type="tns:obtenerSesion" />
@@ -22,12 +24,14 @@
     <xs:sequence>
       <xs:element minOccurs="0" name="alumno" type="tns:alumno" />
       <xs:element minOccurs="0" name="curso" type="tns:curso" />
+      <xs:element name="estado" type="xs:boolean" />
       <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
       <xs:element name="idHorario" type="xs:int" />
       <xs:element minOccurs="0" name="modalidad" type="xs:string" />
       <xs:element minOccurs="0" name="profesor" type="tns:profesor" />
       <xs:element minOccurs="0" name="sede" type="tns:sede" />
       <xs:element minOccurs="0" name="tipoSesion" type="tns:tipoSesion" />
+      <xs:element minOccurs="0" name="voucher" type="tns:voucher" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="alumno">
@@ -47,6 +51,8 @@
       <xs:element minOccurs="0" name="fechaNacimiento" type="xs:dateTime" />
       <xs:element name="id" type="xs:int" />
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element name="tipoUsuario" type="xs:unsignedShort" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="curso">
@@ -90,6 +96,14 @@
       <xs:element minOccurs="0" name="tipo" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="voucher">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigoOperacion" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element name="monto" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="listarSesiones">
     <xs:sequence />
   </xs:complexType>
@@ -114,6 +128,14 @@
   </xs:complexType>
   <xs:complexType name="guardarSesionResponse">
     <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarAlumnosporSesiones">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarAlumnosporSesionesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:alumno" />
+    </xs:sequence>
   </xs:complexType>
   <xs:simpleType name="estado">
     <xs:restriction base="xs:string">

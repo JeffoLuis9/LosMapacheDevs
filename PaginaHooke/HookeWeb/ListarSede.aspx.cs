@@ -14,17 +14,10 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
         private SedeWSClient sedeWS;
         private BindingList<sede> sedes;
 
-        public ListarSede()
-        {
-            // Instanciar el servicio web
-            this.sedeWS = new SedeWSClient();
-        }
-
         protected void Page_Load(object sender, EventArgs e)
         {
             sedeWS = new SedeWSClient();
-            
-            sedes = new BindingList<sede>(sedeWS.listarSedes().ToList());
+            sedes = new BindingList<sede>(sedeWS.listarSedes());
             gvSedes.DataSource = sedes;
             gvSedes.DataBind();
         }
@@ -36,7 +29,7 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
             if (e.CommandName == "ModificarSede")
             {
                 // Redirige a RegistrarProfesor.aspx con el ID del profesor para modificar
-                Response.Redirect($"RegistrarSede.aspx?id={idSede}");
+                Response.Redirect($"GestionarSede.aspx?id={idSede}");
             }
             else if (e.CommandName == "EliminarSede")
             {
@@ -44,29 +37,20 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
                 // Aquí se llama a la lógica de eliminación.
                 // Como ya tenemos OnClientClick para la confirmación, podemos eliminar directamente.
                 // EliminarProfesor(idUsuario);
-                gvSedes_RowDeleting(sender, e);
+                sedeWS.eliminarSede(idSede);
+                Response.Redirect("ListarSede.aspx");
             }
         }
 
         protected void btnRegistrarNuevo_Click(object sender, EventArgs e)
         {
             // Redirigir a la página de registro de nuevo profesor
-            Response.Redirect("GestionarSedes.aspx");
+            Response.Redirect("GestionarSede.aspx");
         }
 
 
 
-        protected void gvSedes_RowDeleting(object sender, EventArgs e)
-        {
-            // Obtener el ID del objeto a eliminar
-            int idSede = Int32.Parse(((LinkButton)sender).CommandArgument);
-
-            // Llamar al servicio para eliminar
-            sedeWS.eliminarSede(idSede);
-
-            // Recargar la página para actualizar la lista
-            Response.Redirect("ListarSedes.aspx");
-        }
+       
 
 
 

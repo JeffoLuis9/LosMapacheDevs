@@ -13,5 +13,5 @@ import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Alumno;
  */
 public interface SesionDAO extends ICrud<Sesion>{
     List<Integer>buscaralumnosede();
-    
+    List<Integer>buscarsesionesxalumno(int idAlumno);    
 }

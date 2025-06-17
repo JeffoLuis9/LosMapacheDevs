@@ -62,4 +62,19 @@ public class SesionBOImpl implements ISesionBO{
                 
     }
     
+    @Override
+    public List<Sesion>buscarSesionesxalumno(int idAlumno){
+       ISesionBO sesionBO=new SesionBOImpl();
+       List<Integer>bandera=sesionDAO.buscarsesionesxalumno(idAlumno);
+       List<Sesion>datafinal=new ArrayList<Sesion>();
+       for(Integer bande :bandera){
+           int aa=bande.intValue();
+           Sesion se=sesionBO.obtener(aa);
+           datafinal.add(se);
+       }
+       return datafinal;
+       
+    }
+    
+    
 }
