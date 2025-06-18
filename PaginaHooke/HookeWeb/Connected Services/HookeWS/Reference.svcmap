@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="2abd335e-e69e-4b06-9b76-2676148e347b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="a0e986ae-5c79-42c7-b22a-bddc4efc02e1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,45 +22,25 @@
     <MetadataSource Address="http://localhost:8080/WebHookeWS/servicios.disco" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-<<<<<<< HEAD
-    <MetadataFile FileName="ProfesorWS.xsd" MetadataType="Schema" ID="8a766ede-2b64-44de-8d49-dbb562899444" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/ProfesorWS?xsd=1" />
-    <MetadataFile FileName="TipoSesionWS.wsdl" MetadataType="Wsdl" ID="ad6a0a14-e5ef-4b8c-a316-74f8c37aea7f" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/TipoSesionWS?wsdl" />
-    <MetadataFile FileName="CursoWS.xsd" MetadataType="Schema" ID="9d19565a-b47a-4b6e-8cfa-65515307a2e0" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/CursoWS?xsd=1" />
-    <MetadataFile FileName="UsuarioWS.wsdl" MetadataType="Wsdl" ID="dc208846-3a63-4ced-a1fe-623b56ff38de" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/UsuarioWS?wsdl" />
-    <MetadataFile FileName="AlumnoWS.wsdl" MetadataType="Wsdl" ID="8eeed754-cd9d-4298-b1e1-b68a40e9bb68" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/AlumnoWS?wsdl" />
-    <MetadataFile FileName="AcademiaWS.wsdl" MetadataType="Wsdl" ID="a83109e8-fc43-43b0-98a8-860fe55cd0d8" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/AcademiaWS?wsdl" />
-    <MetadataFile FileName="VoucherWS.wsdl" MetadataType="Wsdl" ID="f821bed0-8053-4410-a48a-8fdb9552be91" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/VoucherWS?wsdl" />
-    <MetadataFile FileName="AcademiaWS.xsd" MetadataType="Schema" ID="89515966-019b-4b19-9d03-a028aa596789" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/AcademiaWS?xsd=1" />
-    <MetadataFile FileName="VoucherWS.xsd" MetadataType="Schema" ID="b2475548-a282-44ae-8f3a-5a9ffb32e7ef" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/VoucherWS?xsd=1" />
-    <MetadataFile FileName="ProfesorWS.wsdl" MetadataType="Wsdl" ID="ade93bd8-1d54-4893-a2c8-6311303b5809" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/ProfesorWS?wsdl" />
-    <MetadataFile FileName="AlumnoWS.xsd" MetadataType="Schema" ID="3059f9f2-b7a4-43cc-a621-4bb50c34e8bb" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/AlumnoWS?xsd=1" />
-    <MetadataFile FileName="SedeWS.xsd" MetadataType="Schema" ID="bfbf560c-d09d-42c0-894d-fd2aa2281167" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/SedeWS?xsd=1" />
-    <MetadataFile FileName="servicios.disco" MetadataType="Disco" ID="78f565ca-5149-4d07-8256-a33f9076a301" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/servicios.disco" />
-    <MetadataFile FileName="SesionWS.xsd" MetadataType="Schema" ID="b06c9cdc-0445-434b-9ac2-94f55797e4c1" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/SesionWS?xsd=1" />
-    <MetadataFile FileName="UsuarioWS.xsd" MetadataType="Schema" ID="8399190e-93bd-49a0-9f39-51dec6246cf1" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/UsuarioWS?xsd=1" />
-    <MetadataFile FileName="SedeWS.wsdl" MetadataType="Wsdl" ID="5101bff6-682e-4d97-a14e-7411c8a37e12" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/SedeWS?wsdl" />
-    <MetadataFile FileName="TipoSesionWS.xsd" MetadataType="Schema" ID="32681249-1b77-45d7-a99a-be801bdfbc8a" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/TipoSesionWS?xsd=1" />
-    <MetadataFile FileName="CursoWS.wsdl" MetadataType="Wsdl" ID="75b97a14-b973-42d0-82f7-2e9f8eba1234" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/CursoWS?wsdl" />
-    <MetadataFile FileName="SesionWS.wsdl" MetadataType="Wsdl" ID="58424b6e-ba72-4036-b33a-df6a27bc7ea4" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/SesionWS?wsdl" />
-=======
-    <MetadataFile FileName="ProfesorWS.xsd" MetadataType="Schema" ID="6c708fb2-3cca-444e-9627-7100254e42a8" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/ProfesorWS?xsd=1" />
-    <MetadataFile FileName="TipoSesionWS.wsdl" MetadataType="Wsdl" ID="029c0db9-db87-4896-afdf-3bdd14c1a2c5" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/TipoSesionWS?wsdl" />
-    <MetadataFile FileName="CursoWS.xsd" MetadataType="Schema" ID="e2395297-25e6-4425-b934-9442517aee17" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/CursoWS?xsd=1" />
-    <MetadataFile FileName="VoucherWS.xsd" MetadataType="Schema" ID="cd9bc030-fa6a-499b-b40f-265be25ebaa9" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/VoucherWS?xsd=1" />
-    <MetadataFile FileName="AlumnoWS.wsdl" MetadataType="Wsdl" ID="3b7e880f-88bc-4292-80b4-52da93956f7d" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/AlumnoWS?wsdl" />
-    <MetadataFile FileName="AcademiaWS.wsdl" MetadataType="Wsdl" ID="23e665c0-f895-44c8-9127-dbac2d5214a0" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/AcademiaWS?wsdl" />
-    <MetadataFile FileName="VoucherWS.wsdl" MetadataType="Wsdl" ID="cb6d73c8-6866-4a7c-abc4-08d3d29f3ad8" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/VoucherWS?wsdl" />
-    <MetadataFile FileName="AlumnoWS.xsd" MetadataType="Schema" ID="ded9ffab-c088-4e2c-bf42-89cd80399493" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/AlumnoWS?xsd=1" />
-    <MetadataFile FileName="ProfesorWS.wsdl" MetadataType="Wsdl" ID="34482b57-2684-4561-a142-eae798563505" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/ProfesorWS?wsdl" />
-    <MetadataFile FileName="SesionWS.wsdl" MetadataType="Wsdl" ID="2334e34a-b72b-4266-ba19-e026667ff7a6" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/SesionWS?wsdl" />
-    <MetadataFile FileName="SedeWS.xsd" MetadataType="Schema" ID="5f7a450f-b1b9-4aee-a507-8ea571f15fe8" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/SedeWS?xsd=1" />
-    <MetadataFile FileName="servicios.disco" MetadataType="Disco" ID="2ce6ef50-3999-45e0-9ae5-9d0e53bdf416" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/servicios.disco" />
-    <MetadataFile FileName="SesionWS.xsd" MetadataType="Schema" ID="4fc4d578-6d20-47b0-a500-a6e9dc8be049" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/SesionWS?xsd=1" />
-    <MetadataFile FileName="AcademiaWS.xsd" MetadataType="Schema" ID="86bb243a-a2b1-4aad-ade6-5ca514a3bdff" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/AcademiaWS?xsd=1" />
-    <MetadataFile FileName="SedeWS.wsdl" MetadataType="Wsdl" ID="2647e9ab-cc2d-40dc-ac28-3f4f650fe9a1" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/SedeWS?wsdl" />
-    <MetadataFile FileName="TipoSesionWS.xsd" MetadataType="Schema" ID="0c74606e-9702-4c44-b674-8870e3572a2d" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/TipoSesionWS?xsd=1" />
-    <MetadataFile FileName="CursoWS.wsdl" MetadataType="Wsdl" ID="b9572fe9-5f5e-481f-ba32-7fc55527927f" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/CursoWS?wsdl" />
->>>>>>> origin/BranchAndres
+    <MetadataFile FileName="ProfesorWS.xsd" MetadataType="Schema" ID="15a4ba1f-5110-4ec2-8ca4-8242f79de9c5" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/ProfesorWS?xsd=1" />
+    <MetadataFile FileName="TipoSesionWS.wsdl" MetadataType="Wsdl" ID="11f33f9a-1212-4bd7-83e6-d35f12fdd9aa" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/TipoSesionWS?wsdl" />
+    <MetadataFile FileName="CursoWS.xsd" MetadataType="Schema" ID="c9124793-5d31-4100-bc49-7ab46d261b4b" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/CursoWS?xsd=1" />
+    <MetadataFile FileName="UsuarioWS.wsdl" MetadataType="Wsdl" ID="c179eaa2-e3bb-42ac-b9ff-6f63629703be" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/UsuarioWS?wsdl" />
+    <MetadataFile FileName="AlumnoWS.wsdl" MetadataType="Wsdl" ID="fe96cbb8-ef8f-4858-847a-9e70e0f33803" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/AlumnoWS?wsdl" />
+    <MetadataFile FileName="AcademiaWS.wsdl" MetadataType="Wsdl" ID="4432162c-312d-4cb9-93c2-1612462d8b17" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/AcademiaWS?wsdl" />
+    <MetadataFile FileName="VoucherWS.wsdl" MetadataType="Wsdl" ID="a7d4f8ee-b4bd-4a1d-ac8c-d205e3bfd0c8" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/VoucherWS?wsdl" />
+    <MetadataFile FileName="AcademiaWS.xsd" MetadataType="Schema" ID="d1e65d27-508d-4026-a9ad-2cedaa0dd199" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/AcademiaWS?xsd=1" />
+    <MetadataFile FileName="VoucherWS.xsd" MetadataType="Schema" ID="2e98a22b-a8a4-4bb1-a369-b4cd8ecc86c6" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/VoucherWS?xsd=1" />
+    <MetadataFile FileName="ProfesorWS.wsdl" MetadataType="Wsdl" ID="84f611a7-7f7a-471d-9e34-e16c28eb2fc5" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/ProfesorWS?wsdl" />
+    <MetadataFile FileName="AlumnoWS.xsd" MetadataType="Schema" ID="fe2c60e8-960a-40ff-84c1-c561869f2abd" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/AlumnoWS?xsd=1" />
+    <MetadataFile FileName="SedeWS.xsd" MetadataType="Schema" ID="1b274ef9-5ceb-4cbf-aeac-ea47714606ec" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/SedeWS?xsd=1" />
+    <MetadataFile FileName="servicios.disco" MetadataType="Disco" ID="888475df-5422-400c-af90-76ee78baeaf3" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/servicios.disco" />
+    <MetadataFile FileName="SesionWS.xsd" MetadataType="Schema" ID="aacf5eb4-4d1f-4c01-a744-7e4748806fff" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/SesionWS?xsd=1" />
+    <MetadataFile FileName="UsuarioWS.xsd" MetadataType="Schema" ID="e126038a-4680-499b-9752-4796ec0f9228" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/UsuarioWS?xsd=1" />
+    <MetadataFile FileName="SedeWS.wsdl" MetadataType="Wsdl" ID="7b484460-168f-4a9e-b45d-646d185bdacf" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/SedeWS?wsdl" />
+    <MetadataFile FileName="TipoSesionWS.xsd" MetadataType="Schema" ID="de42c37d-6c76-4686-83a8-e80a352312a8" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/TipoSesionWS?xsd=1" />
+    <MetadataFile FileName="CursoWS.wsdl" MetadataType="Wsdl" ID="e41e1490-c489-405b-8eb8-cf71a2f65cbb" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/CursoWS?wsdl" />
+    <MetadataFile FileName="SesionWS.wsdl" MetadataType="Wsdl" ID="5e4599f0-7f55-4673-8143-ea2013105c8a" SourceId="1" SourceUrl="http://localhost:8080/WebHookeWS/SesionWS?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

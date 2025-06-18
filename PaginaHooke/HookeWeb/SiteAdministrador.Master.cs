@@ -11,11 +11,9 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+
             lblUserName.Text = Session["usuario"].ToString();
-=======
-            lblUserName.Text = Session["UserName"].ToString();
->>>>>>> origin/BranchAndres
+
         }
 
         protected void lnkLogout_Click(object sender, EventArgs e)

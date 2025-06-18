@@ -11,252 +11,238 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
 {
 
 
-<<<<<<<< HEAD:PaginaHooke/HookeWeb/RegistrarMatricula.aspx.designer.cs
+
     public partial class RegistrarMatricula
     {
 
         /// <summary>
         /// Control txtNivel.
-========
-    public partial class RegistrarCurso
-    {
 
-        /// <summary>
-        /// Control litPageTitle.
->>>>>>>> origin/BranchAndres:PaginaHooke/HookeWeb/RegistrarCurso.aspx.designer.cs
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-<<<<<<<< HEAD:PaginaHooke/HookeWeb/RegistrarMatricula.aspx.designer.cs
-        protected global::System.Web.UI.WebControls.TextBox txtNivel;
+        public partial class RegistrarCurso
+        {
 
-        /// <summary>
-        /// Control rfvNivel.
-========
-        protected global::System.Web.UI.WebControls.Literal litPageTitle;
+            /// <summary>
+            /// Control litPageTitle.
 
-        /// <summary>
-        /// Control formTitle.
->>>>>>>> origin/BranchAndres:PaginaHooke/HookeWeb/RegistrarCurso.aspx.designer.cs
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-<<<<<<<< HEAD:PaginaHooke/HookeWeb/RegistrarMatricula.aspx.designer.cs
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNivel;
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
 
-        /// <summary>
-        /// Control ddlModalidad.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlModalidad;
+            protected global::System.Web.UI.WebControls.TextBox txtNivel;
 
-        /// <summary>
-        /// Control rfvModalidad.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvModalidad;
-========
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl formTitle;
->>>>>>>> origin/BranchAndres:PaginaHooke/HookeWeb/RegistrarCurso.aspx.designer.cs
+            /// <summary>
+            /// Control rfvNivel.
 
-        /// <summary>
-        /// Control ddlCurso.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCurso;
+            protected global::System.Web.UI.WebControls.Literal litPageTitle;
 
-        /// <summary>
-<<<<<<<< HEAD:PaginaHooke/HookeWeb/RegistrarMatricula.aspx.designer.cs
-        /// Control rfvCurso.
-========
-        /// Control rfvCodigo.
->>>>>>>> origin/BranchAndres:PaginaHooke/HookeWeb/RegistrarCurso.aspx.designer.cs
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-<<<<<<<< HEAD:PaginaHooke/HookeWeb/RegistrarMatricula.aspx.designer.cs
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCurso;
-========
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCodigo;
->>>>>>>> origin/BranchAndres:PaginaHooke/HookeWeb/RegistrarCurso.aspx.designer.cs
+            /// <summary>
+            /// Control formTitle.
 
-        /// <summary>
-        /// Control ddlTipoSesion.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlTipoSesion;
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
 
-        /// <summary>
-<<<<<<<< HEAD:PaginaHooke/HookeWeb/RegistrarMatricula.aspx.designer.cs
-        /// Control rfvTipoSesion.
-========
-        /// Control rfvNombre.
->>>>>>>> origin/BranchAndres:PaginaHooke/HookeWeb/RegistrarCurso.aspx.designer.cs
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-<<<<<<<< HEAD:PaginaHooke/HookeWeb/RegistrarMatricula.aspx.designer.cs
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTipoSesion;
-========
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNombre;
+            protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNivel;
 
-        /// <summary>
-        /// Control txtNivel.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNivel;
+            /// <summary>
+            /// Control ddlModalidad.
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
+            protected global::System.Web.UI.WebControls.DropDownList ddlModalidad;
 
-        /// <summary>
-        /// Control rfvNivel.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNivel;
+            /// <summary>
+            /// Control rfvModalidad.
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
+            protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvModalidad;
 
-        /// <summary>
-        /// Control rvNivel.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator rvNivel;
->>>>>>>> origin/BranchAndres:PaginaHooke/HookeWeb/RegistrarCurso.aspx.designer.cs
+            protected global::System.Web.UI.HtmlControls.HtmlGenericControl formTitle;
 
-        /// <summary>
-        /// Control ddlProfesor.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlProfesor;
 
-        /// <summary>
-<<<<<<<< HEAD:PaginaHooke/HookeWeb/RegistrarMatricula.aspx.designer.cs
-        /// Control rfvProfesor.
-========
-        /// Control rfvHoraInicio.
->>>>>>>> origin/BranchAndres:PaginaHooke/HookeWeb/RegistrarCurso.aspx.designer.cs
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-<<<<<<<< HEAD:PaginaHooke/HookeWeb/RegistrarMatricula.aspx.designer.cs
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvProfesor;
-========
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvHoraInicio;
+            /// <summary>
+            /// Control ddlCurso.
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
+            protected global::System.Web.UI.WebControls.DropDownList ddlCurso;
 
-        /// <summary>
-        /// Control rvHoraInicio.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator rvHoraInicio;
->>>>>>>> origin/BranchAndres:PaginaHooke/HookeWeb/RegistrarCurso.aspx.designer.cs
+            /// <summary>
 
-        /// <summary>
-        /// Control ddlSede.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlSede;
+            /// Control rfvCurso.
 
-        /// <summary>
-<<<<<<<< HEAD:PaginaHooke/HookeWeb/RegistrarMatricula.aspx.designer.cs
-        /// Control rfvSede.
-========
-        /// Control rfvHoraFin.
->>>>>>>> origin/BranchAndres:PaginaHooke/HookeWeb/RegistrarCurso.aspx.designer.cs
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-<<<<<<<< HEAD:PaginaHooke/HookeWeb/RegistrarMatricula.aspx.designer.cs
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvSede;
+            /// Control rfvCodigo.
 
-        /// <summary>
-        /// Control btnAccion.
-========
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvHoraFin;
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
 
-        /// <summary>
-        /// Control rvHoraFin.
->>>>>>>> origin/BranchAndres:PaginaHooke/HookeWeb/RegistrarCurso.aspx.designer.cs
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-<<<<<<<< HEAD:PaginaHooke/HookeWeb/RegistrarMatricula.aspx.designer.cs
-        protected global::System.Web.UI.WebControls.Button btnAccion;
+            protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCurso;
 
-        /// <summary>
-        /// Control btnCancelar.
-========
-        protected global::System.Web.UI.WebControls.RangeValidator rvHoraFin;
+            protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCodigo;
 
-        /// <summary>
-        /// Control cmpHoras.
->>>>>>>> origin/BranchAndres:PaginaHooke/HookeWeb/RegistrarCurso.aspx.designer.cs
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-<<<<<<<< HEAD:PaginaHooke/HookeWeb/RegistrarMatricula.aspx.designer.cs
-        protected global::System.Web.UI.WebControls.Button btnCancelar;
-========
-        protected global::System.Web.UI.WebControls.CompareValidator cmpHoras;
 
-        /// <summary>
-        /// Control btnRegistrar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegistrar;
+            /// <summary>
+            /// Control ddlTipoSesion.
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
+            protected global::System.Web.UI.WebControls.DropDownList ddlTipoSesion;
 
-        /// <summary>
-        /// Control hdnCursoId.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdnCursoId;
->>>>>>>> origin/BranchAndres:PaginaHooke/HookeWeb/RegistrarCurso.aspx.designer.cs
+            /// <summary>
+
+            /// Control rfvTipoSesion.
+
+            /// Control rfvNombre.
+
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
+
+            protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTipoSesion;
+
+            protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNombre;
+
+           
+
+
+            /// <summary>
+            /// Control rvNivel.
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
+            protected global::System.Web.UI.WebControls.RangeValidator rvNivel;
+
+
+            /// <summary>
+            /// Control ddlProfesor.
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
+            protected global::System.Web.UI.WebControls.DropDownList ddlProfesor;
+
+            /// <summary>
+
+            /// Control rfvProfesor.
+
+            /// Control rfvHoraInicio.
+
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
+
+            protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvProfesor;
+
+            protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvHoraInicio;
+
+            /// <summary>
+            /// Control rvHoraInicio.
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
+            protected global::System.Web.UI.WebControls.RangeValidator rvHoraInicio;
+
+
+            /// <summary>
+            /// Control ddlSede.
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
+            protected global::System.Web.UI.WebControls.DropDownList ddlSede;
+
+            /// <summary>
+
+            /// Control rfvSede.
+
+            /// Control rfvHoraFin.
+
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
+
+            protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvSede;
+
+            /// <summary>
+            /// Control btnAccion.
+
+            protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvHoraFin;
+
+            /// <summary>
+            /// Control rvHoraFin.
+
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
+
+            protected global::System.Web.UI.WebControls.Button btnAccion;
+
+            /// <summary>
+            /// Control btnCancelar.
+
+            protected global::System.Web.UI.WebControls.RangeValidator rvHoraFin;
+
+            /// <summary>
+            /// Control cmpHoras.
+
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
+
+            protected global::System.Web.UI.WebControls.Button btnCancelar;
+
+            protected global::System.Web.UI.WebControls.CompareValidator cmpHoras;
+
+            /// <summary>
+            /// Control btnRegistrar.
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
+            protected global::System.Web.UI.WebControls.Button btnRegistrar;
+
+            /// <summary>
+            /// Control hdnCursoId.
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
+            protected global::System.Web.UI.WebControls.HiddenField hdnCursoId;
+
+        }
     }
 }

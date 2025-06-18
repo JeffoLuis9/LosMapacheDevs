@@ -158,12 +158,12 @@
                     <li><a href="ListarProfesor.aspx">Mostrar Profesores</a></li>
                     <li><a href="ListarCursos.aspx">Mostrar Cursos</a></li>
                     <li><a href="ListarTipoSesiones.aspx">Mostrar Tipo de Sesiones</a></li>
-<<<<<<< HEAD
+
                     <li><a href="Intenciones.aspx">Intenciones de matricula</a></li>
-=======
+
                     <li><a href="GestionarSede.aspx">Gestionar Sedes</a></li>
                     <li><a href="ListarSede.aspx">Listar Sedes</a></li>
->>>>>>> origin/BranchAndres
+
                 </ul>
             </div>
             <div class="page-content">

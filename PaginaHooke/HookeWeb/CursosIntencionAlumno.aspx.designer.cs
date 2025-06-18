@@ -10,45 +10,44 @@
 namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
 {
 
-
-<<<<<<<< HEAD:PaginaHooke/HookeWeb/CursosIntencionAlumno.aspx.designer.cs
     public partial class CursosIntencionAlumno
     {
 
         /// <summary>
         /// Control litNombreAlumno.
-========
-    public partial class ListarCursos
-    {
 
-        /// <summary>
-        /// Control btnRegistrarNuevo.
->>>>>>>> origin/BranchAndres:PaginaHooke/HookeWeb/ListarCursos.aspx.designer.cs
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-<<<<<<<< HEAD:PaginaHooke/HookeWeb/CursosIntencionAlumno.aspx.designer.cs
-        protected global::System.Web.UI.WebControls.Literal litNombreAlumno;
+        public partial class ListarCursos
+        {
 
-        /// <summary>
-        /// Control gvCursosAlumno.
-========
-        protected global::System.Web.UI.WebControls.LinkButton btnRegistrarNuevo;
+            /// <summary>
+            /// Control btnRegistrarNuevo.
 
-        /// <summary>
-        /// Control gvCursos.
->>>>>>>> origin/BranchAndres:PaginaHooke/HookeWeb/ListarCursos.aspx.designer.cs
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-<<<<<<<< HEAD:PaginaHooke/HookeWeb/CursosIntencionAlumno.aspx.designer.cs
-        protected global::System.Web.UI.WebControls.GridView gvCursosAlumno;
-========
-        protected global::System.Web.UI.WebControls.GridView gvCursos;
->>>>>>>> origin/BranchAndres:PaginaHooke/HookeWeb/ListarCursos.aspx.designer.cs
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
+
+            protected global::System.Web.UI.WebControls.Literal litNombreAlumno;
+
+            /// <summary>
+            /// Control gvCursosAlumno.
+
+            protected global::System.Web.UI.WebControls.LinkButton btnRegistrarNuevo;
+
+            /// <summary>
+            /// Control gvCursos.
+
+            /// </summary>
+            /// <remarks>
+            /// Campo generado automáticamente.
+            /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            /// </remarks>
+
+            protected global::System.Web.UI.WebControls.GridView gvCursosAlumno;
+
+            protected global::System.Web.UI.WebControls.GridView gvCursos;
+
+        }
     }
 }

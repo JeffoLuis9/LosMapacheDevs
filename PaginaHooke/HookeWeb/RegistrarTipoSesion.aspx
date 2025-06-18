@@ -35,11 +35,9 @@
 
         <div class="form-group">
             <label for="txtTipo">Tipo de Sesión:</label>
-<<<<<<< HEAD
+
             <asp:TextBox ID="txtTipo" runat="server" CssClass="form-control" Placeholder="Ej: Individual, Grupal"></asp:TextBox>
-=======
-            <asp:TextBox ID="txtTipo" runat="server" CssClass="form-control" Placeholder="Ej: Regular, Intensiva"></asp:TextBox>
->>>>>>> origin/BranchAndres
+
             <asp:RequiredFieldValidator ID="rfvTipo" runat="server" ControlToValidate="txtTipo"
                 ErrorMessage="El tipo de sesión es obligatorio." CssClass="validation-message"></asp:RequiredFieldValidator>
         </div>

@@ -33,15 +33,11 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
             alumnoWS.guardarAlumno(alumno, estado.Nuevo);
             Response.Redirect("Login.aspx");
 
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
           
         }
 
-        protected void btnRegistrar_Click(object sender, EventArgs e)
-        {
-            Response.Write("<script>alert('¡Registro exitoso! Ya puedes iniciar sesión.'); window.location='Login.aspx';</script>");
-
-        }
     }
 }

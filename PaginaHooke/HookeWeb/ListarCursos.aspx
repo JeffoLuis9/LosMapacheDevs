@@ -131,7 +131,7 @@
         </div>
      
         <asp:GridView ID="gvCursos" runat="server" AutoGenerateColumns="False" 
-<<<<<<< HEAD
+
             DataKeyNames="id" CssClass="gvStyle"
       
             OnRowCommand="gvCursos_RowCommand"
@@ -139,27 +139,16 @@
             <Columns>
                 <asp:BoundField DataField="codigo" HeaderText="Código" ItemStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center" />
                 <asp:BoundField DataField="nombre" HeaderText="Nombre del Curso" ItemStyle-HorizontalAlign="Left" HeaderStyle-HorizontalAlign="Left" />
-=======
-            DataKeyNames="idCurso" CssClass="gvStyle"
-            OnRowDeleting="gvCursos_RowDeleting" OnRowCommand="gvCursos_RowCommand"
-            EmptyDataText="No hay cursos registrados aún.">
-            <Columns>
-                <asp:BoundField DataField="Codigo" HeaderText="Código" ItemStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center" />
-                <asp:BoundField DataField="Nombre" HeaderText="Nombre del Curso" ItemStyle-HorizontalAlign="Left" HeaderStyle-HorizontalAlign="Left" />
->>>>>>> origin/BranchAndres
+
 
                 <asp:TemplateField HeaderText="Acciones" ItemStyle-CssClass="gv-action-buttons">
                     <ItemTemplate>
                         <asp:LinkButton ID="lnkModificar" runat="server" CommandName="ModificarCurso" 
-<<<<<<< HEAD
+
                             CommandArgument='<%# Eval("id") %>' CssClass="btn-modificar">Modificar</asp:LinkButton>
                         <asp:LinkButton ID="lnkEliminar" runat="server" CommandName="EliminarCurso" 
                             CommandArgument='<%# Eval("id") %>' CssClass="btn-eliminar"
-=======
-                            CommandArgument='<%# Eval("idCurso") %>' CssClass="btn-modificar">Modificar</asp:LinkButton>
-                        <asp:LinkButton ID="lnkEliminar" runat="server" CommandName="EliminarCurso" 
-                            CommandArgument='<%# Eval("idCurso") %>' CssClass="btn-eliminar"
->>>>>>> origin/BranchAndres
+
                             OnClientClick='return confirm("¿Estás seguro de que quieres eliminar este curso?");'>Eliminar</asp:LinkButton>
                     </ItemTemplate>
                 </asp:TemplateField>

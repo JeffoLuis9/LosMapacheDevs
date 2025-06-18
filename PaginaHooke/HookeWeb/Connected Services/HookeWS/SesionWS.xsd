@@ -8,16 +8,18 @@
   <xs:element name="listarAlumnosporSesionesResponse" type="tns:listarAlumnosporSesionesResponse" />
   <xs:element name="listarSesiones" type="tns:listarSesiones" />
   <xs:element name="listarSesionesResponse" type="tns:listarSesionesResponse" />
+  <xs:element name="listarSesionesporAlumnos" type="tns:listarSesionesporAlumnos" />
+  <xs:element name="listarSesionesporAlumnosResponse" type="tns:listarSesionesporAlumnosResponse" />
   <xs:element name="obtenerSesion" type="tns:obtenerSesion" />
   <xs:element name="obtenerSesionResponse" type="tns:obtenerSesionResponse" />
-  <xs:complexType name="obtenerSesion">
+  <xs:complexType name="listarSesionesporAlumnos">
     <xs:sequence>
       <xs:element name="id" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="obtenerSesionResponse">
+  <xs:complexType name="listarSesionesporAlumnosResponse">
     <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="tns:sesion" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:sesion" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="sesion">
@@ -102,6 +104,16 @@
       <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
       <xs:element name="id" type="xs:int" />
       <xs:element name="monto" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerSesion">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerSesionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:sesion" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listarSesiones">
