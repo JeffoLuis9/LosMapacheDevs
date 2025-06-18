@@ -2,7 +2,11 @@ drop procedure if exists insertarSesion;
 drop procedure if exists modificarSesion;
 drop procedure if exists eliminarSesion;
 drop procedure if exists buscarSesionPorId;
+<<<<<<< HEAD
 drop procedure if exists listarSesionesporAlumnos;
+=======
+drop procedure if exists buscarAlumnoEnSesion;
+>>>>>>> BranchJefferson
 drop procedure if exists listarSesiones;
 
 
@@ -61,12 +65,19 @@ BEGIN
 END//
 
 DELIMITER //
+<<<<<<< HEAD
 CREATE DEFINER=`admin`@`%` PROCEDURE `listarSesionesporAlumnos`(
     IN p_id INT
 )
 BEGIN
 	SELECT idSesion FROM Sesion
     WHERE idAlumno=p_id;
+=======
+CREATE DEFINER=`admin`@`%` PROCEDURE `buscarAlumnoEnSesion`()
+BEGIN
+    SELECT DISTINCT idAlumno
+	FROM Sesion;
+>>>>>>> BranchJefferson
 END//
 
 DELIMITER //

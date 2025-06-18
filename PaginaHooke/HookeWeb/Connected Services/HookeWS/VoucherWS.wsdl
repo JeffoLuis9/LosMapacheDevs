@@ -5,11 +5,11 @@
       <xsd:import schemaLocation="http://localhost:8080/WebHookeWS/VoucherWS?xsd=1" namespace="http://services.webhooke.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="eliminarVoucher">
-    <part name="parameters" element="tns:eliminarVoucher" />
+  <message name="obtenerVoucher">
+    <part name="parameters" element="tns:obtenerVoucher" />
   </message>
-  <message name="eliminarVoucherResponse">
-    <part name="parameters" element="tns:eliminarVoucherResponse" />
+  <message name="obtenerVoucherResponse">
+    <part name="parameters" element="tns:obtenerVoucherResponse" />
   </message>
   <message name="obtenerVoucher">
     <part name="parameters" element="tns:obtenerVoucher" />
@@ -17,39 +17,55 @@
   <message name="obtenerVoucherResponse">
     <part name="parameters" element="tns:obtenerVoucherResponse" />
   </message>
+  <message name="eliminarVoucher">
+    <part name="parameters" element="tns:eliminarVoucher" />
+  </message>
+  <message name="eliminarVoucherResponse">
+    <part name="parameters" element="tns:eliminarVoucherResponse" />
+  </message>
   <message name="guardarVoucher">
     <part name="parameters" element="tns:guardarVoucher" />
   </message>
   <message name="guardarVoucherResponse">
     <part name="parameters" element="tns:guardarVoucherResponse" />
   </message>
+<<<<<<< HEAD
   <message name="listarVouchers">
     <part name="parameters" element="tns:listarVouchers" />
   </message>
   <message name="listarVouchersResponse">
     <part name="parameters" element="tns:listarVouchersResponse" />
   </message>
+=======
+>>>>>>> BranchJefferson
   <portType name="VoucherWS">
-    <operation name="eliminarVoucher">
-      <input wsam:Action="http://services.webhooke.pucp.edu.pe/VoucherWS/eliminarVoucherRequest" message="tns:eliminarVoucher" />
-      <output wsam:Action="http://services.webhooke.pucp.edu.pe/VoucherWS/eliminarVoucherResponse" message="tns:eliminarVoucherResponse" />
+    <operation name="obtenerVoucher">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/VoucherWS/obtenerVoucherRequest" message="tns:obtenerVoucher" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/VoucherWS/obtenerVoucherResponse" message="tns:obtenerVoucherResponse" />
     </operation>
     <operation name="obtenerVoucher">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/VoucherWS/obtenerVoucherRequest" message="tns:obtenerVoucher" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/VoucherWS/obtenerVoucherResponse" message="tns:obtenerVoucherResponse" />
     </operation>
+    <operation name="eliminarVoucher">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/VoucherWS/eliminarVoucherRequest" message="tns:eliminarVoucher" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/VoucherWS/eliminarVoucherResponse" message="tns:eliminarVoucherResponse" />
+    </operation>
     <operation name="guardarVoucher">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/VoucherWS/guardarVoucherRequest" message="tns:guardarVoucher" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/VoucherWS/guardarVoucherResponse" message="tns:guardarVoucherResponse" />
     </operation>
+<<<<<<< HEAD
     <operation name="listarVouchers">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/VoucherWS/listarVouchersRequest" message="tns:listarVouchers" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/VoucherWS/listarVouchersResponse" message="tns:listarVouchersResponse" />
     </operation>
+=======
+>>>>>>> BranchJefferson
   </portType>
   <binding name="VoucherWSPortBinding" type="tns:VoucherWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="eliminarVoucher">
+    <operation name="obtenerVoucher">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -67,7 +83,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="guardarVoucher">
+    <operation name="eliminarVoucher">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -76,7 +92,11 @@
         <soap:body use="literal" />
       </output>
     </operation>
+<<<<<<< HEAD
     <operation name="listarVouchers">
+=======
+    <operation name="guardarVoucher">
+>>>>>>> BranchJefferson
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

@@ -5,17 +5,36 @@
       <xsd:import schemaLocation="http://localhost:8080/WebHookeWS/SesionWS?xsd=1" namespace="http://services.webhooke.pucp.edu.pe/" />
     </xsd:schema>
   </types>
+<<<<<<< HEAD
   <message name="listarAlumnosporSesiones">
     <part name="parameters" element="tns:listarAlumnosporSesiones" />
   </message>
   <message name="listarAlumnosporSesionesResponse">
     <part name="parameters" element="tns:listarAlumnosporSesionesResponse" />
+=======
+  <message name="guardarSesion">
+    <part name="parameters" element="tns:guardarSesion" />
+  </message>
+  <message name="guardarSesionResponse">
+    <part name="parameters" element="tns:guardarSesionResponse" />
+>>>>>>> BranchJefferson
   </message>
   <message name="listarSesionesporAlumnos">
     <part name="parameters" element="tns:listarSesionesporAlumnos" />
   </message>
+<<<<<<< HEAD
   <message name="listarSesionesporAlumnosResponse">
     <part name="parameters" element="tns:listarSesionesporAlumnosResponse" />
+=======
+  <message name="listarSesionesResponse">
+    <part name="parameters" element="tns:listarSesionesResponse" />
+  </message>
+  <message name="obtenerSesion">
+    <part name="parameters" element="tns:obtenerSesion" />
+  </message>
+  <message name="obtenerSesionResponse">
+    <part name="parameters" element="tns:obtenerSesionResponse" />
+>>>>>>> BranchJefferson
   </message>
   <message name="eliminarSesion">
     <part name="parameters" element="tns:eliminarSesion" />
@@ -42,6 +61,7 @@
     <part name="parameters" element="tns:guardarSesionResponse" />
   </message>
   <portType name="SesionWS">
+<<<<<<< HEAD
     <operation name="listarAlumnosporSesiones">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/listarAlumnosporSesionesRequest" message="tns:listarAlumnosporSesiones" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/listarAlumnosporSesionesResponse" message="tns:listarAlumnosporSesionesResponse" />
@@ -49,6 +69,19 @@
     <operation name="listarSesionesporAlumnos">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/listarSesionesporAlumnosRequest" message="tns:listarSesionesporAlumnos" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/listarSesionesporAlumnosResponse" message="tns:listarSesionesporAlumnosResponse" />
+=======
+    <operation name="guardarSesion">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/guardarSesionRequest" message="tns:guardarSesion" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/guardarSesionResponse" message="tns:guardarSesionResponse" />
+    </operation>
+    <operation name="listarSesiones">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/listarSesionesRequest" message="tns:listarSesiones" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/listarSesionesResponse" message="tns:listarSesionesResponse" />
+    </operation>
+    <operation name="obtenerSesion">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/obtenerSesionRequest" message="tns:obtenerSesion" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/obtenerSesionResponse" message="tns:obtenerSesionResponse" />
+>>>>>>> BranchJefferson
     </operation>
     <operation name="eliminarSesion">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/SesionWS/eliminarSesionRequest" message="tns:eliminarSesion" />
@@ -69,6 +102,7 @@
   </portType>
   <binding name="SesionWSPortBinding" type="tns:SesionWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+<<<<<<< HEAD
     <operation name="listarAlumnosporSesiones">
       <soap:operation soapAction="" />
       <input>
@@ -88,6 +122,9 @@
       </output>
     </operation>
     <operation name="eliminarSesion">
+=======
+    <operation name="guardarSesion">
+>>>>>>> BranchJefferson
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

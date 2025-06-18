@@ -36,7 +36,11 @@ public class AlumnoDAOImplement extends BaseDAOImplement<Alumno> implements Alum
         cmd.setString("p_dni", usu.getDNI());
         cmd.setString("p_email", usu.getEmail());
 //        cmd.setDate("p_fechanacimiento", usu.getFechaNacimiento());
-        cmd.setDate("p_fechanacimiento",  new java.sql.Date(usu.getFechaNacimiento().getTime()));
+        if (usu.getFechaNacimiento() != null) {
+            cmd.setDate("p_fechanacimiento", new java.sql.Date(usu.getFechaNacimiento().getTime()));
+        } else {
+            cmd.setNull("p_fechanacimiento", java.sql.Types.DATE);
+        }
         cmd.setString("p_carrera", usu.getCarrera());
         cmd.setString("p_tipoUsuario", String.valueOf(usu.getTipoUsuario()));
         cmd.setString("p_password", usu.getPassword());
@@ -53,7 +57,11 @@ public class AlumnoDAOImplement extends BaseDAOImplement<Alumno> implements Alum
         cmd.setString("p_apellido", usu.getApellido());
         cmd.setString("p_dni", usu.getDNI());
         cmd.setString("p_email", usu.getEmail());
-        cmd.setDate("p_fechanacimiento",  new java.sql.Date(usu.getFechaNacimiento().getTime()));
+        if (usu.getFechaNacimiento() != null) {
+            cmd.setDate("p_fechanacimiento", new java.sql.Date(usu.getFechaNacimiento().getTime()));
+        } else {
+            cmd.setNull("p_fechanacimiento", java.sql.Types.DATE);
+        }
         cmd.setString("p_carrera", usu.getCarrera());
         cmd.setInt("p_id", usu.getId());
         cmd.setString("p_password", usu.getPassword());

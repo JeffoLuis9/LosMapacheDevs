@@ -8,4 +8,5 @@
     <contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/" ref="http://localhost:8080/WebHookeWS/AcademiaWS?wsdl"/>
     <contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/" ref="http://localhost:8080/WebHookeWS/UsuarioWS?wsdl"/> 
     <contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/" ref="http://localhost:8080/WebHookeWS/VoucherWS?wsdl"/> 
+    <contractRef xmlns="http://schemas.xmlsoap.org/disco/scl/" ref="http://localhost:8080/WebHookeWS/UsuarioWS?wsdl"/>
 </discovery>
