@@ -12,5 +12,5 @@ import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Voucher;
  * @author ASUS
  */
 public interface VoucherDAO extends ICrud<Voucher>{
-    
+    Voucher buscarVoucherPorIdSesion (int idSesion);
 }

@@ -36,7 +36,7 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
         protected void btnBuscarCursos_Click (object sender, EventArgs e)
         {
             cursoWS = new CursoWSClient();
-            ddlCurso.DataSource = new BindingList<curso>(cursoWS.listarCursosPorNivel(6));
+            ddlCurso.DataSource = new BindingList<curso>(cursoWS.listarCursosPorNivel(Int32.Parse(ddlNivel.Text)));
             ddlCurso.DataTextField = "nombre";
             ddlCurso.DataValueField = "id";
             ddlCurso.DataBind();
@@ -58,6 +58,8 @@ namespace PUCP.Edu.Pe.Prog03HookeWeb.Web
             ddlSede.DataBind();
             ddlSede.Items.Insert(0, new ListItem("-- Seleccione una Sede --", "0"));
         }
+
+       
 
         protected void ddlCurso_SelectedIndexChanged(object sender, EventArgs e)
         {

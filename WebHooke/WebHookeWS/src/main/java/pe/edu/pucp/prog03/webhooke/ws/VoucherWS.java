@@ -50,4 +50,9 @@ public class VoucherWS {
     public List<Voucher> listarVouchers () {
         return this.voucherBo.listar();
     }
+    
+    @WebMethod(operationName = "obtenerVoucherDeSesion")
+    public Voucher obtenerVoucherDeSesion(@WebParam(name = "idSesion") int idSesion) {
+        return this.voucherBo.obtener(idSesion);
+    }
 }

@@ -11,5 +11,5 @@ import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Voucher;
  * @author ASUS
  */
 public interface IVoucherBO extends IBaseBO<Voucher>{
-    
+    Voucher buscarVoucherPorIdSeion(int idSesion);
 }

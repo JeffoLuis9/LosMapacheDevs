@@ -5,25 +5,8 @@
       <xsd:import schemaLocation="http://localhost:8080/WebHookeWS/ProfesorWS?xsd=1" namespace="http://services.webhooke.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="listarProfesoresPorCurso">
-    <part name="parameters" element="tns:listarProfesoresPorCurso" />
-  </message>
-  <message name="listarProfesoresPorCursoResponse">
-    <part name="parameters" element="tns:listarProfesoresPorCursoResponse" />
-  </message>
-<<<<<<< HEAD
-  <message name="eliminarProfesor">
-    <part name="parameters" element="tns:eliminarProfesor" />
-=======
-  <message name="guardarProfesor">
-    <part name="parameters" element="tns:guardarProfesor" />
-  </message>
-  <message name="guardarProfesorResponse">
-    <part name="parameters" element="tns:guardarProfesorResponse" />
-  </message>
   <message name="listarProfesores">
     <part name="parameters" element="tns:listarProfesores" />
->>>>>>> BranchJefferson
   </message>
   <message name="listarProfesoresResponse">
     <part name="parameters" element="tns:listarProfesoresResponse" />
@@ -46,24 +29,16 @@
   <message name="eliminarProfesorResponse">
     <part name="parameters" element="tns:eliminarProfesorResponse" />
   </message>
+  <message name="listarProfesoresPorCurso">
+    <part name="parameters" element="tns:listarProfesoresPorCurso" />
+  </message>
+  <message name="listarProfesoresPorCursoResponse">
+    <part name="parameters" element="tns:listarProfesoresPorCursoResponse" />
+  </message>
   <portType name="ProfesorWS">
-    <operation name="listarProfesoresPorCurso">
-      <input wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresPorCursoRequest" message="tns:listarProfesoresPorCurso" />
-      <output wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresPorCursoResponse" message="tns:listarProfesoresPorCursoResponse" />
-    </operation>
-<<<<<<< HEAD
-    <operation name="eliminarProfesor">
-      <input wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/eliminarProfesorRequest" message="tns:eliminarProfesor" />
-      <output wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/eliminarProfesorResponse" message="tns:eliminarProfesorResponse" />
-=======
-    <operation name="guardarProfesor">
-      <input wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/guardarProfesorRequest" message="tns:guardarProfesor" />
-      <output wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/guardarProfesorResponse" message="tns:guardarProfesorResponse" />
-    </operation>
     <operation name="listarProfesores">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresRequest" message="tns:listarProfesores" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresResponse" message="tns:listarProfesoresResponse" />
->>>>>>> BranchJefferson
     </operation>
     <operation name="guardarProfesor">
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/guardarProfesorRequest" message="tns:guardarProfesor" />
@@ -77,32 +52,23 @@
       <input wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/eliminarProfesorRequest" message="tns:eliminarProfesor" />
       <output wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/eliminarProfesorResponse" message="tns:eliminarProfesorResponse" />
     </operation>
+    <operation name="listarProfesoresPorCurso">
+      <input wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresPorCursoRequest" message="tns:listarProfesoresPorCurso" />
+      <output wsam:Action="http://services.webhooke.pucp.edu.pe/ProfesorWS/listarProfesoresPorCursoResponse" message="tns:listarProfesoresPorCursoResponse" />
+    </operation>
   </portType>
   <binding name="ProfesorWSPortBinding" type="tns:ProfesorWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="listarProfesoresPorCurso">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="eliminarProfesor">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-<<<<<<< HEAD
-    <operation name="guardarProfesor">
-=======
     <operation name="listarProfesores">
->>>>>>> BranchJefferson
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="guardarProfesor">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -121,6 +87,15 @@
       </output>
     </operation>
     <operation name="eliminarProfesor">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarProfesoresPorCurso">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

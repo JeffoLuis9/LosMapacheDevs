@@ -55,7 +55,8 @@ CREATE TABLE Voucher (
 	idVoucher INT AUTO_INCREMENT PRIMARY KEY,
     codigoOperacion VARCHAR (50),
     monto DOUBLE,
-    fecha DATE
+    fecha DATE,
+    idSesion int
 );
 
 CREATE TABLE Sesion (

@@ -11,11 +11,17 @@ import jakarta.json.bind.annotation.JsonbDateFormat;
  * @author ASUS
  */
 public class Voucher {
+
+    /**
+     * @return the idSesion
+     */
+    
     private int id;
     private String codigoOperacion;
     private double monto;
     @JsonbDateFormat("yyyy-MM-dd'T'HH:mm:ss")
     private Date fecha;
+    private int idSesion;
 
     /**
      * @return the id
@@ -72,5 +78,15 @@ public class Voucher {
     public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
+    
+    public int getIdSesion() {
+        return idSesion;
+    }
 
+    /**
+     * @param idSesion the idSesion to set
+     */
+    public void setIdSesion(int idSesion) {
+        this.idSesion = idSesion;
+    }
 }

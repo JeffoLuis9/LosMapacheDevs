@@ -46,5 +46,10 @@ public class VoucherBOImpl implements IVoucherBO{
             this.voucherDAO.modificar(modelo);
         }
     }
+
+    @Override
+    public Voucher buscarVoucherPorIdSeion(int idSesion) {
+        return this.voucherDAO.buscarVoucherPorIdSesion(idSesion);
+    }
     
 }
