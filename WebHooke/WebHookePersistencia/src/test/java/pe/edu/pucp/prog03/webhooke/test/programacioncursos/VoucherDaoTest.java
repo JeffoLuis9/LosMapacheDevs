@@ -56,6 +56,7 @@
 //            Logger.getLogger(VoucherDaoTest.class.getName()).log(Level.SEVERE, null, ex);
 //        }
 //        voucher.setMonto(30);
+//        voucher.setIdSesion(1);
 //        this.testId = voucherDao.insertar(voucher);
 //        assertTrue(this.testId > 0);
 //    }

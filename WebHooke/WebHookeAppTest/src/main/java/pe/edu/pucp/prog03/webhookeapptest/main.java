@@ -1,3 +1,11 @@
+
+import com.google.protobuf.TextFormat;
+import java.text.ParseException;
+import java.util.List;
+import pe.edu.pucp.prog03.webhooke.bo.ISesionBO;
+import pe.edu.pucp.prog03.webhooke.boimpl.SesionBOImpl;
+import pe.edu.pucp.prog03.webhooke.modelo.programacioncursos.Sesion;
+
 //package pe.edu.pucp.prog03.webhookeapptest;
 ////import pe.edu.pucp.prog03.webhooke.gestionacademia.model.Academia;
 ////import pe.edu.pucp.prog03.webhooke.gestionacademia.dao.AcademiaDAO;
@@ -59,8 +67,12 @@
 ///**
 // * Hello world!
 // */
-//public class main {
-//    public static void main(String[] args) throws ParseException {
+public class main {
+    public static void main(String[] args) throws ParseException {
+        ISesionBO sesionBo = new SesionBOImpl();
+        List<Sesion>sesiones = sesionBo.buscarSesionesxalumno(21);
+
+
 //    //INSERTAR DATOS ALEATORIOS DE PROFESOR
 //    
 ////    for(int i=0;i<10;i++){
@@ -189,6 +201,6 @@
 //        sesionBo.guardar(sesion, estado);
 //        
 //        
-//  }
+  }
 //
-//}
+}

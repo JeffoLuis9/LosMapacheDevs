@@ -40,3 +40,10 @@ INSERT INTO Academia(Nombre,RUC) VALUES ("HOOKE","12345678912");
 INSERT INTO Sede(Direccion,Distrito,idAcademia) VALUES ("Av.PruebaTest1","Distrito prueba 1",1);
 INSERT INTO Sede(Direccion,Distrito,idAcademia) VALUES ("Av.PruebaTest2","Distrito prueba 2",1);
 INSERT INTO Sede(Direccion,Distrito,idAcademia) VALUES ("Av.PruebaTest3","Distrito prueba 3",1); 
+
+INSERT INTO Usuario (TipoUsuario,Nombre,Apellido,DNI,Email,password,fechaNacimiento)VALUES("A","David","Cutisaca","12345678","David@gmail.com","encriptado2","1999-01-01");
+INSERT INTO Usuario (TipoUsuario,Nombre,Apellido,DNI,Email,password,fechaNacimiento,idCurso)VALUES("P","Jorge","Ronaldo","12345678","Jorge@gmail.com","encriptado1","1999-01-01",1);
+INSERT INTO Usuario (TipoUsuario,Nombre,Apellido,DNI,Email,password,carrera,fechaNacimiento)VALUES("E","Jefferson","Robles","12345678","Jefferson@gmail.com","encriptado1","Ingenieria Informatica","1999-01-01");
+
+select * from Usuario;
+select * from Sede;

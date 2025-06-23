@@ -53,6 +53,6 @@ public class VoucherWS {
     
     @WebMethod(operationName = "obtenerVoucherDeSesion")
     public Voucher obtenerVoucherDeSesion(@WebParam(name = "idSesion") int idSesion) {
-        return this.voucherBo.obtener(idSesion);
+        return this.voucherBo.buscarVoucherPorIdSeion(idSesion);
     }
 }

@@ -30,12 +30,13 @@ import pe.edu.pucp.prog03.webhooke.modelo.gestionusuarios.Alumno;
 public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements SesionDAO{
     @Override
     protected CallableStatement comandoInsertar(Connection conn, Sesion sesion) throws SQLException {
-        String sql = "{CALL insertarSesion(?,?,?,?,?,?,?,?,?)}";
+        String sql = "{CALL insertarSesion(?,?,?,?,?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         
         //cmd.setDate("p_fechanacimiento", java.sql.Date.valueOf(usu.getFechaNacimiento()));
         cmd.setDate("p_fecha", new java.sql.Date(sesion.getFecha().getTime()));
         cmd.setString("p_modalidad",sesion.getModalidad());
+        cmd.setBoolean("p_estado", sesion.isEstado());
         cmd.setInt("p_idCurso", sesion.getCurso().getId());
         cmd.setInt("p_idAlumno", sesion.getAlumno().getId());
         cmd.setInt("p_idTipoSesion", sesion.getTipoSesion().getIdModalidad());
@@ -55,11 +56,12 @@ public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements Sesi
 
     @Override
     protected CallableStatement comandoModificar(Connection conn, Sesion sesion) throws SQLException {
-        String sql = "{CALL modificarSesion(?,?,?,?,?,?,?,?,?)}";
+        String sql = "{CALL modificarSesion(?,?,?,?,?,?,?,?,?,?)}";
         CallableStatement cmd = conn.prepareCall(sql);
         
         cmd.setDate("p_fecha",new java.sql.Date(sesion.getFecha().getTime()));
         cmd.setString("p_modalidad",sesion.getModalidad());
+        cmd.setBoolean("p_estado", sesion.isEstado());
         cmd.setInt("p_idCurso", sesion.getCurso().getId());
         cmd.setInt("p_idAlumno", sesion.getAlumno().getId());
         cmd.setInt("p_idTipoSesion", sesion.getTipoSesion().getIdModalidad());
@@ -108,6 +110,7 @@ public class SesionDAOImplement extends BaseDAOImplement<Sesion> implements Sesi
         sesion.setFecha(rs.getDate("fecha"));
         
         sesion.setModalidad(rs.getString("Modalidad"));
+        sesion.setEstado(rs.getBoolean("estado"));
         sesion.setCurso(new CursoDAOImplement().buscar(rs.getInt("idCurso")));
         sesion.setAlumno(new AlumnoDAOImplement().buscar(rs.getInt("idAlumno")));
         sesion.setTipoSesion(new TipoSesionDAOImplement().buscar(rs.getInt("idTipoSesion")));
